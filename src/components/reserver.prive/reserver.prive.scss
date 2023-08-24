@@ -1,0 +1,244 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+.familleDivAF {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: fit-content;
+//   background-image: url(../../../public/img/gradient-blue-pink.png);
+  background-size: cover;
+  .titleAF {
+    margin: 45px 0 15px 0;
+    position: relative;
+    height: 4vh;
+    z-index: 10;
+    font-family: "Archivo Black";
+    font-size: 47px;
+    color: $primaryDark;
+  }
+  .familleAF {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 50px;
+    .subtitleFamilleAF {
+      z-index: 10;
+      width: 100%;
+      position: relative;
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: $primary;
+      margin: 8% 0 0 7%;
+      font-size: 33px;
+    }
+    .familleChoiceAF {
+      width: 100%;
+      z-index: 10;
+      position: relative;
+      width: 646px;
+      height: 474px;
+    }
+    .reserverFamilleAF {
+      z-index: 10;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans";
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      width: 160px;
+      height: 61px;
+      background: #005f4e;
+    //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
+    //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);
+    //   filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86))
+    //     drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
+      border-radius: 11px;
+    }
+  }
+
+  .frise40,
+  .frise42,
+  .frise44 {
+    right: -1500px;
+  }
+  .frise41,
+  .frise43,
+  .frise45 {
+    left: -1500px;
+  }
+  .frise40,
+  .frise41,
+  .frise42,
+  .frise43,
+  .frise44,
+  .frise45 {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    margin: 4% 0 0 0;
+    width: 200%;
+    opacity: 0.1;
+    filter: drop-shadow(5px 5px 5px #0000008e);
+    transition: 1s;
+  }
+  .frise41 {
+    margin: 10% 0 0 0;
+  }
+  .frise42 {
+    margin: 18% 0 0 0;
+  }
+  .frise43 {
+    margin: 26% 0 0 0;
+  }
+  .frise44 {
+    margin: 34% 0 0 0;
+  }
+  .frise45 {
+    margin: 42% 0 0 0;
+  }
+}
+
+// ----------RESPONSIVE----------
+
+@media screen and (max-width: 576px) {
+  .familleDivAF {
+    z-index: 0;
+    position: relative;
+    height: fit-content !important;
+    background-image: url(../../../public/img/gradient-blue-pink.png);
+    background-size: cover;
+    .titleAF {
+      padding-top: 25px;
+      position: relative;
+      text-align: center;
+      margin: auto;
+      font-size: 23px !important;
+    }
+	.familleAF {
+		width: 100%;
+		height: fit-content;
+		margin-top: 20px;
+		.subtitleFamilleAF {
+		  text-align: center;
+		  color: $primary;
+		  font-size: 26px !important;
+		}
+		.familleChoiceAF {
+		  width: 367px !important;
+		  height: 290px !important;
+		}
+	  }
+  }
+	.frise40, .frise42, .frise44{
+		right: -1500px;
+	}
+	.frise41, .frise43, .frise45{
+		left: -1500px;
+	}
+	.frise40, .frise41, .frise42, .frise43, .frise44, .frise45{
+		padding-top: 35px;
+		overflow: hidden;
+		z-index: 1;
+		position: absolute;
+		margin: 4% 0 0 0;
+		width:200% !important;
+		height: 150px !important;
+		opacity: 1 !important;
+		filter: drop-shadow(5px 5px 5px #0000008e);
+		transition: 1s;
+	}
+	.frise41{
+		
+		margin: 10% 0 0 0;
+	}
+	.frise42{
+		margin: 18% 0 0 0;
+	}
+	.frise43{
+		margin: 26% 0 0 0;
+	}
+	.frise44{
+		margin: 34% 0 0 0;
+	}
+	.frise45{
+		margin: 42% 0 0 0;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+  .familleDivAF {
+    z-index: 0;
+    position: relative;
+    height: fit-content;
+    background-image: url(../../../public/img/gradient-blue-pink.png);
+    background-size: cover;
+    .titleAF {
+      padding-top: 35px;
+	  padding-bottom: 35px;
+      position: relative;
+      text-align: center;
+      margin: auto;
+      font-size: 36px;
+    }
+	.familleAF {
+		width: 100%;
+		height: fit-content;
+		margin-top: 20px;
+		.subtitleFamilleAF {
+		  text-align: center;
+		  color: $primary;
+		  font-size: 33px;
+		}
+		.familleChoiceAF {
+		  width: 700px;
+		  height: 510px;
+		}
+	  }
+  }
+  .frise40, .frise42, .frise44{
+	right: -1500px;
+}
+.frise41, .frise43, .frise45{
+	left: -1500px;
+}
+.frise40, .frise41, .frise42, .frise43, .frise44, .frise45{
+	padding-top: 10vh;
+	overflow: hidden;
+	z-index: 1;
+	position: absolute;
+	width:800% !important;
+	// height: 400px !important;
+	opacity: 0.13 !important;
+	filter: drop-shadow(5px 5px 5px #0000008e);
+	transition: 1s;
+}
+.frise41{
+	
+	margin: 250px 0 0 0 !important;
+}
+.frise42{
+	margin: 450px 0 0 0 !important;
+}
+.frise43{
+	margin: 650px 0 0 0 !important;
+}
+.frise44{
+	margin: 850px 0 0 0 !important;
+}
+.frise45{
+	margin: 1050px 0 0 0 !important;
+}
+}

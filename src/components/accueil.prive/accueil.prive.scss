@@ -1,0 +1,193 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+.homeAF{
+	overflow-y: hidden !important;
+    overflow-x: hidden !important;
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	// background-image: url("../../../public/img/gradient-blue-pink.png");
+	background-size: cover;
+	.accueilImageAF{
+		z-index: 9;
+		position: relative;
+		height: 600px;
+		background-image: url(../../../public/img/vr-vibes-home-image.jpg);
+		background-size: cover;
+		display: flex;
+		animation: clip 3s 1;
+		animation-fill-mode: forwards;
+		@keyframes clip {
+			from {
+				clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+			}
+			to {
+				clip-path: polygon(73% 0, 73% 0, 30% 100%, 30% 100%);
+			}
+		}
+	}	
+	.logoVRvibesAF{
+		z-index: 9;
+		position: absolute;
+		height: 100px;
+		left: calc(50% - 156px);
+    	top: calc(50% - 60px);
+		clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+		animation: logoAnimation 1.8s 1;
+		animation-delay: 3s;
+		animation-fill-mode: forwards;
+	}
+	.imageVRFamilleAF1{
+		z-index: 7 !important;
+		position: relative;
+		background-image: url(../../../public/img/famille-image-1.jpg);
+		background-color: aquamarine;
+		width: 33%;
+		height: 600px;
+		background-size: cover;
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	}
+	.imageVRFamilleAF2{
+		z-index: 7 !important;
+		position: relative;
+		background-image: url(../../../public/img/famille-image-2.jpg);
+		background-color: aquamarine;
+		width: 33%;
+		height: 600px;
+		background-size: cover;
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	}
+	.imageVRFamilleAF3{
+		z-index: 7 !important;
+		position: relative;
+		background-image: url(../../../public/img/famille-image-3.jpg);
+		background-color: aquamarine;
+		width: 33%;
+		height: 600px;
+		background-size: cover;
+		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
+		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	}
+
+	.animate__animated.animate__backInLeft{
+		--animate-duration: 1.5s ;
+	}
+	.animate__animated.animate__backInRight{
+		--animate-duration: 1.5s ;
+	}
+	.animate__animated.animate__backInDown{
+		--animate-duration: 1.2s ;
+	}
+}
+
+.frise60,
+.frise62,
+.frise64 {
+  right: -1500px;
+}
+.frise61,
+.frise63,
+.frise65 {
+  left: -1500px;
+}
+.frise60,
+.frise61,
+.frise62,
+.frise63,
+.frise64,
+.frise65 {
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+  margin: 4% 0 0 0;
+  width: 200%;
+  opacity: 0.1;
+  filter: drop-shadow(5px 5px 5px #0000008e);
+  transition: 1s;
+}
+.frise61 {
+  margin: 10% 0 0 0;
+}
+.frise62 {
+  margin: 18% 0 0 0;
+}
+.frise63 {
+  margin: 26% 0 0 0;
+}
+.frise64 {
+  margin: 34% 0 0 0;
+}
+.frise65 {
+  margin: 42% 0 0 0;
+}
+
+@keyframes logoAnimation {
+	from{
+		clip-path: polygon(77% 0, 77% 0, 31% 100%, 31% 100%);
+	}
+	to{
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+}
+
+// ----------------RESPONSIVE----------------
+
+@media screen and (min-width: 1200px ) {
+	
+}
+
+@media screen and (max-width: 768px){
+
+	.logoVRvibesAF{
+		height: 80px !important;
+		left: calc(50% - 80px) !important;
+    	top: calc(50% - 50px) !important;
+	}
+
+	.imageVRFamilleAF1{
+		background-image: url("../../../public/img/famille-image-1-768px.jpg") !important;
+	}
+	.imageVRFamilleAF2{
+		background-image: url("../../../public/img/famille-image-2-768px.jpg") !important;
+	}
+	.imageVRFamilleAF3{
+		background-image: url("../../../public/img/famille-image-3-768px.jpg") !important;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.logoVRvibesAF{
+		height: 80px !important;
+		left: calc(50% - 80px) !important;
+    	top: calc(50% - -50px) !important;
+	}
+
+	.imageVRFamilleAF1{
+		background-image: url("../../../public/img/famille-image-1-576px.jpg") !important;
+	}
+	.imageVRFamilleAF2{
+		background-image: url("../../../public/img/famille-image-2-576px.jpg") !important;
+	}
+	.imageVRFamilleAF3{
+		background-image: url("../../../public/img/famille-image-3-576px.jpg") !important;
+	}
+
+	.accueilImageAF{
+		height: 600px;
+		background-image: url(../../../public/img/vr-vibes-home-image-576px.jpg)!important;
+	}
+	.logoVRvibesAF{
+		height: 125px !important;
+		left: calc(50% - 135px) !important;
+	}
+	.imageVRFamilleAF{
+		background-color: rgb(255, 221, 254);
+		background-image: url(../../../public/img/vr-vibes-famille-accueil-576px.jpg) !important;
+	}
+
+}
+
+

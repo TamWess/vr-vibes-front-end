@@ -1,0 +1,214 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url(../../../public/fonts/NunitoSans.ttf);
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
+}
+
+.containerFormulaireCoordonnees {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  .verticalLine {
+	z-index: 9;
+	position: absolute;
+	margin-left: 70%;
+	width:2px;
+	height: 800px;
+	margin-top: 200px;
+	background-color: $primary;
+  }
+  .containerFormulaire {
+    margin-top: 150px;
+	display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 70%;
+    height: fit-content;
+	margin-bottom: 10vh;
+    background-color: rgb(255, 255, 255);
+    .titleFormulaire {
+      margin: auto;
+	  margin-bottom: 30px;
+      font-family: "Archivo Black";
+      font-size: 30px;
+      color: $primary;
+    }
+    .texteFormulaire {
+	  width:100%;
+      margin: 3%;
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Nunito Sans";
+      font-size: 17px;
+    }
+    .nousVousRecontacterons {
+	  width:100%;
+      margin: 3%;
+      margin-top: 20px;
+      text-align: center;
+      font-family: "Nunito Sans";
+      font-size: 18px;
+	  color: rgba(64, 161, 0, 0.648);
+    }
+	.prix{
+		margin: auto;
+		font-family: "Archivo Black";
+		font-size: 20px;
+		color: $primary;
+	}
+	.ligne{
+		margin: auto;
+		width: 80%;
+		height: 2px;
+		padding: 40px 0 40px 0;
+	}
+    .typeEvent {
+      width: 100%;
+      height: fit-content;
+      margin-left: 3%;
+      .labelQuelTypeEvent {
+        font-family: "Nunito Sans";
+        font-size: 17px;
+      }
+      #quelTypeEvent {
+        width: fit-content;
+        height: fit-content;
+        background-color: $primary;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        font-family: "Nunito Sans";
+        font-size: 17px;
+        border-radius: 10px;
+      }
+    }
+    .nombrePersonnes {
+      width: 100%;
+      height: fit-content;
+      margin-left: 3%;
+      .labelNombrePersonnes {
+        font-family: "Nunito Sans";
+        font-size: 17px;
+      }
+      #combienDePersonnes {
+        width: fit-content;
+        height: fit-content;
+        background-color: $primary;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        margin-top: 30px;
+        font-family: "Nunito Sans";
+        font-size: 17px;
+        border-radius: 10px;
+      }
+    }
+	.aQuelleDate{
+		font-family: "Nunito Sans";
+        font-size: 17px;
+		width: 100%;
+        height: fit-content;
+        margin-left: 3%;
+		.dateLabel{
+			font-family: "Nunito Sans";
+			font-size: 17px;
+			height: fit-content;
+			margin-left: 3%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+			
+		}
+		#date{
+			margin: 7px 0 13px 0;
+			border-radius: 20px;
+			padding: 10px;
+			text-indent: 2%;
+		}
+		#erreurDate{
+			font-family: "Nunito Sans";
+        	font-size: 18px;
+			color: rgba(161, 0, 0, 0.648);
+			margin-top: 20px;
+		}
+		#dateCorrect{
+			font-family: "Nunito Sans";
+        	font-size: 17px;
+			color: rgba(64, 161, 0, 0.648);
+			margin-top: 20px;
+		}
+	}
+	
+	.quelleEstVotreAdresse{
+		font-family: "Nunito Sans";
+        font-size: 17px;
+		width: 100%;
+        height: fit-content;
+        margin-left: 3%;
+	}
+	.pourToutesPrecisions{
+		font-family: "Nunito Sans";
+        font-size: 18px;
+		width: 100%;
+        height: fit-content;
+		margin: 30px 0 10px 3%;
+	}
+	#precisions{
+		margin: 7px 0 7px 0;
+		border-radius: 20px;
+		padding: 10px;
+		padding-bottom: 100px;
+		text-indent: 2%;
+		width: 150%
+	}
+	.saisirCoordonnees{
+		font-family: "Nunito Sans";
+        font-size: 18px;
+        height: fit-content;
+        margin-left: 3%;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin-top: 20px;
+		
+		#prenom, #nom, #rue, #ville, #codePostal, #mail, #tel{
+			margin: 7px 0 13px 0;
+			border-radius: 20px;
+			padding: 10px;
+			text-indent: 2%;
+		}
+		.messageTel{
+			font-size: 15px;
+			font-style: italic;
+		}
+		.erreurTel{
+			color: rgba(161, 0, 0, 0.648);
+			margin: 10px 0;
+		}
+	}
+	.boutonEnvoyer{
+		font-family: "Nunito Sans";
+        font-size: 18px;
+		width: fit-content;
+		height: fit-content;
+		color: white;
+		padding: 5px 10px;
+		background-color: $primary;
+		border-radius: 10px;
+		margin-top: 30px;
+	}
+  }
+  .containerCoordonnees {
+    position: relative;
+    width: 30%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+  }
+}
