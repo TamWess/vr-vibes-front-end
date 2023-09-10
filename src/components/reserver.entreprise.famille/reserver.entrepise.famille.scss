@@ -11,6 +11,7 @@
 //   background-image: url(../../../public/img/gradient-blue-pink.png);
   background-size: cover;
   .titleEntrepriseFamille {
+	opacity : 0;
     margin: 85px 0 15px 0;
     position: relative;
     height: 4vh;
@@ -27,6 +28,7 @@
     height: fit-content;
     margin-bottom: 50px;
     .subtitleEntreprise {
+	  opacity : 0;
       z-index: 10;
       width: 100%;
       position: relative;
@@ -44,6 +46,7 @@
       height: 474px;
     }
     .reserverEntreprise {
+	  opacity: 0;
       z-index: 10;
       position: relative;
       width: 100%;
@@ -54,8 +57,8 @@
       text-decoration: none;
       color: white;
       font-size: 27px;
-      width: 125px;
-      height: 45px;
+	  width: 160px;
+	  height: 61px;
       background: #005f4e;
     //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
     //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);
@@ -71,6 +74,7 @@
     width: 50%;
     height: fit-content;
     .subtitleFamille {
+	  opacity : 0;
       z-index: 10;
       width: 100%;
       position: relative;
@@ -98,8 +102,8 @@
       text-decoration: none;
       color: white;
       font-size: 27px;
-	  width: 125px;
-      height: 45px;
+	  width: 160px;
+	  height: 61px;
       background: #005f4e;
     //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
     //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);

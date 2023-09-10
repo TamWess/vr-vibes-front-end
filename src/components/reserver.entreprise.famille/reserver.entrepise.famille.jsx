@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import "./reserver.entrepise.famille.scss"
 
 function ReserverEntrepriseFamille() {
+
+	console.log(window.scroll.y);
 	
 	useEffect(() => {
 		
@@ -83,6 +85,62 @@ function ReserverEntrepriseFamille() {
 				friseLeft = -1500
 			}
 		}, 2000)
+
+
+
+		// --------SCROLL ANIMATIONS------
+
+
+		const titleEntrepriseFamille = document.querySelector(".titleEntrepriseFamille")
+
+		const subtitleEntreprise = document.querySelector(".subtitleEntreprise")
+
+		const subtitleFamille = document.querySelector(".subtitleFamille")
+
+		const reserverEntreprise = document.querySelector(".reserverEntreprise")
+
+		const reserverFamille = document.querySelector(".reserverFamille")
+		
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 15) {
+			  titleEntrepriseFamille.style.opacity = "1";
+			  titleEntrepriseFamille.classList.add("animate__animated");
+			  titleEntrepriseFamille.classList.add("animate__fadeInUp");
+			}
+		  });
+
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 100) {
+			  subtitleEntreprise.style.opacity = "1";
+			  subtitleEntreprise.classList.add("animate__animated");
+			  subtitleEntreprise.classList.add("animate__fadeInUp");
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 100) {
+			  subtitleFamille.style.opacity = "1";
+			  subtitleFamille.classList.add("animate__animated");
+			  subtitleFamille.classList.add("animate__fadeInUp");
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 370) {
+			  reserverEntreprise.style.opacity = "1";
+			  reserverEntreprise.classList.add("animate__animated");
+			  reserverEntreprise.classList.add("animate__fadeInUp");
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 370) {
+			  reserverFamille.style.opacity = "1";
+			  reserverFamille.classList.add("animate__animated");
+			  reserverFamille.classList.add("animate__fadeInUp");
+			}
+		  });
 	})
 
 	return (

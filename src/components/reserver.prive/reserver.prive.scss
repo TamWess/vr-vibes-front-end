@@ -4,7 +4,7 @@
 .familleDivAF {
   overflow-y: hidden;
   overflow-x: hidden;
-  z-index: 0;
+  z-index: 5;
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
 //   background-image: url(../../../public/img/gradient-blue-pink.png);
   background-size: cover;
   .titleAF {
-    margin: 45px 0 15px 0;
+    margin: 65px 0 15px 0;
     position: relative;
     height: 4vh;
     z-index: 10;

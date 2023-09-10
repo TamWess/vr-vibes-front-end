@@ -22,6 +22,7 @@
 	width: 100%;
 	height: 400px;
 	.badge1{
+		opacity: 0;
 		text-align: center;
 		z-index: 7;
 		border-radius: 40px;
@@ -60,6 +61,7 @@
 		}
 	}
 	.badge2{
+		opacity: 0;
 		text-align: center;
 		z-index: 7;
 		border-radius: 40px;
@@ -100,6 +102,7 @@
 		}
 	}
 	.badge3{
+		opacity: 0;
 		text-align: center;
 		z-index: 7;
 		border-radius: 40px;

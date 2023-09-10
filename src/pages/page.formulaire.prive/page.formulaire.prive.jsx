@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./page.formulaire.prive.scss";
+import axios from "axios";
 
 function FormulairePrive() {
 
@@ -11,17 +12,65 @@ function FormulairePrive() {
 	const [rue, setRue] = useState("")
 	const [ville, setVille] = useState("")
 	const [codePostal, setCodePostal] = useState("")
+	const [mail, setMail] = useState("")
 	const [tel, setTel] = useState("")
+	const [precisions, setPrecisions] = useState("")
+
+	async function handleSubmit(event) {
+		event.preventDefault()
+		try{
+			
+
+			// -----utiliser nodemailer sur le back-----
+			
+			const data = await axios.post("http://localhost:3001/post", {
+				type: type,
+				nombrePersonnes: nombrePersonnes,
+				nom: nom,
+				prenom: prenom,
+				date: date,
+				rue: rue,
+				ville: ville,
+				codePostal: codePostal,
+				mail: mail,
+				tel: tel,
+				precisions: precisions,
+			})
+
+			if (data.status === 200){
+				console.log("votre demande nous a bien été envoyée");
+				// mettre un inner html
+				// location.replace("http://localhost:3000/ConfirmationEnvoiFormulaire")
+			}
+
+			else {
+				event.preventDefault()
+				console.log("vous n'avez pas rempli tous les éléments requis");
+				// mettre un inner html d'erreur
+
+				document.querySelector(".erreurEnvoi").style.opacity = "1"
+			}
+		}
+
+		catch (error){
+			console.error(error);
+		}
+
+	}
 
 	// --------------REGEX---------------
 
-	const nomPrenomRegex = /^[a-zA-Z]{2,}$/
+	const nomPrenomRegex = /^[a-zA-Z ]+$/
 
 	const dateRegex = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/
 
-	const codePostalRegex = /^(?:0[1-9]|[1-8]\d|9[0-8])\d{3}$/
+	const rueRegex = /./
+
+	const codePostalRegex = /^(?:0[1-9]|[1-8]\d|9[0-8])\d{3}$/g
 
 	const telRegex = /^(\+33|0033|0)(6|7)[0-9]{8}$/g
+
+	const mailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
 
 	// -------------FONCTION VALIDATION SAISIE-----------
@@ -32,16 +81,11 @@ function FormulairePrive() {
 
 		const typeId = document.querySelector("#quelTypeEvent")
 
-		// if (nomPrenomRegex.test(event.target.value)) {
-		// 	typeId.style.color = "green";
-		// 	typeId.style.backgroundColor = "#0080002b";
-		// 	typeId.style.color = "green";
-		// }
-		// else {
-		// 	typeId.style.color = "black";
-		// 	typeId.style.backgroundColor = "white";
-		// 	typeId.style.color = "black";
-		// }
+		if (event.target.value) {
+			typeId.style.color = "green";
+			typeId.style.backgroundColor = "#0080002b";
+			typeId.style.color = "green";
+		}
 	}
 
 	function nombrePersonnesEvent(event) {
@@ -49,16 +93,17 @@ function FormulairePrive() {
 		console.log(event.target.value);
 
 		const combienDePersonnesId = document.querySelector("#combienDePersonnes")
+		
 
-		// if (nomPrenomRegex.test(event.target.value)) {
-		// 	typeId.style.color = "green";
-		// 	typeId.style.backgroundColor = "#0080002b";
-		// 	typeId.style.color = "green";
-		// }
+		if (event.target.value) {
+			combienDePersonnesId.style.color = "green";
+			combienDePersonnesId.style.backgroundColor = "#0080002b";
+			combienDePersonnesId.style.color = "green";
+		}
 		// else {
-		// 	typeId.style.color = "black";
-		// 	typeId.style.backgroundColor = "white";
-		// 	typeId.style.color = "black";
+		// 	combienDePersonnesId.style.color = "red";
+		// 	combienDePersonnesId.style.backgroundColor = "#b104043e";
+		// 	combienDePersonnesId.style.color = "red";
 		// }
 	}
 
@@ -71,7 +116,9 @@ function FormulairePrive() {
 		if (dateId.pattern != "\d{2}-\d{2}-\d{4}") {
 			
 			// typeId.style.color = "green";
-			dateId.style.backgroundColor = "red";
+			dateId.style.backgroundColor = "#0080002b";
+			dateId.style.color = "green";
+
 			// typeId.style.color = "green";
 		}
 		// else {
@@ -89,12 +136,12 @@ function FormulairePrive() {
 		if (nomPrenomRegex.test(event.target.value)) {
 			nomId.style.color = "green";
 			nomId.style.backgroundColor = "#0080002b";
-			nomId.style.color = "green";
+			document.querySelector(".labelNom").style.color = "green";
 		}
 		else {
-			nomId.style.color = "black";
-			nomId.style.backgroundColor = "white";
-			nomId.style.color = "black";
+			nomId.style.color = "red";
+			nomId.style.backgroundColor = "#b104043e";
+			nomId.style.color = "red";
 		}
 	}
 
@@ -109,9 +156,9 @@ function FormulairePrive() {
 			document.querySelector(".labelPrenom").style.color = "green";
 		}
 		else {
-			prenomId.style.color = "black";
-			prenomId.style.backgroundColor = "white";
-			document.querySelector(".labelPrenom").style.color = "black";
+			prenomId.style.color = "red";
+			prenomId.style.backgroundColor = "#b104043e";
+			document.querySelector(".labelPrenom").style.color = "red";
 		}
 		console.log(date);
 	}
@@ -121,15 +168,15 @@ function FormulairePrive() {
 
 		const rueId = document.querySelector("#rue")
 
-		if (nomPrenomRegex.test(event.target.value)) {
+		if (rueRegex.test(event.target.value)) {
 			rueId.style.color = "green";
 			rueId.style.backgroundColor = "#0080002b";
 			document.querySelector(".labelRue").style.color = "green";
 		}
 		else {
-			rueId.style.color = "black";
-			rueId.style.backgroundColor = "white";
-			document.querySelector(".labelRue").style.color = "black";
+			rueId.style.color = "red";
+			rueId.style.backgroundColor = "#b104043e";
+			document.querySelector(".labelRue").style.color = "red";
 		}
 	}
 
@@ -144,17 +191,17 @@ function FormulairePrive() {
 			document.querySelector(".labelVille").style.color = "green";
 		}
 		else {
-			villeId.style.color = "black";
-			villeId.style.backgroundColor = "white";
-			document.querySelector(".labelVille").style.color = "black";
+			villeId.style.color = "red";
+			villeId.style.backgroundColor = "#b104043e";
+			document.querySelector(".labelVille").style.color = "red";
 		}
 	}
-
+	
 	function codePostalEvent(event) {
 		setCodePostal(event.target.value)
-
+		
 		const codePostalId = document.querySelector("#codePostal")
-
+		
 		if (codePostalRegex.test(event.target.value)) {
 			codePostalId.style.color = "green";
 			codePostalId.style.backgroundColor = "#0080002b";
@@ -166,13 +213,30 @@ function FormulairePrive() {
 			document.querySelector(".labelCodePostal").style.color = "red";
 		}
 	}
+	
+	function mailEvent(event) {
+		setMail(event.target.value)
+
+		const mailId = document.querySelector("#mail")
+
+		if (mailRegex.test(event.target.value)) {
+			mailId.style.color = "green";
+			mailId.style.backgroundColor = "#0080002b";
+			document.querySelector(".labelMail").style.color = "green";
+		}
+		else {
+			mailId.style.color = "red";
+			mailId.style.backgroundColor = "#b104043e";
+			document.querySelector(".labelMail").style.color = "red";
+		}
+	}
 
 	function telEvent(event) {
 		setTel(event.target.value)
-
+		
 		const telId = document.querySelector("#tel")
 		const erreurTel = document.querySelector(".erreurTel")
-
+		
 		if (telRegex.test(event.target.value)) {
 			telId.style.color = "green";
 			telId.style.backgroundColor = "#0080002b";
@@ -187,8 +251,12 @@ function FormulairePrive() {
 
 			erreurTel.innerHTML = `Le numéro de téléphone saisi est incorrect. <br/> ! La saisie du numéro de téléphone n'est pas obligatoire.`
 
-
 		}
+	}
+
+	function precisionsEvent(event) {
+		setPrecisions(event.target.value)
+		
 	}
 
 
@@ -226,7 +294,7 @@ function FormulairePrive() {
 				<img className="ligne" src="/icns/line-green.png" />
 
 
-				<form className="saisirCoordonnees" onSubmit={dateEvent}>
+				<form className="saisirCoordonnees" onSubmit={handleSubmit}>
 
 					{/* -------question type d'événement------- */}
 
@@ -255,7 +323,7 @@ function FormulairePrive() {
 						</select>
 					</div>
 
-					<img className="ligne" src="/icns/line-green.png" />
+					{/* <img className="ligne" src="/icns/line-green.png" /> */}
 
 					{/* ------Date------ */}
 
@@ -265,7 +333,7 @@ function FormulairePrive() {
 						<div id="erreurDate" />
 						<div id="dateCorrect" />
 					</div>
-					<img className="ligne" src="/icns/line-green.png" />
+					<img className="ligne2" src="/icns/line-green.png" />
 
 					{/* ------Saisir Coordonnées----- */}
 
@@ -294,13 +362,13 @@ function FormulairePrive() {
 
 					{/* code postal */}
 
-					<label className="labelCodePostal" htmlFor="codePostal" placeholder="75001">Code postal *</label>
+					<label className="labelCodePostal" htmlFor="codePostal">Code postal *</label>
 					<input required type="text" name="codePostale" id="codePostal" onChange={codePostalEvent} />
 
 					{/* mail */}
 
 					<label className="labelMail" htmlFor="mail" placeholder="75001">Mail *</label>
-					<input required type="text" name="mail" id="mail" onChange={codePostalEvent} />
+					<input required type="text" name="mail" id="mail" onChange={mailEvent} />
 
 					{/* tel  */}	
 
@@ -312,22 +380,32 @@ function FormulairePrive() {
 					{/* précisions */}
 
 					<label className="pourToutesPrecisions" htmlFor="precisions">Pour toutes précisions concernant votre événements, écrivez-nous un message:</label>
-					<input type="text" name="precisions" id="precisions" />
+					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent}/>
 
 					{/* envoyer */}
 
 					<button className="boutonEnvoyer">Envoyer</button>
+					<div className="erreurEnvoi">
+						Vous n'avez pas rempli tous les champs requis. 
+						<br/>
+						<br/>
+						Seuls les champs comportant le symbole * sont obligatoires.
+					</div>
 				</form>
-
-				<img className="ligne" src="/icns/line-green.png" />
 
 			</div>
 
 			{/* -----   PARTIE COORDONNEES	----- */}
 			<div className="containerCoordonnees">
-				<div className="phone"></div>
-				<div className="mail"></div>
-				<div className="localisation"></div>
+				<div className="phone">
+					<img className="phoneImage" src="/icns/phone.svg"/>
+				</div>
+				<div className="mail">
+					<img className="mailImage" src="/icns/envelope.svg"/>
+				</div>
+				<div className="localisation">
+					<img className="localisationImage" src="/icns/localisation.svg"/>
+				</div>
 			</div>
 		</div>
 	);

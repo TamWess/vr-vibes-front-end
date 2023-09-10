@@ -30,8 +30,12 @@ function ImaginezVous() {
 		
 		window.addEventListener('scroll', function(){
 			if (this.window.scrollY > 900){
-				targetTitle.style.left= "0px";
-				targetTitle.style.opacity= "1";
+				this.setTimeout(()=>{
+					targetTitle.style.left= "0px";
+					targetTitle.style.opacity= "1";
+				}
+				,100
+				)
 			}
 		})
 
@@ -96,7 +100,7 @@ function ImaginezVous() {
 		
 	return (
 		<div className="imaginezVous">
-			<img className="background" src="/img/star-wars-space-battle.jpg" alt="vr-vibes vrvibes star-wars-space" />
+			<img className="background" src="/img/star-wars-space-battle-02.jpg" alt="vr-vibes vrvibes star-wars-space" />
 			<img className="vaisseau" src="/img/vaisseau-star-wars.png" alt="vr-vibes vrvibes star-wars-vaisseau" />
 			<img className="vaisseau2" src="/img/vaisseau-star-wars-little.png" alt="vr-vibes vrvibes star-wars-vaisseau" />
 			<img className="vaisseau3" src="/img/vaisseau-star-wars-little.png" alt="vr-vibes vrvibes star-wars-vaisseau" />

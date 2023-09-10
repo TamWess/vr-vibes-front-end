@@ -5,6 +5,7 @@ import HomeEntreprise from "./pages/home.entreprise/home.entreprise.jsx";
 import HomePrive from "./pages/home.prive/home.prive.jsx";
 import Template from "./components/template";
 import FormulairePrive from "./pages/page.formulaire.prive/page.formulaire.prive.jsx";
+import ConfirmationEnvoiFormulaire from "./pages/confirmation.envoi.formulaire/confirmation.envoi.formulaire.jsx";
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
         <Route path="/AccueilEntreprise" index element={<HomeEntreprise />} />
         <Route path="/AccueilPrive" index element={<HomePrive />} />
         <Route path="/FormulairePrive" index element={<FormulairePrive />} />
+        <Route
+          path="/ConfirmationEnvoiFormulaire"
+          index
+          element={<ConfirmationEnvoiFormulaire />}
+        />
       </Route>
     </Routes>
   );

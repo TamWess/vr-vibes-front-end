@@ -3,27 +3,54 @@ import "./avis.utilisateurs.scss";
 
 function AvisUtilisateurs (){
 
-
-	// const [centerCircle, setCenterCircle] = useState ({});
-
 	useEffect( () => {
 
-		// const centeredElement = document.querySelector('.circle');
+		const imageUser1 = document.querySelector(".imageUser")
+		const imageUser2 = document.querySelector(".imageUser2")
+		const imageUser3 = document.querySelector(".imageUser3")
+		const imageUser4 = document.querySelector(".imageUser4")
 
-        // // Fonction pour centrer l'élément sur l'axe horizontal
-        // function centerElementHorizontally() {
-        //     const windowWidth = window.innerWidth;
-        //     const elementWidth = centeredElement.offsetWidth; 
-        //     const offsetLeft = (windowWidth - elementWidth) / 2.03;
-		// 	console.log(windowWidth);
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 900) {
+			  imageUser1.style.opacity = "1";
+			  imageUser1.classList.add("animate__animated");
+			  imageUser1.classList.add("animate__slideInLeft");
+			}
+		  });
 
-        //     centeredElement.style.transform = `translateX(${offsetLeft}px)`;
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 900) {
+			  imageUser2.style.opacity = "1";
+			  imageUser2.classList.add("animate__animated");
+			  imageUser2.classList.add("animate__fadeInLeft");
+			}
+		  });
 
-			
-        // }
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 900) {
+			  setTimeout(() => {
+				imageUser3.style.opacity = "1";
+				imageUser3.classList.add("animate__animated");
+				imageUser3.classList.add("animate__slideInLeft");
+			  }
+			  ,1000
+			  )
+			}
+		  });
 
-        // // Centrer l'élément au chargement de la page
-        // centerElementHorizontally();
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 900) {
+			  setTimeout(() => {
+				imageUser4.style.opacity = "1";
+				imageUser4.classList.add("animate__animated");
+				imageUser4.classList.add("animate__slideInLeft");
+			  }
+			  ,1000
+			  )
+			}
+		  });
+
+		
 
 
 	})

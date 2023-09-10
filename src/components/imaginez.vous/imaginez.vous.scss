@@ -16,7 +16,8 @@
 		position: absolute;
 		z-index: 1;
 		width: 100%;
-		height: 95%
+		height: 95%;
+		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 	};
 	.vaisseau{
 		position: absolute;
@@ -47,7 +48,7 @@
 	.planet{
 		position: absolute;
 		left: 47%;
-		margin-top: -40px;
+		margin-top: -70px;
 		z-index: 3;
 		animation: planete infinite 500s;
 		transform-origin: center; /* Centre de l'élément */

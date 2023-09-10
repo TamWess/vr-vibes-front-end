@@ -7,12 +7,51 @@ function SectionChiffres() {
 	let animeDiv = document.querySelector(".laVRcest");
 
 	useEffect(() => {
-		let changeNumber = document.querySelector(".numbers1");
+
+		const badge1 = document.querySelector(".badge1")
+		const badge2 = document.querySelector(".badge2")
+		const badge3 = document.querySelector(".badge3")
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 2100) {
+			  badge1.style.opacity = "1";
+			  badge1.classList.add("animate__animated");
+			  badge1.classList.add("animate__fadeInUp");
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 2100) {
+				setTimeout(() => {
+					badge2.style.opacity = "1";
+					badge2.classList.add("animate__animated");
+					badge2.classList.add("animate__fadeInUp");
+				}
+				,300
+				)
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 2100) {
+				setTimeout(() => {
+					badge3.style.opacity = "1";
+					badge3.classList.add("animate__animated");
+					badge3.classList.add("animate__fadeInUp");
+				}
+				,600
+				)
+			}
+		  });
+
+		window.addEventListener("scroll", function () {
+			if (window.scrollY > 2100) {
+				let changeNumber = document.querySelector(".numbers1");
 		anime({
 			targets: changeNumber,
 			innerHTML: [0, 4.8],
 			easing: "linear",
-			round: 50, // Will round the animated value to 1 decimal
+			round: 5, // Will round the animated value to 1 decimal
 		});
 
 		let changeNumber2 = document.querySelector(".numbers2");
@@ -20,15 +59,17 @@ function SectionChiffres() {
 			targets: changeNumber2,
 			innerHTML: [0, 8],
 			easing: "linear",
-			round: 50, // Will round the animated value to 1 decimal
+			round: 1, // Will round the animated value to 1 decimal
 		});
 
 		let changeNumber3 = document.querySelector(".numbers3");
+
 		anime({
+			
 			targets: changeNumber3,
 			innerHTML: [0, 110],
 			easing: "linear",
-			round: 50, // Will round the animated value to 1 decimal
+			round: 40, // Will round the animated value to 1 decimal
 		});
 		
 		const divFrise = document.querySelector(".friseContainer");
@@ -40,7 +81,6 @@ function SectionChiffres() {
 		// frises défilant de droite à gauche
 		const frise8 = document.querySelector(".frise8");
 		
-
 		let friseRight = -1500;
 
 		setInterval(() => {
@@ -71,6 +111,10 @@ function SectionChiffres() {
 				friseLeft = -1500
 			}
 		}, 1000)
+			}
+		});
+
+		
 
 	})
 

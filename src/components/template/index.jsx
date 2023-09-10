@@ -6,6 +6,8 @@ import "../../utils/style/libs/base.scss";
 import "./style.scss";
 import 'animate.css';
 
+
+
 // Responsive App ip adress: http://192.168.8.123:3000/
 
 function Template() {
@@ -50,6 +52,12 @@ function Template() {
 		})
 
 		
+		setTimeout(()=>{
+			window.scrollTo(0, 0);
+		}
+		,500
+		)
+		
 	});
 	
 
@@ -63,9 +71,9 @@ function Template() {
 							alt="VR Vibes logo entreprise réalité virtuelle animation VR événement Paris ">
 						</img>
 					</Link>
-					<Link to="AccueilEntreprise" className="itemsNav">Animation VR pour Entreprise</Link>
-					<Link to="AccueilPrive" className="itemsNav">Animation VR pour Événement Privé</Link>
-					<Link to="" className="itemsNav">Productions VR</Link>
+					<Link to="AccueilEntreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
+					<Link to="AccueilPrive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
+					<Link to="" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
 					<Link to="" className="contactButton">Contact</Link>
 					<img src="/icns/burger-menu-white.svg" className="burgerMenu" />
 					<div className="rollMenu">
@@ -103,7 +111,7 @@ function Template() {
 					</div>
 					<div className="footerDiv03">
 						<div className="footerDiv03Text">
-							<p>VR Vibes zn région parisienne</p>
+							<p>VR Vibes en région parisienne</p>
 						</div>
 						<div className="locationLogo"></div>
 						{/* <GoogleMap zoom={11} center={{ lat: 48.866667, lng: 2.333333 }} mapContainerClassName="mapContainerFooter"></GoogleMap> */}
