@@ -33,14 +33,16 @@ function Template() {
 		burgerMenu.addEventListener("click", (event) => {
 
 			rollMenu.style.display = "flex"
-			burgerMenu.style.left = "800px"
-			// burgerMenu = 
+			
+			burgerMenu.style.zIndex = "100 !important"
+			rollMenu.style.zIndex = "100 !important"
+
 		})
 
 		crossClose.addEventListener("click", (event) => {
 
 			rollMenu.style.display = "none"
-			burgerMenu.style.left = "80px"
+			
 
 			if (window.width > 578) {
 				burgerMenu.style.left = "80px"
@@ -74,13 +76,13 @@ function Template() {
 					<Link to="AccueilEntreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
 					<Link to="AccueilPrive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
 					<Link to="" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
-					<Link to="" className="contactButton">Contact</Link>
+					<Link to="Contact" className="contactButton">Contact</Link>
 					<img src="/icns/burger-menu-white.svg" className="burgerMenu" />
 					<div className="rollMenu">
 						<ul className="listRollMenu">
 							<img className="crossClose" src="/icns/close-button-white.svg" />
 							<Link className="linksRollMenu" to="AccueilEntreprise"><li> Animation VR pour Entreprise </li></Link>
-							<Link className="linksRollMenu" to="AccueilFamille"><li> Animation VR pour Événements Familiaux </li></Link>
+							<Link className="linksRollMenu" to="AccueilPrive"><li> Animation VR pour Événements Privés </li></Link>
 							<Link className="linksRollMenu" to=""><li> Productions VR </li>
 							</Link>
 							<Link className="linksRollMenu" to=""><li> Contact </li></Link>
@@ -97,29 +99,20 @@ function Template() {
 				<img className="friseGreenPastel" src="/img/frise-green-pastel.png" alt="" />
 				<img className="friseFooter" src="/img/frise-footer.png" alt="" />
 				<div className="footer">
-					<div className="footerDiv01">
-						<p>Mentions légales</p>
-						<p>CGU</p>
-						<p>CGV</p>
-					</div>
 					<div className="footerDiv02">
-						<p>Plan du site</p>
-						<p>Pour les entreprises</p>
-						<p>Pour les événements familiaux</p>
+						{/* <p>Plan du site</p> */}
+						<p>VR-Vibes pour les entreprises</p>
+						<p>VR-Vibes pour les événements privés</p>
 						<p>Notre catalogue d'expériences VR</p>
-						<p>Actus</p>
+						{/* <p>Actus</p> */}
 					</div>
-					<div className="footerDiv03">
-						<div className="footerDiv03Text">
-							<p>VR Vibes en région parisienne</p>
-						</div>
-						<div className="locationLogo"></div>
-						{/* <GoogleMap zoom={11} center={{ lat: 48.866667, lng: 2.333333 }} mapContainerClassName="mapContainerFooter"></GoogleMap> */}
-					</div>
+					
 					<div className="footerDiv04">
 						<p>Contact</p>
-						<p>0ù nous trouver</p>
 						<p>FAQ</p>
+						<Link className="footerLinks" to="/CGU">
+							<p>CGU - CGV - Mentions légales</p>
+						</Link>
 					</div>
 
 					{/* Reseaux sociaux */}

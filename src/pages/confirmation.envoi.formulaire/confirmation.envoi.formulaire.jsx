@@ -5,11 +5,11 @@ function ConfirmationEnvoiFormulaire (){
 
 	return(
 		<div className="confirmationFormulaire">
-			<img className="imageEnvoie" source="https://icons8.com/icon/115367/sent"/>
+			<img className="imageEnvoie" src="/icns/sent-formulaire-icone.png"/>
 			<div className="messageEnvoye">
 				Votre message nous a bien été envoyé!
 			</div>
-			<div className="NousReviendrons">
+			<div className="nousReviendrons">
 				Nous traiterons votre demande dans les 48 heures
 			</div>
 		</div>

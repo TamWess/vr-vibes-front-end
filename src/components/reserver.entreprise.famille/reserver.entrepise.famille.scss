@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-//   background-image: url(../../../public/img/gradient-blue-pink.png);
+  background-color: white;
   background-size: cover;
   .titleEntrepriseFamille {
 	opacity : 0;
@@ -162,10 +162,10 @@
     z-index: 0;
     position: relative;
     height: 1015px !important;
-    background-image: url(../../../public/img/gradient-blue-pink.png);
+    background-color: white;
     background-size: cover;
     .titleEntrepriseFamille {
-      padding-top: 25px;
+      padding-top: 66px;
       position: relative;
       text-align: center;
       margin: auto;
@@ -246,10 +246,10 @@
     z-index: 0;
     position: relative;
     height: 1550px;
-    background-image: url(../../../public/img/gradient-blue-pink.png);
+	background-color: white;
     background-size: cover;
     .titleEntrepriseFamille {
-      padding-top: 35px;
+      padding-top: 66px;
       position: relative;
       text-align: center;
       margin: auto;

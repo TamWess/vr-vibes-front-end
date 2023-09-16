@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-import "./page.formulaire.prive.scss";
+import "./page.formulaire.entreprise.scss";
 
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 
-function FormulairePrive() {
+function FormulaireEntreprise() {
   
 	let navigate = useNavigate()
 	const [type, setType] = useState("")
@@ -286,10 +286,10 @@ function FormulairePrive() {
 							Pour quel type d'événement souhaitez vous réserver? *
 						</label>
 						<select name="event" id="quelTypeEvent" onChange={typeEvent}>
-							<option value="Anniversaire">Anniversaire</option>
-							<option value="Baby-Shower">Baby-Shower</option>
-							<option value="Mariage">Mariage</option>
-							<option value="Autre...">Autres...</option>
+							<option value="Anniversaire">Team-building</option>
+							<option value="Baby-Shower">Afterwork</option>
+							<option value="Mariage">Séminaire</option>
+							<option value="Autre...">Autre...</option>
 						</select>
 					</div>
 
@@ -401,4 +401,4 @@ function FormulairePrive() {
 	);
 }
 
-export default FormulairePrive;
+export default FormulaireEntreprise;

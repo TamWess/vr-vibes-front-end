@@ -98,9 +98,9 @@ function ReserverEntreprise() {
 				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
 			</h2>
 			<div className="entreprise1">
-				<h3 className="subtitleEntreprise">
+				<h1 className="subtitleEntreprise">
 					Team Building, Afterwork, Séminaire ...
-				</h3>
+				</h1>
 				<img className="entrepriseChoice" src="/img/entreprise-choice.png" />
 				<Link className="reserverEntreprise" to="EvenementEntreprise">
 					Réserver

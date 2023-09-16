@@ -11,7 +11,7 @@
 }
 
 .header{
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	position: fixed;
 	z-index: 10;
 	display: flex;
@@ -78,15 +78,17 @@
 		filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.709));
 	}
 	.burgerMenu{
+		right: 20px;
 		display: block;
 		position: relative;
-		z-index: 15;
+		z-index: 100;
 		width: 40px;
 		filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27)) drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
 		transition: 500ms;
 	}
 	.rollMenu{
 		display: none;
+		z-index: 100;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
@@ -98,12 +100,12 @@
 	}
 	.listRollMenu{
 		text-decoration: none !important;
+		z-index: 100;
 		width: 90%;
 		position: relative;
 		font-size: 32px;
 		margin-bottom: 40px;
-		text-decoration: none;
-		text-decoration: none;
+
 		font-family: "Archivo Black";
 		color: white;
 		opacity: 1 !important;
@@ -150,11 +152,12 @@
 		justify-content: space-around;
 		display: flex;
 		width: 100%;
-		height: 350px;
-		background: url(../../../public/img/background-footer-green-gradient.png) repeat;
-		background-size: cover;
+		height: 230px;
+		background-image: url("../../../public/img/filigrane-vr-vibes-footer.jpg");
+		background-size: 800px ;
 		transition: 1.5s;
 		.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
+			text-decoration: none;
 			font-size: 17px;
 			font-family: "Archivo Black";
 			margin-top: 3%;
@@ -199,6 +202,10 @@
 		.footerDiv05 img{
 			height: 33px;
 			filter: invert(100%) sepia(0%) saturate(7478%) hue-rotate(183deg) brightness(99%) contrast(97%);
+		}
+		.footerLinks{
+			text-decoration: none;
+			color: white;
 		}
 	}
 

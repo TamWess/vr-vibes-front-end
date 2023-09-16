@@ -1,6 +1,6 @@
 import "./banniere.scss";
 import React, { useEffect, useRef} from "react";
-import "../../utils/style/libs/base.scss";
+import "@/utils/style/libs/base.scss";
 
 function Banniere() {
 

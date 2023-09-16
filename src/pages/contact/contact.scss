@@ -1,0 +1,82 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+.containerContact{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	.contactTitle{
+		z-index: 9;
+		padding-top: 150px;
+		padding-bottom: 100px;
+		text-align: center;
+		width: 100%;
+		margin: auto;
+		font-family: "Archivo Black";
+		font-size: 30px;
+		color: $primary;
+		font-size: 35px;
+		line-height: 40px;
+		background-color: rgb(211, 250, 238);
+		clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+	}
+	.containerCoordonnees {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		width: 100%;
+		height: 100px;
+		background-color: #ebfaff;
+		clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+		.phone, .mail, .localisation{
+			font-size: 19px;
+			margin-left: 3%;
+			display: flex;
+			flex-wrap: wrap;
+			width: 90%;
+			height: 20px;
+			font-family: "Nunito Sans";
+			font-weight: bold;
+			color: #006F5C;
+			padding-bottom: 30px;
+			.phoneImage, .mailImage, .localisationImage{
+				z-index: 10;
+				width: 30px;
+			}
+			.space{
+				width: 5%;
+			}
+			.textPhone, .textMail, .textLocalisation{
+				width: 85%;
+				height: 30px;
+				margin: auto;
+				line-height: 23px;
+				
+			}
+		}
+		
+	  }
+	  .reserverContact{
+		
+		  padding-left: 3%;
+		  background-color: #fff7ff;
+		  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+		  font-family: "Nunito Sans";
+		  font-size: 23px;
+		  .lienFormulaireEntreprise{
+			font-size: 19px;
+			font-weight: bold;
+			margin-top: 150px;
+		  }
+		  .lienFormulairePrive{
+			font-size: 19px;
+			font-weight: bold;
+			margin-top: 20px;
+			margin-bottom: 100px ;
+		  }
+		}
+	  
+}

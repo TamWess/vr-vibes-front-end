@@ -106,7 +106,7 @@ function ImaginezVous() {
 			<img className="vaisseau3" src="/img/vaisseau-star-wars-little.png" alt="vr-vibes vrvibes star-wars-vaisseau" />
 			<img className="planet" src="/img/planet-star-wars.png" alt="vr-vibes vrvibes star-wars-vaisseau" />
 			<img className="mustafar" src="/img/mustafar-star-wars.png" alt="vr-vibes vrvibes star-wars-vaisseau" />
-			<h2 className="title">Imaginez-vous...</h2>
+			<h2 className="title">Imaginez</h2>
 			<div className="text1">
 				Imaginez-vous transporter vos invités dans des mondes <br/>
 				virtuels époustouflants et participer à des jeux en équipe <br/> 

@@ -98,9 +98,9 @@ function ReserverPrive() {
 				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
 			</h2>
 			<div className="familleAF">
-				<h3 className="subtitleFamilleAF">
+				<h1 className="subtitleFamilleAF">
 					Baby Shower, Anniversaire, Mariage ...
-				</h3>
+				</h1>
 				<img className="familleChoiceAF" src="/img/family-choice.png" />
 				<Link className="reserverFamilleAF" to="/FormulairePrive">
 					Réserver

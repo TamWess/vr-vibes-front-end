@@ -160,9 +160,9 @@
 
 @media screen and (max-width: 576px){
 	.logoVRvibesAF{
-		height: 80px !important;
+		height: 70px !important;
 		left: calc(50% - 80px) !important;
-    	top: calc(50% - -50px) !important;
+    	top: calc(40% - -50px) !important;
 	}
 
 	.imageVRFamilleAF1{
@@ -174,14 +174,9 @@
 	.imageVRFamilleAF3{
 		background-image: url("../../../public/img/famille-image-3-576px.jpg") !important;
 	}
-
 	.accueilImageAF{
 		height: 600px;
 		background-image: url(../../../public/img/vr-vibes-home-image-576px.jpg)!important;
-	}
-	.logoVRvibesAF{
-		height: 125px !important;
-		left: calc(50% - 135px) !important;
 	}
 	.imageVRFamilleAF{
 		background-color: rgb(255, 221, 254);

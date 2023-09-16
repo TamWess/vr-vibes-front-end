@@ -8,6 +8,7 @@
 }
 
 .imaginezVous{
+	z-index: 21;
 	position: relative;
 	height: 900px;
 	overflow-y: hidden;
@@ -72,7 +73,7 @@
 		opacity: 0;
 		color: white;
 		position: absolute;
-		z-index: 9;
+		z-index: 21;
 		transition: 1s;
 	};
 	.text1, .text2, .text3{
@@ -85,7 +86,7 @@
 		color: white;
 		position: absolute;
 		margin: 150px 0 0 30px;
-		z-index: 9;
+		z-index: 21;
 		transition: 1s;
 	};
 	.text2{

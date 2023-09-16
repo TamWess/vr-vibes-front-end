@@ -1,0 +1,28 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+.container{
+	width: 100%;
+	text-align: center;
+	.titleCGU{
+		text-align: center;
+		width: 100%;
+		margin: auto;
+		font-family: "Archivo Black";
+		font-size: 30px;
+		color: $primary;
+		font-size: 35px;
+		line-height: 40px;
+	}
+	.containerText{
+		font-family: "Nunito Sans";
+		width: 80%;
+		padding-top: 150px;
+		text-align: left;
+		margin: auto;
+		font-family: "Nunito Sans";
+		line-height: 30px;
+		font-size: 19px;
+
+	}
+}
