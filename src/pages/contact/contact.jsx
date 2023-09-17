@@ -27,10 +27,10 @@ function Contact (){
 			<div className="reserverContact">
 				<div className="liensReservation">
 					<div className="lienFormulaireEntreprise">
-						Vous souhaitez nous contacter pour un événement d'entreprise? <Link className="lienEntreprise" to="FormulaireEntreprise">Cliquez-ici</Link>
+						Vous souhaitez nous contacter pour un événement d'entreprise? <Link className="lienEntreprise" to="formulaire_entreprise">Cliquez-ici</Link>
 					</div>
 					<div className="lienFormulairePrive">
-						Vous souhaitez nous contacter pour un événement privé? <Link className="lienPrivé" to="/FormulairePrive"> Cliquez ici</Link>
+						Vous souhaitez nous contacter pour un événement privé? <Link className="lienPrivé" to="/formulaire_prive"> Cliquez ici</Link>
 					</div>
 					<div className="lienFormulairePrivé"></div>
 				</div>

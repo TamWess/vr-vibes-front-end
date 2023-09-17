@@ -14,7 +14,7 @@ function ReserverEntreprise() {
 		const frise19 = document.querySelector(".frise19");
 		
 		// frises défilant de droite à gauche
-	
+
 
 		const frise16 = document.querySelector(".frise16");
 		const frise18 = document.querySelector(".frise18");
@@ -102,11 +102,11 @@ function ReserverEntreprise() {
 					Team Building, Afterwork, Séminaire ...
 				</h1>
 				<img className="entrepriseChoice" src="/img/entreprise-choice.png" />
-				<Link className="reserverEntreprise" to="EvenementEntreprise">
+				<Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
 				</Link>
 			</div>
-			<img className="frise15" src="/img/frise-double-green-pastel.png" alt="okay" />
+			<img className="frise15" src="/img/frise-double-green-pastel.png" alt="" />
 			<img className="frise16" src="/img/frise-double-green-pastel.png" />
 			<img className="frise17" src="/img/frise-double-green-pastel.png" />
 			<img className="frise18" src="/img/frise-double-green-pastel.png" />

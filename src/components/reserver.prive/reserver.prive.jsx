@@ -102,7 +102,7 @@ function ReserverPrive() {
 					Baby Shower, Anniversaire, Mariage ...
 				</h1>
 				<img className="familleChoiceAF" src="/img/family-choice.png" />
-				<Link className="reserverFamilleAF" to="/FormulairePrive">
+				<Link className="reserverFamilleAF" to="/formulaire_prive">
 					Réserver
 				</Link>
 			</div>

@@ -11,50 +11,49 @@
   src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
 
-.introFormulaire{
-	margin-top: 80px;
-	padding-bottom: 80px;
-	width: 100%;
-	height: fit-content;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: rgb(211, 250, 238);
-	clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-	.titleFormulaire {
-		margin: auto;
-		margin-bottom: 30px;
-		margin-top: 30px;
-		text-align: center;
-		font-family: "Archivo Black";
-		font-size: 30px;
-		color: $primary;
-	  }
-	  .texteFormulaire {
-		width:100%;
-		margin: 3%;
-		margin-top: 0px;
-		text-align: center;
-		font-family: "Nunito Sans";
-		font-size: 17px;
-		font-weight: bold;
-		line-height: 30px
-
-	  }
-	  .nousVousRecontacterons {
-		width:100%;
-		margin: 3%;
-		margin-top: 0px;
-		text-align: center;
-		font-family: "Nunito Sans";
-		font-size: 18px;
-		color: rgba(64, 161, 0, 0.648);
-	  }
-	  .prix{
-		  margin: auto;
-		  font-family: "Archivo Black";
-		  font-size: 20px;
-		  color: $primary;
-	  }
+.introFormulaire {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(211, 250, 238);
+  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  .titleFormulaire {
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Archivo Black";
+    font-size: 30px;
+    color: $primary;
+  }
+  .texteFormulaire {
+    width: 100%;
+    margin: 3%;
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  .nousVousRecontacterons {
+    width: 100%;
+    margin: 3%;
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    color: rgba(64, 161, 0, 0.648);
+  }
+  .prix {
+    margin: auto;
+    font-family: "Archivo Black";
+    font-size: 20px;
+    color: $primary;
+  }
 }
 .containerFormulaireCoordonnees {
   display: flex;
@@ -62,38 +61,37 @@
   width: 100%;
   height: fit-content;
   .verticalLine {
-	z-index: 9;
-	position: absolute;
-	margin-left: 70%;
-	width:2px;
-	height: 800px;
-	margin-top: 370px;
-	background-color: $primary;
+    z-index: 9;
+    position: absolute;
+    margin-left: 70%;
+    width: 2px;
+    height: 800px;
+    margin-top: 370px;
+    background-color: $primary;
   }
   .containerFormulaire {
-    
-	display: flex;
+    display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 70%;
     height: fit-content;
-	margin-bottom: 10vh;
+    margin-bottom: 10vh;
     background-color: #ebfaff;
-	clip-path: polygon(0 2%, 100% 0%, 100% 97.8%, 0% 100%);
-	.ligne{
-		opacity: 0;
-		margin: auto;
-		width: 80%;
-		height: 2px;
-		padding: 13px 0 13px 0;
-	}
-	.ligne2{
-		opacity: 0;
-		margin: auto;
-		width: 80%;
-		height: 2px;
-		padding: 13px 0 13px 0;
-	}
+    clip-path: polygon(0 2%, 100% 0%, 100% 97.8%, 0% 100%);
+    .ligne {
+      opacity: 0;
+      margin: auto;
+      width: 80%;
+      height: 2px;
+      padding: 13px 0 13px 0;
+    }
+    .ligne2 {
+      opacity: 0;
+      margin: auto;
+      width: 80%;
+      height: 2px;
+      padding: 13px 0 13px 0;
+    }
     .typeEvent {
       width: 100%;
       height: fit-content;
@@ -112,12 +110,11 @@
         font-family: "Nunito Sans";
         font-size: 17px;
         border-radius: 10px;
-		border: none;
-			&:focus{
-				outline: none;
-			}
+        border: none;
+        &:focus {
+          outline: none;
+        }
       }
-	  
     }
     .nombrePersonnes {
       width: 100%;
@@ -138,165 +135,173 @@
         font-family: "Nunito Sans";
         font-size: 17px;
         border-radius: 10px;
-		border: none;
-			&:focus{
-				outline: none;
-			}
+        border: none;
+        &:focus {
+          outline: none;
+        }
       }
     }
-	.aQuelleDate{
-		font-family: "Nunito Sans";
+    .aQuelleDate {
+      font-family: "Nunito Sans";
+      font-size: 17px;
+      width: 100%;
+      height: fit-content;
+      margin-left: 3%;
+      .dateLabel {
+        font-family: "Nunito Sans";
         font-size: 17px;
-		width: 100%;
         height: fit-content;
         margin-left: 3%;
-		.dateLabel{
-			font-family: "Nunito Sans";
-			font-size: 17px;
-			height: fit-content;
-			margin-left: 3%;
-			display: flex;
-			flex-direction: column;
-			margin-top: 20px;
-			
-		}
-		#date{
-			font-family: "Nunito Sans";
-			color: white;
-			margin: 7px 0 0px 0;
-			border-radius: 20px;
-			padding: 10px;
-			text-indent: 2%;
-			background-color: #b104043e;
-			border: none;
-				&:focus{
-					outline:none;
-				}
-		}
-		#erreurDate{
-			font-family: "Nunito Sans";
-        	font-size: 18px;
-			color: rgba(161, 0, 0, 0.648);
-			margin-top: 20px;
-		}
-		#dateCorrect{
-			font-family: "Nunito Sans";
-        	font-size: 17px;
-			color: rgba(64, 161, 0, 0.648);
-			margin-top: 20px;
-		}
-	}
-	
-	.quelleEstVotreAdresse{
-		font-family: "Nunito Sans";
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+      }
+      #date {
+        font-family: "Nunito Sans";
+        color: white;
+        margin: 7px 0 0px 0;
+        border-radius: 20px;
+        padding: 10px;
+        text-indent: 2%;
+        background-color: #b104043e;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      #erreurDate {
+        font-family: "Nunito Sans";
+        font-size: 18px;
+        color: rgba(161, 0, 0, 0.648);
+        margin-top: 20px;
+      }
+      #dateCorrect {
+        font-family: "Nunito Sans";
         font-size: 17px;
-		width: 100%;
-        height: fit-content;
-        margin-left: 3%;
-	}
-	.pourToutesPrecisions{
-		font-family: "Nunito Sans";
-        font-size: 18px;
-		width: 100%;
-        height: fit-content;
-		margin: 30px 0 10px 3%;
-	}
-	#precisions{
-		margin: 7px 0 7px 0;
-		border-radius: 20px;
-		padding: 10px;
-		padding-bottom: 100px;
-		text-indent: 2%;
-		width: 150%;
-		background-color:rgba(0, 140, 255, 0.11);
-		border: none;
-		&:focus{
-			outline:none;
-		}
-	}
-	.saisirCoordonnees{
-		font-family: "Nunito Sans";
-        font-size: 18px;
-        height: fit-content;
-        margin-left: 3%;
-		display: flex;
-		flex-direction: column;
-		width: 50%;
-		margin-top: 20px;
-		
-		#prenom, #nom, #rue, #ville, #codePostal, #mail, #tel{
-			border: none;
-			background-color: rgba(0, 140, 255, 0.11);
-			margin: 7px 0 13px 0;
-			border-radius: 20px;
-			padding: 10px;
-			text-indent: 2%;
-			&:focus{
-				outline:none;
-			}
-		}
-		.messageTel{
-			font-size: 15px;
-			font-style: italic;
-		}
-		.erreurTel{
-			color: rgba(161, 0, 0, 0.648);
-			margin: 10px 0;
-		}
-	}
-	.boutonEnvoyer{
-		font-family: "Nunito Sans";
-        font-size: 18px;
-		width: fit-content;
-		height: fit-content;
-		color: white;
-		padding: 5px 10px;
-		background-color: $primary;
-		border-radius: 10px;
-		margin-top: 30px;
-		border: none;
-	}
-	.erreurEnvoi{
-		opacity: 0;
-		margin-top: 20px;
-		color: #b10404da;
-		transition: 0.5;
-	}
+        color: rgba(64, 161, 0, 0.648);
+        margin-top: 20px;
+      }
+    }
+
+    .quelleEstVotreAdresse {
+      font-family: "Nunito Sans";
+      font-size: 17px;
+      width: 100%;
+      height: fit-content;
+      margin-left: 3%;
+    }
+    .pourToutesPrecisions {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      width: 100%;
+      height: fit-content;
+      margin: 30px 0 10px 3%;
+    }
+    #precisions {
+      margin: 7px 0 7px 0;
+      border-radius: 20px;
+      padding: 10px;
+      padding-bottom: 100px;
+      text-indent: 2%;
+      width: 150%;
+      background-color: rgba(0, 140, 255, 0.11);
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .saisirCoordonnees {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      height: fit-content;
+      margin-left: 3%;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin-top: 20px;
+
+      #prenom,
+      #nom,
+      #rue,
+      #ville,
+      #codePostal,
+      #mail,
+      #tel {
+        border: none;
+        background-color: rgba(0, 140, 255, 0.11);
+        margin: 7px 0 13px 0;
+        border-radius: 20px;
+        padding: 10px;
+        text-indent: 2%;
+        &:focus {
+          outline: none;
+        }
+      }
+      .messageTel {
+        font-size: 15px;
+        font-style: italic;
+      }
+      .erreurTel {
+        color: rgba(161, 0, 0, 0.648);
+        margin: 10px 0;
+      }
+    }
+    .boutonEnvoyer {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      width: fit-content;
+      height: fit-content;
+      color: white;
+      padding: 5px 10px;
+      background-color: $primary;
+      border-radius: 10px;
+      margin-top: 30px;
+      border: none;
+    }
+    .erreurEnvoi {
+      margin-block: 30px;
+      color: #b10404da;
+      transition: 0.5;
+    }
   }
   .containerCoordonnees {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-	
+
     width: 30%;
     height: 100px;
-    
-	.phone, .mail, .localisation{
-		margin-left: 3%;
-		margin-top: 15px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 20px;
-		font-family: "Nunito Sans";
-		font-weight: bold;
-		color: #006F5C;
-		padding-bottom: 30px;
-		.phoneImage, .mailImage, .localisationImage{
-			z-index: 10;
-			width: 10%;
-			
-		}
-		.space{
-			width: 5%;
-		}
-		.textPhone, .textMail, .textLocalisation{
-			width: 85%;
-			height: 10px;
-			margin: auto;
-			line-height: 23px;
-		}
-	}
-	
+
+    .phone,
+    .mail,
+    .localisation {
+      margin-left: 3%;
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 20px;
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: #006f5c;
+      padding-bottom: 30px;
+      .phoneImage,
+      .mailImage,
+      .localisationImage {
+        z-index: 10;
+        width: 10%;
+      }
+      .space {
+        width: 5%;
+      }
+      .textPhone,
+      .textMail,
+      .textLocalisation {
+        width: 85%;
+        height: 10px;
+        margin: auto;
+        line-height: 23px;
+      }
+    }
   }
 }

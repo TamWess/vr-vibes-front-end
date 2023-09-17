@@ -1,7 +1,7 @@
 import React from "react";
 import "./cgu.cgv.mentions.legales.scss"
 
-function CGU (){
+function CGV (){
 	return(
 	<div className="container">
 		<div className="containerText">
@@ -153,4 +153,4 @@ function CGU (){
 	)
 }
 
-export default CGU;
+export default CGV;

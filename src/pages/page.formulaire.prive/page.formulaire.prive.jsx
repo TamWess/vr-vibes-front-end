@@ -9,7 +9,7 @@ const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 function FormulairePrive() {
   
 	let navigate = useNavigate()
-	const [type, setType] = useState("")
+	const [type, setType] = useState("Anniversaire")
 	const [nombrePersonnes, setNombrePersonnes] = useState("")
 	const [nom, setNom] = useState("")
 	const [prenom, setPrenom] = useState("")
@@ -20,15 +20,19 @@ function FormulairePrive() {
 	const [mail, setMail] = useState("")
 	const [tel, setTel] = useState("")
 	const [precisions, setPrecisions] = useState("")
+	const [errorMessage, setErrorMessage] = useState("")
+	
+	const [isSaving, setSaving] = useState(false) // TODO: Utiliser ça dans handleSubmit et dans la template pour signaler à l’utilisateur qu’il faut attendre
 
 	async function handleSubmit(event) {
 		event.preventDefault()
-		try{
+		setErrorMessage('')
+		try {
 			
 			// -----utiliser nodemailer sur le back-----
 			
-			const response = await axios.post(`${apiBaseUrl}/post`,
-			// `http://localhost:${process.env.portBack}/post`
+			const response = await axios.post(`${apiBaseUrl}/reservations`,
+			// `http://localhost:${process.env.portBack}/reservations`
 			{
 				type: type,
 				nombrePersonnes: nombrePersonnes,
@@ -43,26 +47,26 @@ function FormulairePrive() {
 				precisions: precisions,
 			})
 
-			const request = response.data
+			const data = response.data
 
-			if (response.status === 200){
+			if (response.status === 201){
 				console.log("votre demande nous a bien été envoyée");
 				// Surtout pas ça !!!
 				// location.replace("http://localhost:3000/ConfirmationEnvoiFormulaire")
 				// Utiliser le router pour changer de "page", cad de composant "parent"
-				navigate('/ConfirmationEnvoiFormulaire')
+				navigate('/confirmation_envoi_formulaire')
 			}
 
 			else {
 				event.preventDefault()
-				console.log("vous n'avez pas rempli tous les éléments requis");
+				console.log(data.message);
 				// mettre un inner html d'erreur
-
-				document.querySelector(".erreurEnvoi").style.opacity = "1"
 			}
 		}
 
 		catch (error){
+			setErrorMessage(error.response.data.message)
+			console.error(error.response.data.message);
 			console.error(error);
 		}
 
@@ -91,10 +95,14 @@ function FormulairePrive() {
 
 		const typeId = document.querySelector("#quelTypeEvent")
 
-		if (event.target.value) {
+		if (event.target.value !== '') {
 			typeId.style.color = "green";
 			typeId.style.backgroundColor = "#0080002b";
 			typeId.style.color = "green";
+		} else {
+			typeId.style.color = "white";
+			typeId.style.backgroundColor = "#b104043e";
+			typeId.style.color = "white";
 		}
 	}
 
@@ -103,12 +111,15 @@ function FormulairePrive() {
 		console.log(event.target.value);
 
 		const combienDePersonnesId = document.querySelector("#combienDePersonnes")
-		
 
 		if (event.target.value) {
 			combienDePersonnesId.style.color = "green";
 			combienDePersonnesId.style.backgroundColor = "#0080002b";
 			combienDePersonnesId.style.color = "green";
+		} else {
+			combienDePersonnesId.style.color = "white";
+			combienDePersonnesId.style.backgroundColor = "#b104043e";
+			combienDePersonnesId.style.color = "white";
 		}
 	}
 
@@ -276,7 +287,6 @@ function FormulairePrive() {
 				
 				<img className="ligne" src="/icns/line-green.png" />
 
-
 				<form className="saisirCoordonnees" onSubmit={handleSubmit}>
 
 					{/* -------question type d'événement------- */}
@@ -286,6 +296,7 @@ function FormulairePrive() {
 							Pour quel type d'événement souhaitez vous réserver? *
 						</label>
 						<select name="event" id="quelTypeEvent" onChange={typeEvent}>
+							<option value="">Choisir une option</option>
 							<option value="Anniversaire">Anniversaire</option>
 							<option value="Baby-Shower">Baby-Shower</option>
 							<option value="Mariage">Mariage</option>
@@ -300,6 +311,7 @@ function FormulairePrive() {
 							À combien de personnes est destinée l'animation VR? *
 						</label>
 						<select name="nombre" id="combienDePersonnes" onChange={nombrePersonnesEvent}>
+							<option value="">Choisir une option</option>
 							<option value="moins de 10">moins de 10</option>
 							<option value="entre 10 et 20">entre 10 et 20</option>
 							<option value="plus de 20">plus de 20</option>
@@ -323,7 +335,7 @@ function FormulairePrive() {
 					{/* nom */}
 
 					<label className="labelNom" htmlFor="nom">Nom *</label>
-					<input required type="text" name="nom" id="nom" onChange={nomEvent} />
+					<input required type="text" name="nom" id="nom" onChange={nomEvent} onInput={nomEvent} />
 
 
 					{/* prenom */}
@@ -351,7 +363,7 @@ function FormulairePrive() {
 					{/* mail */}
 
 					<label className="labelMail" htmlFor="mail" placeholder="75001">Mail *</label>
-					<input required type="text" name="mail" id="mail" onChange={mailEvent} />
+					<input required type="email" name="mail" id="mail" onChange={mailEvent} />
 
 					{/* tel  */}	
 
@@ -368,12 +380,13 @@ function FormulairePrive() {
 					{/* envoyer */}
 
 					<button className="boutonEnvoyer">Envoyer</button>
-					<div className="erreurEnvoi">
-						Vous n'avez pas rempli tous les champs requis. 
-						<br/>
-						<br/>
-						Seuls les champs comportant le symbole * sont obligatoires.
-					</div>
+					{
+						errorMessage && (
+							<div className="erreurEnvoi">
+								{errorMessage}
+							</div>
+						)
+					}
 				</form>
 
 			</div>

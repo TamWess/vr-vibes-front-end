@@ -27,7 +27,7 @@ function FormulaireEntreprise() {
 			
 			// -----utiliser nodemailer sur le back-----
 			
-			const response = await axios.post(`${apiBaseUrl}/post`,
+			const response = await axios.post(`${apiBaseUrl}/reservations`,
 			// `http://localhost:${process.env.portBack}/post`
 			{
 				type: type,
@@ -45,12 +45,12 @@ function FormulaireEntreprise() {
 
 			const request = response.data
 
-			if (response.status === 200){
+			if (response.status === 201){
 				console.log("votre demande nous a bien été envoyée");
 				// Surtout pas ça !!!
 				// location.replace("http://localhost:3000/ConfirmationEnvoiFormulaire")
 				// Utiliser le router pour changer de "page", cad de composant "parent"
-				navigate('/ConfirmationEnvoiFormulaire')
+				navigate('/confirmation_envoi_formulaire')
 			}
 
 			else {
@@ -351,7 +351,7 @@ function FormulaireEntreprise() {
 					{/* mail */}
 
 					<label className="labelMail" htmlFor="mail" placeholder="75001">Mail *</label>
-					<input required type="text" name="mail" id="mail" onChange={mailEvent} />
+					<input required type="email" name="mail" id="mail" onChange={mailEvent} />
 
 					{/* tel  */}	
 

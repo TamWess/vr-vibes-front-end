@@ -153,7 +153,7 @@ function ReserverEntrepriseFamille() {
 					Team Building, Afterwork, Séminaire ...
 				</h1>
 				<img className="entrepriseChoice" src="/img/entreprise-choice.png" />
-				<Link className="reserverEntreprise" to="EvenementEntreprise">
+				<Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
 				</Link>
 			</div>
@@ -162,7 +162,7 @@ function ReserverEntrepriseFamille() {
 					Baby Shower, Anniversaire, Mariage ...
 				</h3>
 				<img className="familleChoice" src="/img/family-choice.png" />
-				<Link className="reserverFamille" to="FormulairePrive">
+				<Link className="reserverFamille" to="formulaire_prive">
 					Réserver
 				</Link>
 			</div>

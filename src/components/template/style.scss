@@ -167,7 +167,17 @@
 			flex-direction: column;
 			justify-content: space-between;
 		}
-	
+		.scrollTop{
+			position: absolute;
+			width: 400px;
+			right: 89%;
+		}
+		.footerDiv01{
+			width: 10%;
+			.smileysFooter{
+				width: 200px;
+			}
+		}
 		.footerDiv03 img{
 			align-self: center;
 			height: 30px;
@@ -178,13 +188,9 @@
 				height: 30vh;
 			}
 		}
-		
-	
 		.locationLogo img{
 			margin-left: 45%;
 		}
-	
-	
 		.tempGoogleMap {
 			z-index: 1;
 			padding: 0 40px 40px 40px;
