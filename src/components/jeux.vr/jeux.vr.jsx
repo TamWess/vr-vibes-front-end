@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./jeux.vr.scss";
 
 function JeuxVR() {
+	return(
 	<div className="containerJeuxVR">
 		<div className="leftPartJeuxVR">
 			<img src="imageJeux" alt="" />
@@ -12,6 +13,7 @@ function JeuxVR() {
 			<button className="boutonNosJeux">Nos Jeux</button>
 		</div>
 	</div>
+	)
 }
 
 export default JeuxVR;

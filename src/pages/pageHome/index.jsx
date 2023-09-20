@@ -10,7 +10,7 @@ import SimpleSlider from "../../components/carousels/carouselHome";
 import AvisUtilisateurs from "../../components/avis.utilisateurs/avis.utilisateurs";
 import SectionChiffres from "../../components/section.chiffres/section.chiffres";
 import GoogleMapSection from "../../components/map/map";
-import JeuxVR from "../../components/jeux.vr/jeux.vr.jsx";
+import JeuxVR from "../../components/jeux.vr/jeux.vr";
 
 function Home() {
 
@@ -20,7 +20,7 @@ function Home() {
 		<Reassurance/>
 		<ReserverEntrepriseFamille/>
 		<AvisUtilisateurs/>
-		<JeuxVR/>
+		{/* <JeuxVR/> */}
 		<ImaginezVous/>
 		<SectionChiffres/>
 		<GoogleMapSection/>
