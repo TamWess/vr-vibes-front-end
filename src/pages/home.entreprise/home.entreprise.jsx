@@ -20,7 +20,7 @@ function HomeEntreprise() {
 		<Reassurance/>
 		<ReserverEntreprise/>
 		<AvisUtilisateurs/>
-		<JeuxVR/>
+		{/* <JeuxVR/> */}
 		<ImaginezVous/>
 		<SectionChiffres/>
 		<GoogleMapSection/>
