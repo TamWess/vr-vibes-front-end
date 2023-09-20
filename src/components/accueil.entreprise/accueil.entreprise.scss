@@ -1,87 +1,82 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
-.homeAE{
-	overflow-y: hidden !important;
-    overflow-x: hidden !important;
-	padding-top: 30px;
-	display: flex;
-	height: fit-content;
-	flex-wrap: wrap;
-	// background-image: url("../../../public/img/gradient-blue-pink.png");
-	background-size: cover;
-	.accueilImageAE{
-		z-index: 9;
-		position: relative;
-		height: 600px;
-		background-image: url(../../../public/img/vr-vibes-home-image.jpg);
-		background-size: cover;
-		display: flex;
-		animation: clip 3s 1;
-		animation-fill-mode: forwards;
-		@keyframes clip {
-			from {
-				clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-			}
-			to {
-				clip-path: polygon(73% 0, 73% 0, 30% 100%, 30% 100%);
-			}
-		}
-	}	
-	.logoVRvibesAE{
-		z-index: 9;
-		position: absolute;
-		height: 100px;
-		left: calc(50% - 156px);
-    	top: calc(50% - 60px);
-		clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
-		animation: logoAnimation 1.8s 1;
-		animation-delay: 3s;
-		animation-fill-mode: forwards;
-	}
-	.imageVREntrepriseAE1{
-		z-index: 7 !important;
-		position: relative;
-		background-image: url(../../../public/img/entreprise-image-1.jpg);
-		background-color: aquamarine;
-		width: 33%;
-		height: 600px;
-		background-size: cover;
-		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
-		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-	}
-	.imageVREntrepriseAE2{
-		z-index: 7 !important;
-		position: relative;
-		background-image: url(../../../public/img/entreprise-image-2.jpg);
-		background-color: aquamarine;
-		width: 33%;
-		height: 600px;
-		background-size: cover;
-		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
-		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-	}
-	.imageVREntrepriseAE3{
-		z-index: 7 !important;
-		position: relative;
-		background-image: url(../../../public/img/entreprise-image-3.jpg);
-		background-color: aquamarine;
-		width: 33%;
-		height: 600px;
-		background-size: cover;
-		// filter: drop-shadow(0px 11px 20px rgba(0, 0, 0, 0.25));
-		clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-	}
-
-	.animate__animated.animate__backInLeft{
-		--animate-duration: 1.5s ;
-	}
-	.animate__animated.animate__backInRight{
-		--animate-duration: 1.5s ;
-	}
-	.animate__animated.animate__backInDown{
-		--animate-duration: 1.2s ;
-	}
+.homeAE {
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  padding-top: 30px;
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  background-size: cover;
+  .accueilImageAE {
+    z-index: 9;
+    position: relative;
+    height: 600px;
+    background-image: url(../../../public/img/vr-vibes-home-image.jpg);
+    background-size: cover;
+    display: flex;
+    animation: clip 3s 1;
+    animation-fill-mode: forwards;
+    @keyframes clip {
+      from {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      }
+      to {
+        clip-path: polygon(73% 0, 73% 0, 30% 100%, 30% 100%);
+      }
+    }
+  }
+  .logoVRvibesAE {
+    z-index: 9;
+    position: absolute;
+    height: 100px;
+    left: calc(50% - 156px);
+    top: calc(50% - 60px);
+    clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    animation: logoAnimation 1.8s 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+  }
+  .imageVREntrepriseAE1 {
+    z-index: 7 !important;
+    position: relative;
+    background-image: url(../../../public/img/entreprise-image-1.jpg);
+    background-color: aquamarine;
+    width: 33%;
+    height: 600px;
+    background-size: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  .imageVREntrepriseAE2 {
+    z-index: 7 !important;
+    position: relative;
+    background-image: url(../../../public/img/entreprise-image-2.jpg);
+    background-color: aquamarine;
+    width: 33%;
+    height: 600px;
+    background-size: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  .imageVREntrepriseAE3 {
+    z-index: 7 !important;
+    position: relative;
+    background-image: url(../../../public/img/entreprise-image-3.jpg);
+    background-color: aquamarine;
+    width: 33%;
+    height: 600px;
+    background-size: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  .animate__animated.animate__backInLeft {
+    --animate-duration: 1.5s;
+  }
+  .animate__animated.animate__backInRight {
+    --animate-duration: 1.5s;
+  }
+  .animate__animated.animate__backInDown {
+    --animate-duration: 1.2s;
+  }
 }
 
 .frise30,
@@ -126,60 +121,54 @@
 }
 
 @keyframes logoAnimation {
-	from{
-		clip-path: polygon(77% 0, 77% 0, 31% 100%, 31% 100%);
-	}
-	to{
-		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	}
+  from {
+    clip-path: polygon(77% 0, 77% 0, 31% 100%, 31% 100%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
 }
 
 // ----------------RESPONSIVE----------------
 
-@media screen and (min-width: 1200px ) {
-	
+@media screen and (min-width: 1200px) {
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  .logoVRvibesAE {
+    height: 80px !important;
+    left: calc(50% - 80px) !important;
+    top: calc(50% - 50px) !important;
+  }
 
-	.logoVRvibesAE{
-		height: 80px !important;
-		left: calc(50% - 80px) !important;
-    	top: calc(50% - 50px) !important;
-	}
-
-	.imageVREntrepriseAE1{
-		background-image: url("../../../public/img/entreprise-image-1-768px.jpg") !important;
-	}
-	.imageVREntrepriseAE2{
-		background-image: url("../../../public/img/entreprise-image-2-768px.jpg") !important;
-	}
-	.imageVREntrepriseAE3{
-		background-image: url("../../../public/img/entreprise-image-3-768px.jpg") !important;
-	}
+  .imageVREntrepriseAE1 {
+    background-image: url("../../../public/img/entreprise-image-1-768px.jpg") !important;
+  }
+  .imageVREntrepriseAE2 {
+    background-image: url("../../../public/img/entreprise-image-2-768px.jpg") !important;
+  }
+  .imageVREntrepriseAE3 {
+    background-image: url("../../../public/img/entreprise-image-3-768px.jpg") !important;
+  }
 }
 
-@media screen and (max-width: 576px){
-	.logoVRvibesAE{
-		height: 80px !important;
-		left: calc(50% - 80px) !important;
-    	top: calc(40% - -50px) !important;
-	}
-
-	.imageVREntrepriseAE1{
-		background-image: url("../../../public/img/entreprise-image-1-576px.jpg") !important;
-	}
-	.imageVREntrepriseAE2{
-		background-image: url("../../../public/img/entreprise-image-2-576px.jpg") !important;
-	}
-	.imageVREntrepriseAE3{
-		background-image: url("../../../public/img/entreprise-image-3-576px.jpg") !important;
-	}
-	.accueilImage{
-		height: 600px;
-		background-image: url(../../../public/img/vr-vibes-home-image-576px.jpg)!important;
-	}
-
+@media screen and (max-width: 576px) {
+  .logoVRvibesAE {
+    height: 80px !important;
+    left: calc(50% - 80px) !important;
+    top: calc(40% - -50px) !important;
+  }
+  .imageVREntrepriseAE1 {
+    background-image: url("../../../public/img/entreprise-image-1-576px.jpg") !important;
+  }
+  .imageVREntrepriseAE2 {
+    background-image: url("../../../public/img/entreprise-image-2-576px.jpg") !important;
+  }
+  .imageVREntrepriseAE3 {
+    background-image: url("../../../public/img/entreprise-image-3-576px.jpg") !important;
+  }
+  .accueilImage {
+    height: 600px;
+    background-image: url(../../../public/img/vr-vibes-home-image-576px.jpg) !important;
+  }
 }
-
-

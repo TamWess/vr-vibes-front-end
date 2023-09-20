@@ -6,8 +6,6 @@ import "../../utils/style/libs/base.scss";
 import "./style.scss";
 import 'animate.css';
 
-
-
 // Responsive App ip adress: http://192.168.8.123:3000/
 
 function Template() {
@@ -21,10 +19,7 @@ function Template() {
 			document.getElementsByClassName("animate__pulse").className = "animate__tada";
 		}
 
-		// if(window.screen.width>768){
-		// 	document.querySelector(".burgerMenu").style.display = "none"
-		// 	console.log(window.screen.width);
-		// }
+		// -----Fonction pour burger menu responsive écrans téléphones----
 
 		const burgerMenu = document.querySelector(".burgerMenu");
 		const rollMenu = document.querySelector(".rollMenu")
@@ -42,24 +37,19 @@ function Template() {
 		crossClose.addEventListener("click", (event) => {
 
 			rollMenu.style.display = "none"
-
-
 			if (window.width > 578) {
 				burgerMenu.style.left = "80px"
 			}
-
 			if (window.width <= 578) {
 				burgerMenu.style.left = "30px !important"
 			}
 		})
-
 
 		setTimeout(() => {
 			window.scrollTo(0, 0);
 		}
 			, 500
 		)
-
 	});
 
 
@@ -70,13 +60,13 @@ function Template() {
 					<Link to="/">
 						<img className="headerLogo animate__animated animate__pulse"
 							src="/icns/vr-vibes-logo.png"
-							alt="VR Vibes logo entreprise réalité virtuelle animation VR événement Paris ">
+							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris">
 						</img>
 					</Link>
 					<Link to="accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
 					<Link to="accueil_prive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
-					<Link to="" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
-					<Link to="contact" className="contactButton">Contact</Link>
+					<Link to="/productions-VR" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
+					<Link to="/contact" className="contactButton">Contact</Link>
 					<img src="/icns/burger-menu-white.svg" className="burgerMenu" />
 					<div className="rollMenu">
 						<ul className="listRollMenu">
@@ -99,9 +89,9 @@ function Template() {
 				<img className="friseGreenPastel" src="/img/frise-green-pastel.png" alt="" />
 				<img className="friseFooter" src="/img/frise-footer.png" alt="" />
 				<div className="footer">
-				<img className="scrollTop" src="/icns/scroll-to-top.svg" />
 					<div className="footerDiv01">
-						<img className="smileysFooter" src="/icns/vr-vibes-logo-smileys.svg" />
+						<img className="scrollTop" src="/icns/scroll-to-top.svg" onClick={(() => window.scrollTo(0, 0))} />
+						<img className="smileysFooter" src="/icns/vr-vibes-logo-smileys.svg" alt="logo vr-vibes symbole" />
 					</div>
 					<div className="footerDiv02">
 						{/* <p>Plan du site</p> */}
@@ -112,20 +102,13 @@ function Template() {
 						{/* <p>Actus</p> */}
 					</div>
 
-					<div className="footerDiv04">
+					<div className="footerDiv03">
 						<Link className="footerLinks" to="/contact"><p>Contact</p></Link>
 						<p>FAQ</p>
 						<Link className="footerLinks" to="/CGV">
 							<p>CGU - CGV - Mentions légales</p>
 						</Link>
 					</div>
-
-					{/* Reseaux sociaux */}
-					{/* <div className="footerDiv05">
-            <img src="/icns/facebook.svg" alt="" />
-            <img src="/icns/instagram.svg" alt="" />
-            <img src="/icns/twitter.svg" alt="" />
-          </div> */}
 
 				</div>
 			</footer>

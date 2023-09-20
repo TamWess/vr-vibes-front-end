@@ -2,7 +2,6 @@
 @import "../../../src/utils/style/libs/variable.scss";
 
 .entrepriseFamille {
-  
   z-index: 0;
   position: relative;
   display: flex;
@@ -11,7 +10,7 @@
   background-color: white;
   background-size: cover;
   .titleEntrepriseFamille {
-	opacity : 0;
+    opacity: 0;
     margin: 85px 0 15px 0;
     position: relative;
     height: 4vh;
@@ -28,7 +27,7 @@
     height: fit-content;
     margin-bottom: 50px;
     .subtitleEntreprise {
-	  opacity : 0;
+      opacity: 0;
       z-index: 10;
       width: 100%;
       position: relative;
@@ -46,7 +45,7 @@
       height: 474px;
     }
     .reserverEntreprise {
-	  opacity: 0;
+      opacity: 0;
       z-index: 10;
       position: relative;
       width: 100%;
@@ -57,13 +56,9 @@
       text-decoration: none;
       color: white;
       font-size: 27px;
-	  width: 160px;
-	  height: 61px;
+      width: 160px;
+      height: 61px;
       background: #005f4e;
-    //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
-    //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-    //   filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86))
-    //     drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
       border-radius: 11px;
     }
   }
@@ -74,7 +69,7 @@
     width: 50%;
     height: fit-content;
     .subtitleFamille {
-	  opacity : 0;
+      opacity: 0;
       z-index: 10;
       width: 100%;
       position: relative;
@@ -102,13 +97,9 @@
       text-decoration: none;
       color: white;
       font-size: 27px;
-	  width: 160px;
-	  height: 61px;
+      width: 160px;
+      height: 61px;
       background: #005f4e;
-    //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
-    //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);
-    //   filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86))
-    //     drop-shadow(4px 4px 15px rgba(0, 0, 0, 0.29));
       border-radius: 11px;
     }
   }
@@ -204,49 +195,56 @@
       }
     }
   }
-	.frise1, .frise3, .frise5{
-		right: -1500px;
-	}
-	.frise2, .frise4, .frise6{
-		left: -1500px;
-	}
-	.frise1, .frise2, .frise3, .frise4, .frise5, .frise6{
-		padding-top: 35px;
-		overflow: hidden;
-		z-index: 1;
-		position: absolute;
-		margin: 4% 0 0 0;
-		width:200% !important;
-		height: 150px !important;
-		opacity: 1 !important;
-		filter: drop-shadow(5px 5px 5px #0000008e);
-		transition: 1s;
-	}
-	.frise2{
-		
-		margin: 10% 0 0 0;
-	}
-	.frise3{
-		margin: 18% 0 0 0;
-	}
-	.frise4{
-		margin: 26% 0 0 0;
-	}
-	.frise5{
-		margin: 34% 0 0 0;
-	}
-	.frise6{
-		margin: 42% 0 0 0;
-	}
+  .frise1,
+  .frise3,
+  .frise5 {
+    right: -1500px;
+  }
+  .frise2,
+  .frise4,
+  .frise6 {
+    left: -1500px;
+  }
+  .frise1,
+  .frise2,
+  .frise3,
+  .frise4,
+  .frise5,
+  .frise6 {
+    padding-top: 35px;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    margin: 4% 0 0 0;
+    width: 200% !important;
+    height: 150px !important;
+    opacity: 1 !important;
+    filter: drop-shadow(5px 5px 5px #0000008e);
+    transition: 1s;
+  }
+  .frise2 {
+    margin: 10% 0 0 0;
+  }
+  .frise3 {
+    margin: 18% 0 0 0;
+  }
+  .frise4 {
+    margin: 26% 0 0 0;
+  }
+  .frise5 {
+    margin: 34% 0 0 0;
+  }
+  .frise6 {
+    margin: 42% 0 0 0;
+  }
 }
-
 
 @media screen and (max-width: 768px) {
   .entrepriseFamille {
     z-index: 0;
     position: relative;
     height: 1550px;
-	background-color: white;
+    background-color: white;
     background-size: cover;
     .titleEntrepriseFamille {
       padding-top: 66px;
@@ -288,37 +286,45 @@
       }
     }
   }
-  .frise1, .frise3, .frise5{
-	right: -1500px;
-}
-.frise2, .frise4, .frise6{
-	left: -1500px;
-}
-.frise1, .frise2, .frise3, .frise4, .frise5, .frise6{
-	padding-top: 10vh;
-	overflow: hidden;
-	z-index: 1;
-	position: absolute;
-	width:800% !important;
-	// height: 400px !important;
-	opacity: 0.13 !important;
-	filter: drop-shadow(5px 5px 5px #0000008e);
-	transition: 1s;
-}
-.frise2{
-	
-	margin: 250px 0 0 0 !important;
-}
-.frise3{
-	margin: 450px 0 0 0 !important;
-}
-.frise4{
-	margin: 650px 0 0 0 !important;
-}
-.frise5{
-	margin: 850px 0 0 0 !important;
-}
-.frise6{
-	margin: 1050px 0 0 0 !important;
-}
+  .frise1,
+  .frise3,
+  .frise5 {
+    right: -1500px;
+  }
+  .frise2,
+  .frise4,
+  .frise6 {
+    left: -1500px;
+  }
+  .frise1,
+  .frise2,
+  .frise3,
+  .frise4,
+  .frise5,
+  .frise6 {
+    padding-top: 10vh;
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    width: 800% !important;
+    // height: 400px !important;
+    opacity: 0.13 !important;
+    filter: drop-shadow(5px 5px 5px #0000008e);
+    transition: 1s;
+  }
+  .frise2 {
+    margin: 250px 0 0 0 !important;
+  }
+  .frise3 {
+    margin: 450px 0 0 0 !important;
+  }
+  .frise4 {
+    margin: 650px 0 0 0 !important;
+  }
+  .frise5 {
+    margin: 850px 0 0 0 !important;
+  }
+  .frise6 {
+    margin: 1050px 0 0 0 !important;
+  }
 }

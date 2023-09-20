@@ -7,8 +7,9 @@ import "./page.formulaire.prive.scss";
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 
 function FormulairePrive() {
-  
+
 	let navigate = useNavigate()
+	
 	const [type, setType] = useState("Anniversaire")
 	const [nombrePersonnes, setNombrePersonnes] = useState("")
 	const [nom, setNom] = useState("")
@@ -21,55 +22,47 @@ function FormulairePrive() {
 	const [tel, setTel] = useState("")
 	const [precisions, setPrecisions] = useState("")
 	const [errorMessage, setErrorMessage] = useState("")
-	
-	const [isSaving, setSaving] = useState(false) // TODO: Utiliser ça dans handleSubmit et dans la template pour signaler à l’utilisateur qu’il faut attendre
+
+	const [isSaving, setSaving] = useState(false)
+	// TODO: Utiliser ça dans handleSubmit et dans la template pour signaler à l’utilisateur qu’il faut attendre
 
 	async function handleSubmit(event) {
 		event.preventDefault()
 		setErrorMessage('')
 		try {
-			
-			// -----utiliser nodemailer sur le back-----
-			
+
 			const response = await axios.post(`${apiBaseUrl}/reservations`,
-			// `http://localhost:${process.env.portBack}/reservations`
-			{
-				type: type,
-				nombrePersonnes: nombrePersonnes,
-				nom: nom,
-				prenom: prenom,
-				date: date,
-				rue: rue,
-				ville: ville,
-				codePostal: codePostal,
-				mail: mail,
-				tel: tel,
-				precisions: precisions,
-			})
+				{
+					type: type,
+					nombrePersonnes: nombrePersonnes,
+					nom: nom,
+					prenom: prenom,
+					date: date,
+					rue: rue,
+					ville: ville,
+					codePostal: codePostal,
+					mail: mail,
+					tel: tel,
+					precisions: precisions,
+				})
 
 			const data = response.data
 
-			if (response.status === 201){
-				console.log("votre demande nous a bien été envoyée");
-				// Surtout pas ça !!!
-				// location.replace("http://localhost:3000/ConfirmationEnvoiFormulaire")
-				// Utiliser le router pour changer de "page", cad de composant "parent"
+			if (response.status === 201) {
 				navigate('/confirmation_envoi_formulaire')
 			}
 
 			else {
 				event.preventDefault()
 				console.log(data.message);
-				// mettre un inner html d'erreur
 			}
 		}
 
-		catch (error){
+		catch (error) {
 			setErrorMessage(error.response.data.message)
 			console.error(error.response.data.message);
 			console.error(error);
 		}
-
 	}
 
 	// --------------REGEX---------------
@@ -130,7 +123,7 @@ function FormulairePrive() {
 		const dateId = document.querySelector("#date")
 
 		if (dateId.pattern != "\d{2}-\d{2}-\d{4}") {
-			
+
 			dateId.style.backgroundColor = "#0080002b";
 			dateId.style.color = "green";
 
@@ -205,12 +198,12 @@ function FormulairePrive() {
 			document.querySelector(".labelVille").style.color = "red";
 		}
 	}
-	
+
 	function codePostalEvent(event) {
 		setCodePostal(event.target.value)
-		
+
 		const codePostalId = document.querySelector("#codePostal")
-		
+
 		if (codePostalRegex.test(event.target.value)) {
 			codePostalId.style.color = "green";
 			codePostalId.style.backgroundColor = "#0080002b";
@@ -222,7 +215,7 @@ function FormulairePrive() {
 			document.querySelector(".labelCodePostal").style.color = "red";
 		}
 	}
-	
+
 	function mailEvent(event) {
 		setMail(event.target.value)
 
@@ -242,10 +235,10 @@ function FormulairePrive() {
 
 	function telEvent(event) {
 		setTel(event.target.value)
-		
+
 		const telId = document.querySelector("#tel")
 		const erreurTel = document.querySelector(".erreurTel")
-		
+
 		if (telRegex.test(event.target.value)) {
 			telId.style.color = "green";
 			telId.style.backgroundColor = "#0080002b";
@@ -265,7 +258,7 @@ function FormulairePrive() {
 
 	function precisionsEvent(event) {
 		setPrecisions(event.target.value)
-		
+
 	}
 
 	return (
@@ -275,16 +268,16 @@ function FormulairePrive() {
 			{/* -----	PARTIE FORMULAIRE	----- */}
 			<div className="introFormulaire">
 
-			<h1 className="titleFormulaire">Réserver votre événement ici </h1>
+				<h1 className="titleFormulaire">Réserver votre événement ici </h1>
 				<div className="texteFormulaire">Nous proposons un accompagnement plein de
-					bonnes surprises, idéale pour un événement! <br/>
+					bonnes surprises, idéale pour un événement! <br />
 					La VR fera voyager enfants comme adultes.
 				</div>
 				<div className="nousVousRecontacterons">Nous vous recontacterons sous 48h week-end compris.</div>
 				<div className="prix">À partir de 450€ HT</div>
 			</div>
 			<div className="containerFormulaire">
-				
+
 				<img className="ligne" src="/icns/line-green.png" />
 
 				<form className="saisirCoordonnees" onSubmit={handleSubmit}>
@@ -365,17 +358,17 @@ function FormulairePrive() {
 					<label className="labelMail" htmlFor="mail" placeholder="75001">Mail *</label>
 					<input required type="email" name="mail" id="mail" onChange={mailEvent} />
 
-					{/* tel  */}	
+					{/* tel  */}
 
 					<label className="labelTel" htmlFor="tel" placeholder="75001">Téléphone</label>
 					<input required type="text" name="tel" id="tel" onChange={telEvent} />
 					<div className="erreurTel" />
-					<div className="messageTel"> Seulement si vous souhaitez que l'on vous contacte par téléphone. <br/> Si vous êtes en possession d'un numéro étranger, veuillez ignorer cette case. </div>
+					<div className="messageTel"> Seulement si vous souhaitez que l'on vous contacte par téléphone. <br /> Si vous êtes en possession d'un numéro étranger, veuillez ignorer cette case. </div>
 
 					{/* précisions */}
 
 					<label className="pourToutesPrecisions" htmlFor="precisions">Pour toutes précisions concernant votre événements, écrivez-nous un message:</label>
-					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent}/>
+					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent} />
 
 					{/* envoyer */}
 
@@ -394,19 +387,19 @@ function FormulairePrive() {
 			{/* -----   PARTIE COORDONNEES	----- */}
 			<div className="containerCoordonnees">
 				<div className="phone">
-					<img className="phoneImage" src="/icns/phone.svg"/>
-					<div className="space"/>
+					<img className="phoneImage" src="/icns/phone.svg" />
+					<div className="space" />
 					<div className="textPhone">06.52.83.57.22</div>
 				</div>
 				<div className="mail">
-					<img className="mailImage" src="/icns/envelope.svg"/>
-					<div className="space"/>
+					<img className="mailImage" src="/icns/envelope.svg" />
+					<div className="space" />
 					<div className="textMail">contact@eosvr.fr</div>
 				</div>
 				<div className="localisation">
-					<img className="localisationImage" src="/icns/localisation.svg"/>
-					<div className="space"/>
-					<div className="textLocalisation">Nous proposons nos services dans <br/> toute la région île-de-France</div>
+					<img className="localisationImage" src="/icns/localisation.svg" />
+					<div className="space" />
+					<div className="textLocalisation">Nous proposons nos services dans <br /> toute la région île-de-France</div>
 
 				</div>
 			</div>

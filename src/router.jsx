@@ -10,6 +10,7 @@ import FormulaireEntreprise from "./pages/page.formulaire.entreprise/page.formul
 import ConfirmationEnvoiFormulaire from "./pages/confirmation.envoi.formulaire/confirmation.envoi.formulaire.jsx";
 import CGV from "./pages/CGU.CGV.mentions.legales/cgu.cgv.mentions.legales.jsx";
 import Contact from "./pages/contact/contact.jsx";
+import ProductionsVR from "./pages/productions.vr/productions.vr.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
+	  {
+		path: "productions-VR",
+		element: <ProductionsVR />
+	  },
     ],
   },
 ]);

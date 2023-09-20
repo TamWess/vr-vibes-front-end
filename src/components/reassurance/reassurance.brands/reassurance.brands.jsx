@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./reassurance.brands.scss";
-// import "../../utils/style/libs/base.scss";
 
 function Reassurance() {
 
@@ -9,10 +8,10 @@ function Reassurance() {
 			<div className="reassuranceBrands">
 				<div className="nosPartenaires">NOS PARTENAIRES</div>
 				<div className="divLogoPartenaires">
-					<img className="logoPartenaires" src="/icns/sanofi-logo.png" alt="" />
+					<img className="logoPartenaires" src="/icns/sanofi-logo.png" alt="logo SANOFI" />
 				</div>
-				<div className="divLogoPartenaires"><img className="logoPartenaires" src="/icns/ponticelli-logo.png" alt="" /></div>
-				<div className="divLogoPartenaires"><img className="logoPartenaires" src="/icns/partners-formation-logo.png" alt="" /></div>
+				<div className="divLogoPartenaires"><img className="logoPartenaires" src="/icns/ponticelli-logo.png" alt="logo PONTICELLI FRERES" /></div>
+				<div className="divLogoPartenaires"><img className="logoPartenaires" src="/icns/partners-formation-logo.png" alt="logo PARTNERS FORMATION" /></div>
 			</div>
 		</React.Fragment>
 	);

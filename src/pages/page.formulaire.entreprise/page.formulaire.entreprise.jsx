@@ -7,8 +7,9 @@ import "./page.formulaire.entreprise.scss";
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 
 function FormulaireEntreprise() {
-  
+
 	let navigate = useNavigate()
+	
 	const [type, setType] = useState("")
 	const [nombrePersonnes, setNombrePersonnes] = useState("")
 	const [nom, setNom] = useState("")
@@ -23,33 +24,24 @@ function FormulaireEntreprise() {
 
 	async function handleSubmit(event) {
 		event.preventDefault()
-		try{
-			
-			// -----utiliser nodemailer sur le back-----
-			
+
+		try {
 			const response = await axios.post(`${apiBaseUrl}/reservations`,
-			// `http://localhost:${process.env.portBack}/post`
-			{
-				type: type,
-				nombrePersonnes: nombrePersonnes,
-				nom: nom,
-				prenom: prenom,
-				date: date,
-				rue: rue,
-				ville: ville,
-				codePostal: codePostal,
-				mail: mail,
-				tel: tel,
-				precisions: precisions,
-			})
+				{
+					type: type,
+					nombrePersonnes: nombrePersonnes,
+					nom: nom,
+					prenom: prenom,
+					date: date,
+					rue: rue,
+					ville: ville,
+					codePostal: codePostal,
+					mail: mail,
+					tel: tel,
+					precisions: precisions,
+				})
 
-			const request = response.data
-
-			if (response.status === 201){
-				console.log("votre demande nous a bien été envoyée");
-				// Surtout pas ça !!!
-				// location.replace("http://localhost:3000/ConfirmationEnvoiFormulaire")
-				// Utiliser le router pour changer de "page", cad de composant "parent"
+			if (response.status === 201) {
 				navigate('/confirmation_envoi_formulaire')
 			}
 
@@ -62,10 +54,9 @@ function FormulaireEntreprise() {
 			}
 		}
 
-		catch (error){
+		catch (error) {
 			console.error(error);
 		}
-
 	}
 
 	// --------------REGEX---------------
@@ -103,7 +94,7 @@ function FormulaireEntreprise() {
 		console.log(event.target.value);
 
 		const combienDePersonnesId = document.querySelector("#combienDePersonnes")
-		
+
 
 		if (event.target.value) {
 			combienDePersonnesId.style.color = "green";
@@ -119,7 +110,7 @@ function FormulaireEntreprise() {
 		const dateId = document.querySelector("#date")
 
 		if (dateId.pattern != "\d{2}-\d{2}-\d{4}") {
-			
+
 			dateId.style.backgroundColor = "#0080002b";
 			dateId.style.color = "green";
 
@@ -194,12 +185,12 @@ function FormulaireEntreprise() {
 			document.querySelector(".labelVille").style.color = "red";
 		}
 	}
-	
+
 	function codePostalEvent(event) {
 		setCodePostal(event.target.value)
-		
+
 		const codePostalId = document.querySelector("#codePostal")
-		
+
 		if (codePostalRegex.test(event.target.value)) {
 			codePostalId.style.color = "green";
 			codePostalId.style.backgroundColor = "#0080002b";
@@ -211,7 +202,7 @@ function FormulaireEntreprise() {
 			document.querySelector(".labelCodePostal").style.color = "red";
 		}
 	}
-	
+
 	function mailEvent(event) {
 		setMail(event.target.value)
 
@@ -231,10 +222,10 @@ function FormulaireEntreprise() {
 
 	function telEvent(event) {
 		setTel(event.target.value)
-		
+
 		const telId = document.querySelector("#tel")
 		const erreurTel = document.querySelector(".erreurTel")
-		
+
 		if (telRegex.test(event.target.value)) {
 			telId.style.color = "green";
 			telId.style.backgroundColor = "#0080002b";
@@ -254,7 +245,7 @@ function FormulaireEntreprise() {
 
 	function precisionsEvent(event) {
 		setPrecisions(event.target.value)
-		
+
 	}
 
 	return (
@@ -264,16 +255,16 @@ function FormulaireEntreprise() {
 			{/* -----	PARTIE FORMULAIRE	----- */}
 			<div className="introFormulaire">
 
-			<h1 className="titleFormulaire">Réserver votre événement ici </h1>
+				<h1 className="titleFormulaire">Réserver votre événement ici </h1>
 				<div className="texteFormulaire">Nous proposons un accompagnement plein de
-					bonnes surprises, idéale pour un événement! <br/>
+					bonnes surprises, idéale pour un événement! <br />
 					La VR fera voyager enfants comme adultes.
 				</div>
 				<div className="nousVousRecontacterons">Nous vous recontacterons sous 48h week-end compris.</div>
 				<div className="prix">À partir de 450€ HT</div>
 			</div>
 			<div className="containerFormulaire">
-				
+
 				<img className="ligne" src="/icns/line-green.png" />
 
 
@@ -353,25 +344,25 @@ function FormulaireEntreprise() {
 					<label className="labelMail" htmlFor="mail" placeholder="75001">Mail *</label>
 					<input required type="email" name="mail" id="mail" onChange={mailEvent} />
 
-					{/* tel  */}	
+					{/* tel  */}
 
 					<label className="labelTel" htmlFor="tel" placeholder="75001">Téléphone</label>
 					<input required type="text" name="tel" id="tel" onChange={telEvent} />
 					<div className="erreurTel" />
-					<div className="messageTel"> Seulement si vous souhaitez que l'on vous contacte par téléphone. <br/> Si vous êtes en possession d'un numéro étranger, veuillez ignorer cette case. </div>
+					<div className="messageTel"> Seulement si vous souhaitez que l'on vous contacte par téléphone. <br /> Si vous êtes en possession d'un numéro étranger, veuillez ignorer cette case. </div>
 
 					{/* précisions */}
 
 					<label className="pourToutesPrecisions" htmlFor="precisions">Pour toutes précisions concernant votre événements, écrivez-nous un message:</label>
-					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent}/>
+					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent} />
 
 					{/* envoyer */}
 
 					<button className="boutonEnvoyer">Envoyer</button>
 					<div className="erreurEnvoi">
-						Vous n'avez pas rempli tous les champs requis. 
-						<br/>
-						<br/>
+						Vous n'avez pas rempli tous les champs requis.
+						<br />
+						<br />
 						Seuls les champs comportant le symbole * sont obligatoires.
 					</div>
 				</form>
@@ -381,19 +372,19 @@ function FormulaireEntreprise() {
 			{/* -----   PARTIE COORDONNEES	----- */}
 			<div className="containerCoordonnees">
 				<div className="phone">
-					<img className="phoneImage" src="/icns/phone.svg"/>
-					<div className="space"/>
+					<img className="phoneImage" src="/icns/phone.svg" />
+					<div className="space" />
 					<div className="textPhone">06.52.83.57.22</div>
 				</div>
 				<div className="mail">
-					<img className="mailImage" src="/icns/envelope.svg"/>
-					<div className="space"/>
+					<img className="mailImage" src="/icns/envelope.svg" />
+					<div className="space" />
 					<div className="textMail">contact@eosvr.fr</div>
 				</div>
 				<div className="localisation">
-					<img className="localisationImage" src="/icns/localisation.svg"/>
-					<div className="space"/>
-					<div className="textLocalisation">Nous proposons nos services dans <br/> toute la région île-de-France</div>
+					<img className="localisationImage" src="/icns/localisation.svg" />
+					<div className="space" />
+					<div className="textLocalisation">Nous proposons nos services dans <br /> toute la région île-de-France</div>
 
 				</div>
 			</div>

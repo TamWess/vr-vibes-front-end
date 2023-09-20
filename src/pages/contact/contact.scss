@@ -54,13 +54,10 @@
 				height: 30px;
 				margin: auto;
 				line-height: 23px;
-				
 			}
 		}
-		
 	  }
 	  .reserverContact{
-		
 		  padding-left: 3%;
 		  background-color: #fff7ff;
 		  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
@@ -70,12 +67,22 @@
 			font-size: 19px;
 			font-weight: bold;
 			margin-top: 150px;
+			color:black;
+			.lienEntreprise{
+				text-decoration: none;
+				color:#006F5C;
+			}
 		  }
 		  .lienFormulairePrive{
 			font-size: 19px;
 			font-weight: bold;
 			margin-top: 20px;
 			margin-bottom: 100px ;
+			color:black;
+			.lienPrive{
+				text-decoration: none;
+				color:#006F5C;
+			}
 		  }
 		}
 	  

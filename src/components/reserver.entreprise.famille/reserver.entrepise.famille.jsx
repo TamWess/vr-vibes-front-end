@@ -1,4 +1,3 @@
-import userEvent from "@testing-library/user-event";
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./reserver.entrepise.famille.scss"
@@ -6,27 +5,13 @@ import "./reserver.entrepise.famille.scss"
 function ReserverEntrepriseFamille() {
 
 	console.log(window.scroll.y);
-	
+
 	useEffect(() => {
-		
+
 		// frises défilant de droite à gauche
 		const frise1 = document.querySelector(".frise1");
 		const frise3 = document.querySelector(".frise3");
 		const frise5 = document.querySelector(".frise5");
-		
-		// frises défilant de droite à gauche
-		const frise2 = document.querySelector(".frise2");
-		const frise4 = document.querySelector(".frise4");
-		const frise6 = document.querySelector(".frise6");
-
-		// -------RESPONSIVE------
-		
-		if(window.screen.width<576){
-			
-		}	
-
-		// --------FIN DE REPONSIVE------
-
 
 		let friseRight = -1500;
 
@@ -56,6 +41,11 @@ function ReserverEntrepriseFamille() {
 				friseRight = -1500
 			}
 		}, 2000)
+
+		// frises défilant de droite à gauche
+		const frise2 = document.querySelector(".frise2");
+		const frise4 = document.querySelector(".frise4");
+		const frise6 = document.querySelector(".frise6");
 
 		let friseLeft = -1500
 
@@ -100,68 +90,59 @@ function ReserverEntrepriseFamille() {
 		const reserverEntreprise = document.querySelector(".reserverEntreprise")
 
 		const reserverFamille = document.querySelector(".reserverFamille")
-		
+
 		window.addEventListener("scroll", function () {
 			if (window.scrollY > 15) {
-			  titleEntrepriseFamille.style.opacity = "1";
-			  titleEntrepriseFamille.classList.add("animate__animated");
-			  titleEntrepriseFamille.classList.add("animate__fadeInUp");
+				titleEntrepriseFamille.style.opacity = "1";
+				titleEntrepriseFamille.classList.add("animate__animated");
+				titleEntrepriseFamille.classList.add("animate__fadeInUp");
 			}
-		  });
 
-
-		window.addEventListener("scroll", function () {
 			if (window.scrollY > 100) {
-			  subtitleEntreprise.style.opacity = "1";
-			  subtitleEntreprise.classList.add("animate__animated");
-			  subtitleEntreprise.classList.add("animate__fadeInUp");
+				subtitleEntreprise.style.opacity = "1";
+				subtitleEntreprise.classList.add("animate__animated");
+				subtitleEntreprise.classList.add("animate__fadeInUp");
 			}
-		  });
 
-		window.addEventListener("scroll", function () {
 			if (window.scrollY > 100) {
-			  subtitleFamille.style.opacity = "1";
-			  subtitleFamille.classList.add("animate__animated");
-			  subtitleFamille.classList.add("animate__fadeInUp");
+				subtitleFamille.style.opacity = "1";
+				subtitleFamille.classList.add("animate__animated");
+				subtitleFamille.classList.add("animate__fadeInUp");
 			}
-		  });
 
-		window.addEventListener("scroll", function () {
 			if (window.scrollY > 370) {
-			  reserverEntreprise.style.opacity = "1";
-			  reserverEntreprise.classList.add("animate__animated");
-			  reserverEntreprise.classList.add("animate__fadeInUp");
+				reserverEntreprise.style.opacity = "1";
+				reserverEntreprise.classList.add("animate__animated");
+				reserverEntreprise.classList.add("animate__fadeInUp");
 			}
-		  });
 
-		window.addEventListener("scroll", function () {
 			if (window.scrollY > 370) {
-			  reserverFamille.style.opacity = "1";
-			  reserverFamille.classList.add("animate__animated");
-			  reserverFamille.classList.add("animate__fadeInUp");
+				reserverFamille.style.opacity = "1";
+				reserverFamille.classList.add("animate__animated");
+				reserverFamille.classList.add("animate__fadeInUp");
 			}
-		  });
+		});
 	})
 
 	return (
 		<div className="entrepriseFamille">
-			<h2 className="titleEntrepriseFamille">
+			<h1 className="titleEntrepriseFamille">
 				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
-			</h2>
+			</h1>
 			<div className="entreprise">
-				<h1 className="subtitleEntreprise">
+				<h2 className="subtitleEntreprise">
 					Team Building, Afterwork, Séminaire ...
-				</h1>
-				<img className="entrepriseChoice" src="/img/entreprise-choice.png" />
+				</h2>
+				<img className="entrepriseChoice" src="/img/entreprise-choice.png" alt="vr-vibes réserver votre événement d'entreprise en réalité virtuelle - team building - escape game - after work - séminaire" />
 				<Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
 				</Link>
 			</div>
 			<div className="famille">
-				<h3 className="subtitleFamille">
+				<h2 className="subtitleFamille">
 					Baby Shower, Anniversaire, Mariage ...
-				</h3>
-				<img className="familleChoice" src="/img/family-choice.png" />
+				</h2>
+				<img className="familleChoice" src="/img/family-choice.png" alt="vr-vibes réserver votre événement privé en réalité virtuelle baby shower - anniversaire - mariage" />
 				<Link className="reserverFamille" to="formulaire_prive">
 					Réserver
 				</Link>

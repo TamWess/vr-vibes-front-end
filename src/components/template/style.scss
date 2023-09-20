@@ -156,7 +156,11 @@
 		background-image: url("../../../public/img/filigrane-vr-vibes-footer.jpg");
 		background-size: 800px ;
 		transition: 1.5s;
-		.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
+		.footerLinks{
+			text-decoration: none;
+			color: white;
+		}
+		.footerDiv01, .footerDiv02, .footerDiv03{
 			text-decoration: none;
 			font-size: 17px;
 			font-family: "Archivo Black";
@@ -167,51 +171,27 @@
 			flex-direction: column;
 			justify-content: space-between;
 		}
-		.scrollTop{
-			position: absolute;
-			width: 400px;
-			right: 89%;
-		}
 		.footerDiv01{
+			right: 80px;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 			width: 10%;
-			.smileysFooter{
-				width: 200px;
+			.scrollTop{
+				position: relative;
+				width: 40px;
+				bottom:80px;
+				right: 2%;
 			}
-		}
-		.footerDiv03 img{
-			align-self: center;
-			height: 30px;
+			.smileysFooter{
+				position: relative;
+				left: 40px;
+				width: 250px;
+			}
 		}
 		.footerDiv03{
-			.mapContainerFooter{
-				width: 100%;
-				height: 30vh;
-			}
-		}
-		.locationLogo img{
-			margin-left: 45%;
-		}
-		.tempGoogleMap {
-			z-index: 1;
-			padding: 0 40px 40px 40px;
-			height: 120px;
-			background: white;
-		}
-	
-		.footerDiv05{
-			color: white;
-			display: flex;
-			flex-direction: column;
-			width: 9%;
-		}
-	
-		.footerDiv05 img{
-			height: 33px;
-			filter: invert(100%) sepia(0%) saturate(7478%) hue-rotate(183deg) brightness(99%) contrast(97%);
-		}
-		.footerLinks{
-			text-decoration: none;
-			color: white;
+			position: relative;
 		}
 	}
 
@@ -257,7 +237,7 @@
 		}
 		.footer{
 			height: 40vh !important;
-			.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
+			.footerDiv01, .footerDiv02, .footerDiv03{
 				left: 3%;
 				position: relative;
 				width: 22%;
@@ -265,9 +245,9 @@
 				margin-top: 10% !important;
 				margin-bottom: 10% !important;
 			}
-			.footerDiv03{
-				display: none;
-			}
+		}
+		.scrollTop{
+			right: 2%;
 		}
 	} 
 
@@ -313,26 +293,53 @@
 			
 		.footer{
 			height: 40vh;
-			.footerDiv01, .footerDiv02, .footerDiv03, .footerDiv04, .footerDiv05{
+			.footerDiv01, .footerDiv02, .footerDiv03{
 				font-size: 18px;
 				width: 20%;
 				margin-top: 7%;
 				margin-bottom: 7%;
 			}
-			.footerDiv03{
-				display: none;
+		}
+		.footerDiv01{
+			width: fit-content !important;
+			left: 0px !important;
+			.scrollTop{
+				right: 2%;
 			}
-			
+			.smileysFooter{
+				display: none !important;
+			}
 		}
 	}
 	@media screen  and (min-width: 769px) {
 		.burgerMenu{
-			display: none;
+			display: none !important;
 		}
+		.scrollTop{
+			right: 2% !important;
+		}
+		
 	}
 	@media screen and (max-width: 576px){
 		.burgerMenu{
 			width: 28px !important;
 			left: 30px;
 		}
+		.footerDiv01{
+			width: fit-content !important;
+			left: 0px !important;
+			.scrollTop{
+				bottom: 125px !important;
+			}
+			.smileysFooter{
+				display: none !important;
+			}
+		}
+		.footerDiv02{
+			width: 30% !important;
+		}
+		.footerDiv03{
+			width: 30% !important;
+		}
+		
 	}

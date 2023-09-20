@@ -2,320 +2,337 @@
 @import "../../../src/utils/style/libs/variable.scss";
 
 @font-face {
-	font-family: "Archivo Black";
-	src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
+  font-family: "Archivo Black";
+  src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
 @font-face {
-	font-family: "Nunito Sans";
-	src: url(../../../public/fonts/NunitoSans.ttf);
+  font-family: "Nunito Sans";
+  src: url(../../../public/fonts/NunitoSans.ttf);
 }
 
-.laVRcest{
-	overflow-y: hidden;
-    overflow-x: hidden;
-	z-index: 5;
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	height: 400px;
-	.badge1{
-		opacity: 0;
-		text-align: center;
-		z-index: 7;
-		border-radius: 40px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 20vw;
-		height: 250px;
-		background-image: url("../../../public/icns/badge-01.svg");
-		background-size: cover;
-		.avisUtilisateurs1{
-			color:white;
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			width: 100%;
-			font-size: 27px;
-			margin: 37% 10% 0;
-		}
-		.numbers1{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: right;
-			width: 50%;
-			font-size: 45px;
-			margin-bottom: 10%;
-		}
-		.sur1{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: left;
-			width: 50%;
-			font-size: 45px;
-			margin-bottom: 10%;
-		}
-	}
-	.badge2{
-		opacity: 0;
-		text-align: center;
-		z-index: 7;
-		border-radius: 40px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 20vw;
-		height: 250PX;
-		background-image: url("../../../public/icns/badge-02.svg");
-		background-size: cover;
-		.avisUtilisateurs2{
-			color:white;
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			width: 100%;
-			font-size: 27px;
-			margin: 37% 10% 0;
-		}
-		.numbers2{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: right;
-			width: 15%;
-			font-size: 45px;
-			margin-bottom: 10%;
-		}
-		.sur2{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: center;
-			width: 50%;
-			font-size: 30px;
-			margin-bottom: 10%;
-			padding-top: 10px;
-			padding-left: 7px;
-		}
-	}
-	.badge3{
-		opacity: 0;
-		text-align: center;
-		z-index: 7;
-		border-radius: 40px;
-		display: flex;
-		flex-wrap: wrap;
-		width: 20vw;
-		height: 250px;
-		background-image: url("../../../public/icns/badge-03.svg");
-		background-size: cover;
-		.avisUtilisateurs3{
-			color:white;
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			width: 100%;
-			font-size: 27px;
-			margin: 37% 10% 0;
-		}
-		.numbers3{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: center;
-			width: 100%;
-			font-size: 45px;
-			margin-bottom: -10%;
-		}
-		.sur3{
-			font-family: 'Nunito Sans';
-			font-weight: bold;
-			color:white;
-			text-align: left;
-			width: 50%;
-			font-size: 45px;
-			margin-bottom: 10%;
-		}
-	}
-	.frise7, .frise9, .frise11{
-		right: -1500px;
-	}
-	.frise8, .frise10, .frise12{
-		left: -1500px;
-	}
-	.frise7, .frise8, .frise9{
-		overflow: hidden;
-		z-index: 1;
-		margin-bottom: 265px;
-		position: absolute;
-		width:200%;
-		opacity: 0.05;
-		filter: drop-shadow(5px 5px 5px #0000008e);
-		transition: 1s;
-	}
-	.frise8{
-		margin: -15px 0 0 0;
-	}
-	.frise9{
-		margin: 245px 0 0 0;
-	}
+.laVRcest {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 5;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  .badge1 {
+    opacity: 0;
+    text-align: center;
+    z-index: 7;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 250px;
+    background-image: url("../../../public/icns/badge-01.svg");
+    background-size: cover;
+    .avisUtilisateurs1 {
+      color: white;
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      width: 100%;
+      font-size: 27px;
+      margin: 37% 10% 0;
+    }
+    .numbers1 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: right;
+      width: 50%;
+      font-size: 45px;
+      margin-bottom: 10%;
+    }
+    .sur1 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: left;
+      width: 50%;
+      font-size: 45px;
+      margin-bottom: 10%;
+    }
+  }
+  .badge2 {
+    opacity: 0;
+    text-align: center;
+    z-index: 7;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 250px;
+    background-image: url("../../../public/icns/badge-02.svg");
+    background-size: cover;
+    .avisUtilisateurs2 {
+      color: white;
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      width: 100%;
+      font-size: 27px;
+      margin: 37% 10% 0;
+    }
+    .numbers2 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: right;
+      width: 15%;
+      font-size: 45px;
+      margin-bottom: 10%;
+    }
+    .sur2 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      width: 50%;
+      font-size: 30px;
+      margin-bottom: 10%;
+      padding-top: 10px;
+      padding-left: 7px;
+    }
+  }
+  .badge3 {
+    opacity: 0;
+    text-align: center;
+    z-index: 7;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 250px;
+    background-image: url("../../../public/icns/badge-03.svg");
+    background-size: cover;
+    .avisUtilisateurs3 {
+      color: white;
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      width: 100%;
+      font-size: 27px;
+      margin: 37% 10% 0;
+    }
+    .numbers3 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      width: 100%;
+      font-size: 45px;
+      margin-bottom: -10%;
+    }
+    .sur3 {
+      font-family: "Nunito Sans";
+      font-weight: bold;
+      color: white;
+      text-align: left;
+      width: 50%;
+      font-size: 45px;
+      margin-bottom: 10%;
+    }
+  }
+  .frise80,
+  .frise82,
+  .frise11 {
+    right: -1500px;
+  }
+  .frise81,
+  .frise10,
+  .frise12 {
+    left: -1500px;
+  }
+  .frise80,
+  .frise81,
+  .frise82 {
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 265px;
+    position: absolute;
+    width: 200%;
+    opacity: 0.05;
+    filter: drop-shadow(5px 5px 5px #0000008e);
+    transition: 1s;
+  }
+  .frise81 {
+    margin: -15px 0 0 0;
+  }
+  .frise82 {
+    margin: 245px 0 0 0;
+  }
 }
-
 
 // ----------RESPONSIVE----------
 
-@media screen and (min-width: 769px ) {
-	.numbers2{
-		position: relative;
-		left: 10px !important;
-	}
-	.sur2{
-		position: relative;
-		left: 20px !important;
-	}
+@media screen and (min-width: 769px) {
+  .numbers2 {
+    position: relative;
+    left: 10px !important;
+  }
+  .sur2 {
+    position: relative;
+    left: 20px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.laVRcest{
-		z-index: 5;
-		position: relative;
-		display: flex;
-		flex-wrap: nowrap;
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: fit-content;
-		.badge1{
-			margin-top: 15px;
-			width: 50vw;
-			height: 265px;
-		}
-		.badge2{
-			margin-top: 15px;
-			width: 50vw;
-			height: 265px;
-			.avisUtilisateurs2{
-				width: 100%;
-				font-size: 30px;
-				margin: 35% 20% 0;
-			}
-		}
-		.badge3{
-			width: 50vw;
-			height: 265px;
-		}
-		.frise7, .frise9, .frise11{
-			right: -1500px;
-		}
-		.frise8, .frise10, .frise12{
-			left: -1500px;
-		}
-		.frise7, .frise8, .frise9{
-			overflow: hidden;
-			z-index: 1;
-			margin-bottom: 265px;
-			position: absolute;
-			width:200%;
-			opacity: 0.05;
-			filter: drop-shadow(5px 5px 5px #0000008e);
-			transition: 1s;
-		}
-		.frise8{
-			margin: -15px 0 0 0;
-		}
-		.frise9{
-			margin: 245px 0 0 0;
-		}
-	}
+  .laVRcest {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    .badge1 {
+      margin-top: 15px;
+      width: 50vw;
+      height: 265px;
+    }
+    .badge2 {
+      margin-top: 15px;
+      width: 50vw;
+      height: 265px;
+      .avisUtilisateurs2 {
+        width: 100%;
+        font-size: 30px;
+        margin: 35% 20% 0;
+      }
+    }
+    .badge3 {
+      width: 50vw;
+      height: 265px;
+    }
+    .frise80,
+    .frise82,
+    .frise11 {
+      right: -1500px;
+    }
+    .frise81,
+    .frise10,
+    .frise12 {
+      left: -1500px;
+    }
+    .frise80,
+    .frise81,
+    .frise82 {
+      overflow: hidden;
+      z-index: 1;
+      margin-bottom: 265px;
+      position: absolute;
+      width: 200%;
+      opacity: 0.05;
+      filter: drop-shadow(5px 5px 5px #0000008e);
+      transition: 1s;
+    }
+    .frise81 {
+      margin: -15px 0 0 0;
+    }
+    .frise82 {
+      margin: 245px 0 0 0;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
-	.laVRcest{
-		z-index: 5;
-		position: relative;
-		display: flex;
-		flex-wrap: wrap !important;
-		align-items: center;
-		align-content: center;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: fit-content;
-		.badge1{
-			margin-top: 15px !important;
-			width: 60vw !important;
-			height: 200px !important;
-			.avisUtilisateurs1{
-				width: 100% !important;
-				font-size: 24px !important;
-				margin: 35% 20% 0 !important;
-			}
-			.numbers1{
-				font-size: 35px !important;
-			}
-			.sur1{
-				font-size: 35px !important;
-			}
-		}
-		.badge2{
-			margin-top: 15px !important;
-			width: 60vw !important;
-			height: 200px !important;
-			.avisUtilisateurs2{
-				width: 100% !important;
-				font-size: 24px !important;
-				margin: 28% 20% 0 !important;
-			}
-			.numbers2{
-				font-size: 35px !important;
-			}
-			.sur2{
-				font-size: 27px !important;
-				padding-top: 6px !important;
-			}
-		}
-		.badge3{
-			margin-top: 15px !important;
-			width: 60vw !important;
-			height: 200px !important;
-			.avisUtilisateurs3{
-				width: 100% !important;
-				font-size: 24px !important;
-				margin: 35% 20% 0 !important;
-			}
-			.numbers3{
-				font-size: 35px !important;
-			}
-			.sur3{
-				font-size: 35px !important;
-			}
-		}
-		.frise7, .frise9, .frise11{
-			right: -1500px;
-		}
-		.frise8, .frise10, .frise12{
-			left: -1500px;
-		}
-		.frise7, .frise8, .frise9{
-			overflow: hidden;
-			z-index: 1;
-			margin-bottom: 265px;
-			position: absolute;
-			width:200%;
-			opacity: 0.05;
-			filter: drop-shadow(5px 5px 5px #0000008e);
-			transition: 1s;
-		}
-		.frise8{
-			margin: -15px 0 0 0;
-		}
-		.frise9{
-			margin: 245px 0 0 0;
-		}
-	}
+  .laVRcest {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    .badge1 {
+      margin-top: 15px !important;
+      width: 60vw !important;
+      height: 200px !important;
+      .avisUtilisateurs1 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 35% 20% 0 !important;
+      }
+      .numbers1 {
+        font-size: 35px !important;
+      }
+      .sur1 {
+        font-size: 35px !important;
+      }
+    }
+    .badge2 {
+      margin-top: 15px !important;
+      width: 60vw !important;
+      height: 200px !important;
+      .avisUtilisateurs2 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 28% 20% 0 !important;
+      }
+      .numbers2 {
+        font-size: 35px !important;
+      }
+      .sur2 {
+        font-size: 27px !important;
+        padding-top: 6px !important;
+      }
+    }
+    .badge3 {
+      margin-top: 15px !important;
+      width: 60vw !important;
+      height: 200px !important;
+      .avisUtilisateurs3 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 35% 20% 0 !important;
+      }
+      .numbers3 {
+        font-size: 35px !important;
+      }
+      .sur3 {
+        font-size: 35px !important;
+      }
+    }
+    .frise80,
+    .frise82,
+    .frise11 {
+      right: -1500px;
+    }
+    .frise81,
+    .frise10,
+    .frise12 {
+      left: -1500px;
+    }
+    .frise80,
+    .frise81,
+    .frise82 {
+      overflow: hidden;
+      z-index: 1;
+      margin-bottom: 265px;
+      position: absolute;
+      width: 200%;
+      opacity: 0.05;
+      filter: drop-shadow(5px 5px 5px #0000008e);
+      transition: 1s;
+    }
+    .frise81 {
+      margin: -15px 0 0 0;
+    }
+    .frise82 {
+      margin: 245px 0 0 0;
+    }
+  }
 }
