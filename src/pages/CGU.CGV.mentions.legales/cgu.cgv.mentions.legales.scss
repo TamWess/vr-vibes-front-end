@@ -1,6 +1,10 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
+body{
+	overflow: hidden;
+}
+
 .container{
 	width: 100%;
 	text-align: center;
