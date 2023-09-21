@@ -1,6 +1,10 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
+body {
+  overflow-x: hidden;
+}
+
 .containerJeuxVR {
   display: flex;
   flex-wrap: wrap;
@@ -20,13 +24,13 @@
   .leftPartJeuxVR {
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 40%;
     height: 600px;
     .imageJeux1 {
       position: absolute;
       z-index: 8;
       margin: auto;
-      width: 350px;
+      width: 300px;
       height: auto;
       border-radius: 20px;
       filter: drop-shadow(5px 5px 10px #0000009a);
@@ -55,10 +59,10 @@
       position: absolute;
       z-index: 7;
       margin: auto;
-      width: 320px;
+      width: 270px;
       height: auto;
       border-radius: 20px;
-      padding-right: 160px;
+      margin-right: 160px;
       transform: rotate(355deg);
       filter: drop-shadow(5px 5px 10px #0000009a);
       opacity: 0;
@@ -67,10 +71,10 @@
       position: absolute;
       z-index: 6;
       margin: auto;
-      width: 280px;
+      width: 260px;
       height: auto;
       border-radius: 20px;
-      padding-right: 200px;
+      margin-right: 200px;
       transform: rotate(345deg);
       filter: drop-shadow(5px 5px 10px #0000009a);
       opacity: 0;
@@ -79,7 +83,7 @@
   .rightPartJeuxVR {
     display: flex;
     flex-wrap: wrap;
-    width: 45%;
+    width: 50%;
     height: 600px;
     background-color: rgba(255, 255, 255, 0.116);
     .titleRightJeuxVR {
@@ -96,24 +100,27 @@
       opacity: 0;
       transition: 1s;
     }
-    .boutonNosJeux {
-      z-index: 10;
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "Nunito Sans";
-      text-decoration: none;
-      color: white;
-      font-size: 30px;
-      width: 160px;
-      height: 61px;
-      background: #005f4e;
-      border-radius: 11px;
-      border: none;
-      opacity: 0;
-      transition: 1s;
+    .lienJeu {
+		text-decoration: none;
+      .boutonNosJeux {
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Nunito Sans";
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        width: 160px;
+        height: 61px;
+        background: #005f4e;
+        border-radius: 11px;
+        border: none;
+        opacity: 0;
+        transition: 1s;
+      }
     }
   }
 }
@@ -142,10 +149,10 @@
 }
 @media screen and (max-width: 576px) {
   .containerJeuxVR {
-	height: fit-content;
+    height: fit-content;
     .leftPartJeuxVR {
       width: 100% !important;
-	  height: 350px !important;
+      height: 350px !important;
       align-content: end !important;
       align-items: center;
       .imageJeux1 {
@@ -162,10 +169,10 @@
     }
     .rightPartJeuxVR {
       width: 90% !important;
-	  height: 445px !important;
-	  .titleRightJeuxVR {
-		font-size: 46px;
-	  }
+      height: 445px !important;
+      .titleRightJeuxVR {
+        font-size: 46px;
+      }
     }
   }
 }

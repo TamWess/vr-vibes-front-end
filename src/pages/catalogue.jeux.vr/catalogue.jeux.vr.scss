@@ -1,12 +1,16 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
+body {
+  overflow-x: hidden;
+}
+
 .containerCatalogue {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 350px;
-  margin-bottom: 700px;
+  height: fit-content;
+  justify-content: space-around;
   .titleCatalogue {
     z-index: 9;
     padding-top: 150px;
@@ -22,47 +26,101 @@
     background-color: rgb(211, 250, 238);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   }
-  .leftPartCatalogue {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 25%;
-    height: 350px;
-    background-color: aquamarine;
-    .imageJeuCatalogue {
-      margin: auto;
-      width: 200px;
-      height: auto;
-      border-radius: 20px;
-    }
-  }
-  .rightPartCatalogue {
+  .jeuCatalogue {
+    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    .leftPartJeuCatalogue {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      width: 25%;
+      height: fit-content;
+      .imageJeuCatalogue {
+        margin: auto;
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+      }
+    }
+    .rightPartCatalogue {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      text-align: start;
+      width: 75%;
+      //   height: 120px;
+      .titreJeuVR {
+        align-items: center;
+        width: 90%;
+        color: $primary;
+        font-family: "Archivo Black";
+        font-size: 50px;
+      }
+      .descriptionJeu {
+        display: flex;
+        text-align: start;
+        width: 50%;
+        color: $primary;
+        font-size: 20px;
+        font-family: "Nunito Sans";
+      }
+      .videoTrailer {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        padding-right: 2%;
+        height: auto;
+      }
+      .videoJeu {
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+// -------Responsive------
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+  .containerCatalogue {
     justify-content: space-around;
-    width: 75%;
-    height: 350px;
-    background-color: cyan;
-    .descriptionJeuVR {
-      width: 90%;
-	  color: $primary;
-	  font-size: 20px;
-      background-color: lightskyblue;
+    .jeuCatalogue {
+      .leftPartCatalogue {
+        width: 100% !important;
+        .imageJeuCatalogue {
+          width: 200px;
+        }
+      }
+      .rightPartCatalogue {
+        width: 60% !important;
+        .descriptionJeu {
+          margin-top: 5vw;
+          width: 90% !important;
+        }
+        .videoTrailer {
+          margin-top: 5vw;
+          width: 70% !important;
+        }
+      }
     }
-    .descriptionTrailer {
-      display: flex;
-      align-items: center;
-      width: 40%;
-	  color: $primary;
-	  font-size: 20px;
-      background-color: lightcyan;
-    }
-    .videoTrailer {
-      display: flex;
-      align-items: center;
-      width: 40%;
-      background-color: lightcyan;
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerCatalogue {
+    .jeuCatalogue {
+      .titreJeuVR {
+        font-size: 32px !important;
+      }
+      .imageJeuCatalogue {
+        width: 150px !important;
+      }
     }
   }
 }

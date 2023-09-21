@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./jeux.vr.scss";
+import { Link } from "react-router-dom";
 
 function JeuxVR() {
 
@@ -60,14 +61,15 @@ function JeuxVR() {
 	return (
 		<div className="containerJeuxVR">
 			<div className="leftPartJeuxVR">
-				<img className="imageJeux1" src="/img/vr-vibes-vader-among-us-vr.jpg" alt="" />
+				<img className="imageJeux1" src="/img/vr-vibes-among-us-vr.jpg" alt="" />
 				<img className="imageJeux2" src="/img/vr-vibes-acron-attack-on-squirrels.jpg" alt="" />
 				<img className="imageJeux3" src="/img/vr-vibes-vader-immortal-episode-3.jpg" alt="" />
 			</div>
 			<div className="rightPartJeuxVR">
 				<h1 className="titleRightJeuxVR">Découvrez la séléction <br />VR-Vibes <br /> de jeux pour vos événements</h1>
 				<p className="textRightJeuxVR">Des jeux VR multijoueurs incroyables pour s'amuser en équipe! De l'escape game aux jeux collaboratifs, découvrez nos recommandations d'expériences VR pour un événement réussi!</p>
-				<button className="boutonNosJeux">Nos Jeux</button>
+				<Link className="lienJeu" to={"/vrvibes-catalogue-jeux-vr"}><button className="boutonNosJeux">Nos Jeux</button>
+				</Link>
 			</div>
 		</div>
 	)
