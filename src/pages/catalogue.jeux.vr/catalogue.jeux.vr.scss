@@ -1,0 +1,68 @@
+@import "../../../src/utils/style/libs/mixins.scss";
+@import "../../../src/utils/style/libs/variable.scss";
+
+.containerCatalogue {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 700px;
+  .titleCatalogue {
+    z-index: 9;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: "Archivo Black";
+    font-size: 30px;
+    color: $primary;
+    font-size: 35px;
+    line-height: 40px;
+    background-color: rgb(211, 250, 238);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  }
+  .leftPartCatalogue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 25%;
+    height: 350px;
+    background-color: aquamarine;
+    .imageJeuCatalogue {
+      margin: auto;
+      width: 200px;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+  .rightPartCatalogue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    height: 350px;
+    background-color: cyan;
+    .descriptionJeuVR {
+      width: 90%;
+	  color: $primary;
+	  font-size: 20px;
+      background-color: lightskyblue;
+    }
+    .descriptionTrailer {
+      display: flex;
+      align-items: center;
+      width: 40%;
+	  color: $primary;
+	  font-size: 20px;
+      background-color: lightcyan;
+    }
+    .videoTrailer {
+      display: flex;
+      align-items: center;
+      width: 40%;
+      background-color: lightcyan;
+    }
+  }
+}

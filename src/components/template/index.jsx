@@ -98,7 +98,7 @@ function Template() {
 						<Link className="footerLinks" to="/accueil_entreprise"><p>VR-Vibes pour les entreprises</p>
 						</Link>
 						<Link className="footerLinks" to="/accueil_prive"><p>VR-Vibes pour les événements privés</p></Link>
-						<Link className="footerLinks" to="/"><p>Notre catalogue d'expériences VR</p></Link>
+						<Link className="footerLinks" to="/vrvibes-catalogue-jeux-vr"><p>Notre catalogue d'expériences VR</p></Link>
 						{/* <p>Actus</p> */}
 					</div>
 

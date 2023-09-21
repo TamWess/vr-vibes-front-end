@@ -45,7 +45,6 @@ function ProductionsVR() {
 					</div>
 					<div className="video">
 					<iframe className="videoEole"  src="https://www.youtube.com/embed/kQX8qQ1joJA?si=SEyapGY9PA13MvsP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-						
 					</div>
 				</div>
 				<div className="sanofiProjet">

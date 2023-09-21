@@ -66,7 +66,7 @@ function JeuxVR() {
 			</div>
 			<div className="rightPartJeuxVR">
 				<h1 className="titleRightJeuxVR">Découvrez la séléction <br />VR-Vibes <br /> de jeux pour vos événements</h1>
-				<p className="textRightJeuxVR">Des jeux VR multijoueurs incroyables pour s'amuser en équipe! De l'escape game aux jeux en collaboratifs, découvrez nos recommandations d'expériences VR pour un événement réussi!</p>
+				<p className="textRightJeuxVR">Des jeux VR multijoueurs incroyables pour s'amuser en équipe! De l'escape game aux jeux collaboratifs, découvrez nos recommandations d'expériences VR pour un événement réussi!</p>
 				<button className="boutonNosJeux">Nos Jeux</button>
 			</div>
 		</div>

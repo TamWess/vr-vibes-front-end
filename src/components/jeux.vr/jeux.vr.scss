@@ -31,10 +31,9 @@
       border-radius: 20px;
       filter: drop-shadow(5px 5px 10px #0000009a);
       animation: vaisseau2 ease-in-out infinite 8s;
-	  animation-delay: 4s;
+      animation-delay: 5s;
       animation-iteration-count: infinite;
       opacity: 0;
-      
     }
     @keyframes vaisseau {
       0% {
@@ -63,7 +62,6 @@
       transform: rotate(355deg);
       filter: drop-shadow(5px 5px 10px #0000009a);
       opacity: 0;
-      
     }
     .imageJeux3 {
       position: absolute;
@@ -76,7 +74,6 @@
       transform: rotate(345deg);
       filter: drop-shadow(5px 5px 10px #0000009a);
       opacity: 0;
-      
     }
   }
   .rightPartJeuxVR {
@@ -96,7 +93,7 @@
       font-family: "Nunito Sans";
       font-size: 20px;
       color: $primary;
-	  opacity: 0;
+      opacity: 0;
       transition: 1s;
     }
     .boutonNosJeux {
@@ -115,8 +112,60 @@
       background: #005f4e;
       border-radius: 11px;
       border: none;
-	  opacity: 0;
+      opacity: 0;
       transition: 1s;
+    }
+  }
+}
+
+// -------Responsive------
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (max-width: 768px) {
+  .leftPartJeuxVR {
+    align-content: end !important;
+    align-items: center;
+    .imageJeux1 {
+      width: 250px !important;
+    }
+    .imageJeux2 {
+      width: 220px !important;
+      padding-right: 100px !important;
+    }
+    .imageJeux3 {
+      width: 200px !important;
+      padding-right: 100px !important;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .containerJeuxVR {
+	height: fit-content;
+    .leftPartJeuxVR {
+      width: 100% !important;
+	  height: 350px !important;
+      align-content: end !important;
+      align-items: center;
+      .imageJeux1 {
+        width: 200px !important;
+      }
+      .imageJeux2 {
+        width: 180px !important;
+        padding-right: 100px !important;
+      }
+      .imageJeux3 {
+        width: 150px !important;
+        padding-right: 100px !important;
+      }
+    }
+    .rightPartJeuxVR {
+      width: 90% !important;
+	  height: 445px !important;
+	  .titleRightJeuxVR {
+		font-size: 46px;
+	  }
     }
   }
 }

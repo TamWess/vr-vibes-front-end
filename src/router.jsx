@@ -11,6 +11,7 @@ import ConfirmationEnvoiFormulaire from "./pages/confirmation.envoi.formulaire/c
 import CGV from "./pages/CGU.CGV.mentions.legales/cgu.cgv.mentions.legales.jsx";
 import Contact from "./pages/contact/contact.jsx";
 import ProductionsVR from "./pages/productions.vr/productions.vr.jsx";
+import CatalogueJeuxVR from "./pages/catalogue.jeux.vr/catalogue.jeux.vr.jsx";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
 	  {
 		path: "productions-VR",
 		element: <ProductionsVR />
+	  },
+	  {
+		path: "vrvibes-catalogue-jeux-vr",
+		element: <CatalogueJeuxVR />
 	  },
     ],
   },
