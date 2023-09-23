@@ -9,7 +9,7 @@ const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 function FormulaireEntreprise() {
 
 	let navigate = useNavigate()
-	
+
 	const [type, setType] = useState("")
 	const [nombrePersonnes, setNombrePersonnes] = useState("")
 	const [nom, setNom] = useState("")
@@ -21,6 +21,7 @@ function FormulaireEntreprise() {
 	const [mail, setMail] = useState("")
 	const [tel, setTel] = useState("")
 	const [precisions, setPrecisions] = useState("")
+	const [isSaving, setSaving] = useState(false)
 
 	async function handleSubmit(event) {
 		event.preventDefault()
@@ -57,6 +58,8 @@ function FormulaireEntreprise() {
 		catch (error) {
 			console.error(error);
 		}
+		// finally {
+		// 	setSaving(false)
 	}
 
 	// --------------REGEX---------------
@@ -359,6 +362,10 @@ function FormulaireEntreprise() {
 					{/* envoyer */}
 
 					<button className="boutonEnvoyer">Envoyer</button>
+
+					{/* <button className="boutonEnvoyer" disabled={isSaving}><span style={{ marginInline: '1em' }}>Envoyer</span>
+					{isSaving && <AiOutlineLoading3Quarters className={baseStyle.spin} />}</ button> */}
+
 					<div className="erreurEnvoi">
 						Vous n'avez pas rempli tous les champs requis.
 						<br />

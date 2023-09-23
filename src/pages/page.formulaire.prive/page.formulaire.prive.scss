@@ -77,7 +77,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    width: 70%;
+    width: 65%;
     height: fit-content;
     margin-bottom: 10vh;
     background-color: #ebfaff;
@@ -264,6 +264,7 @@ body{
       border: none;
     }
     .erreurEnvoi {
+	  opacity:0;
       margin-block: 30px;
       color: #b10404da;
       transition: 0.5;
@@ -273,13 +274,13 @@ body{
     display: flex;
     flex-wrap: wrap;
     position: relative;
-
     width: 30%;
     height: 100px;
 
     .phone,
     .mail,
     .localisation {
+	  z-index: 5;
       margin-left: 3%;
       margin-top: 15px;
       display: flex;
@@ -293,7 +294,6 @@ body{
       .phoneImage,
       .mailImage,
       .localisationImage {
-        z-index: 10;
         width: 10%;
       }
       .space {

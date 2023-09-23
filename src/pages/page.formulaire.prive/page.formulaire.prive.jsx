@@ -22,9 +22,7 @@ function FormulairePrive() {
 	const [tel, setTel] = useState("")
 	const [precisions, setPrecisions] = useState("")
 	const [errorMessage, setErrorMessage] = useState("")
-
 	const [isSaving, setSaving] = useState(false)
-	// TODO: Utiliser ça dans handleSubmit et dans la template pour signaler à l’utilisateur qu’il faut attendre
 
 	async function handleSubmit(event) {
 		event.preventDefault()
@@ -373,13 +371,12 @@ function FormulairePrive() {
 					{/* envoyer */}
 
 					<button className="boutonEnvoyer">Envoyer</button>
-					{
-						errorMessage && (
-							<div className="erreurEnvoi">
-								{errorMessage}
-							</div>
-						)
-					}
+					<div className="erreurEnvoi">
+						Vous n'avez pas rempli tous les champs requis.
+						<br />
+						<br />
+						Seuls les champs comportant le symbole * sont obligatoires.
+					</div>
 				</form>
 
 			</div>
