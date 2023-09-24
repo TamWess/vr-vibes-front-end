@@ -8,7 +8,7 @@ function JeuxVR() {
 
 		const titleJeuxVR = document.querySelector(".titleRightJeuxVR")
 		const textJeuxVR = document.querySelector(".textRightJeuxVR")
-		const boutonNosJeux = document.querySelector(".boutonNosJeux")
+		const boutonNosJeux = document.querySelector(".lienJeu")
 		const imageJeux3 = document.querySelector(".imageJeux3")
 		const imageJeux2 = document.querySelector(".imageJeux2")
 		const imageJeux1 = document.querySelector(".imageJeux1")
@@ -68,7 +68,7 @@ function JeuxVR() {
 			<div className="rightPartJeuxVR">
 				<h1 className="titleRightJeuxVR">Découvrez la séléction <br />VR-Vibes <br /> de jeux pour vos événements</h1>
 				<p className="textRightJeuxVR">Des jeux VR multijoueurs incroyables pour s'amuser en équipe! De l'escape game aux jeux collaboratifs, découvrez nos recommandations d'expériences VR pour un événement réussi!</p>
-				<Link className="lienJeu" to={"/vrvibes-catalogue-jeux-vr"}><button className="boutonNosJeux">Nos Jeux</button>
+				<Link className="lienJeu" to={"/vrvibes-catalogue-jeux-vr"}>Nos Jeux
 				</Link>
 			</div>
 		</div>

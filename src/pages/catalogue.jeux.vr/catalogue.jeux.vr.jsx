@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../utils/style/libs/base.scss";
 import "./catalogue.jeux.vr.scss";
+import axios from "axios";
+
+import { URL } from "../../utils/URLS/urls.jeux.js"
 
 function CatalogueJeuxVR() {
+
+	const [catalogueJeuxVR, setCatalogueJeuxVR]= useState ([]);
+
+	useState (() => {
+
+		const fetchCatalogueJeuxVR = async () => {
+			try {
+			  const { data } = await axios.get(URL.urlCatalogueJeuxVR);
+			  setCatalogueJeuxVR(data);
+			} catch (error) {
+			  console.log(error.message);
+			}
+			console.log(catalogueJeuxVR);
+		  };
+		  fetchCatalogueJeuxVR();
+
+	}, [])
+
+
 	return (
 		<div className="containerCatalogue">
 			<h1 className="titleCatalogue">Notre sélection de jeux VR</h1>

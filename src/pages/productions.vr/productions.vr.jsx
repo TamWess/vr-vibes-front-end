@@ -6,6 +6,7 @@ import Reassurance from "../../components/reassurance/reassurance.brands/reassur
 function ProductionsVR() {
 
 	useEffect(() => {
+
 		
 		// ? Fonction ne fonctionne pas
 		// window.addEventListener('scroll', function () {

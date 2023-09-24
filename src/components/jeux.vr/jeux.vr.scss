@@ -102,8 +102,7 @@ body {
     }
     .lienJeu {
 		text-decoration: none;
-      .boutonNosJeux {
-        z-index: 10;
+		z-index: 10;
         position: relative;
         width: 100%;
         display: flex;
@@ -120,7 +119,6 @@ body {
         border: none;
         opacity: 0;
         transition: 1s;
-      }
     }
   }
 }
