@@ -125,15 +125,7 @@
 
 // ---------RESPONSIVE---------
 
-@media screen and (max-width: 576px) {
-	.slick-track{
-		height: 260px !important;
-	}
-	.carouselHomeImages{
-		margin: 40px 0 40px 0 !important;
-		height: 150px !important;
-	}
-}
+
 
 @media screen and (max-width: 768px) {
 	.slick-track{
@@ -141,6 +133,16 @@
 	}
 	.carouselHomeImages{
 		height: 250px !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.slick-track{
+		height: 260px !important;
+	}
+	.carouselHomeImages{
+		margin: 40px 0 40px 0 !important;
+		height: 140px !important;
 	}
 }
 

@@ -24,14 +24,13 @@
     position: absolute;
     left: 57%;
     margin-top: -220px;
-    z-index: 20;
+    z-index: 6;
     animation: vaisseau ease-in-out infinite 50s;
-    transform-origin: 312px, 312px;
+    transform-origin: center;
   }
   .vaisseau2 {
     position: absolute;
     left: 50%;
-    margin-top: 60px;
     z-index: 4;
     animation: vaisseau2 ease-in-out infinite 50s;
     transform-origin: 312px, 312px; /* Centre de l'élément */
@@ -43,7 +42,7 @@
     z-index: 4;
     animation-delay: 2s;
     animation: vaisseau2 ease-in-out infinite 50s;
-    transform-origin: 312px, 312px; /* Centre de l'élément */
+    transform-origin: top left; /* Centre de l'élément */
   }
   .planet {
     position: absolute;

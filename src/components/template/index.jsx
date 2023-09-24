@@ -89,8 +89,10 @@ function Template() {
 				<img className="friseGreenPastel" src="/img/frise-green-pastel.png" alt="" />
 				<img className="friseFooter" src="/img/frise-footer.png" alt="" />
 				<div className="footer">
-					<div className="footerDiv01">
+					<div className="sectionScrollTop">
 						<img className="scrollTop" src="/icns/scroll-to-top.svg" onClick={(() => window.scrollTo(0, 0))} />
+					</div>
+					<div className="footerDiv01">
 						<img className="smileysFooter" src="/icns/vr-vibes-logo-smileys.svg" alt="logo vr-vibes symbole" />
 					</div>
 					<div className="footerDiv02">

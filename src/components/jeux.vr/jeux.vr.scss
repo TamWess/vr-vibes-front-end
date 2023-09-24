@@ -39,22 +39,6 @@ body {
       animation-iteration-count: infinite;
       opacity: 0;
     }
-    @keyframes vaisseau {
-      0% {
-        rotate: 0.5deg;
-      }
-
-      33% {
-        rotate: -0.5deg;
-      }
-
-      67% {
-        rotate: 0.5deg;
-      }
-      100% {
-        rotate: -0.5deg;
-      }
-    }
     .imageJeux2 {
       position: absolute;
       z-index: 7;
