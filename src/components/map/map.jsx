@@ -8,7 +8,7 @@ import "./map.scss"
 function GoogleMapSection() {
 
 	const { isLoaded } = useLoadScript({
-		googleMapsAPIKey: process.env.GoogleMapsAPIKey
+		googleMapsAPIKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 	});
 	if (!isLoaded) return <div>Loading...</div>;
 
