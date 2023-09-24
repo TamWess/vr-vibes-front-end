@@ -61,7 +61,7 @@ function JeuxVR() {
 	return (
 		<div className="containerJeuxVR">
 			<div className="leftPartJeuxVR">
-				<img className="imageJeux1" src="/img/vr-vibes-among-us-vr.jpg" alt="" />
+				<img className="imageJeux1" src="/img/vrvibes-among-us-vr.jpg" alt="" />
 				<img className="imageJeux2" src="/img/vr-vibes-acron-attack-on-squirrels.jpg" alt="" />
 				<img className="imageJeux3" src="/img/vr-vibes-vader-immortal-episode-3.jpg" alt="" />
 			</div>

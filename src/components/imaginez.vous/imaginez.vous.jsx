@@ -1,4 +1,4 @@
-import React, { Component, ReactFragment, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./imaginez.vous.scss";
 import rallax from 'rallax.js'
 

@@ -26,6 +26,15 @@ body {
     background-color: rgb(211, 250, 238);
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   }
+  .introTextProductionVR{
+	font-weight: bold;
+	color: black;
+	width: 90%;
+	font-size: 20px;
+	text-align: start;
+	font-family: "Nunito Sans";
+	margin: 20px 0 100px 2%;
+}
   .jeuCatalogue {
     margin-bottom: 100px;
     display: flex;

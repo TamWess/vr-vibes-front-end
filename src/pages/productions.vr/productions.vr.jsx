@@ -7,7 +7,7 @@ function ProductionsVR() {
 
 	useEffect(() => {
 
-		
+
 		// ? Fonction ne fonctionne pas
 		// window.addEventListener('scroll', function () {
 		// 	const eoleProjetJS = document.querySelector(".eoleProjet");
@@ -25,11 +25,14 @@ function ProductionsVR() {
 				<h1 className="titleProductionsVR">
 					Productions VR
 				</h1>
+				<div className="containerIdeeText">
 				<h2 className="uneIdeeUnBesoin">
-					Une idée? Un besoin? Nous créons votre application VR!
-					<p className="introTextProductionVR">VR Vibes, pionnier de l'innovation en réalité virtuelle, est ravi d'introduire EOS VR, notre cellule de production d'application VR de pointe, dédiée à l'élaboration de solutions sur mesure pour les entreprises. Plongez dans l'avenir de la réalité virtuelle avec VR Vibes et transformez votre vision en une expérience immersive incomparable.</p>
+					Une idée? Un besoin? Nous créons votre application VR! 
 				</h2>
-				<Reassurance/>
+				<p className="introTextProductionVR">VR Vibes, pionnier de l'innovation en réalité virtuelle, vous présente EOS VR, notre cellule de production d'application VR de pointe. Plongez dans l'avenir de la réalité virtuelle avec VR Vibes et transformez votre vision en une expérience immersive incomparable.</p>
+				</div>
+				
+
 				<div className="eoleProjet">
 					<div className="leftPart">
 						<img className="logoSNCF" src="/icns/sncf-reseau-logo.png"></img>
@@ -45,7 +48,7 @@ function ProductionsVR() {
 
 					</div>
 					<div className="video">
-					<iframe className="videoEole"  src="https://www.youtube.com/embed/kQX8qQ1joJA?si=SEyapGY9PA13MvsP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+						<iframe className="videoEole" src="https://www.youtube.com/embed/kQX8qQ1joJA?si=SEyapGY9PA13MvsP" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
 				</div>
 				<div className="sanofiProjet">
@@ -53,7 +56,7 @@ function ProductionsVR() {
 						<img className="logoSanofi" src="/icns/sanofi-logo.png"></img>
 						<img className="logoPonticelli" src="/icns/ponticelli-logo.png"></img>
 						<h1 className="titleSanofi">
-							Scénario de sensibilisation 
+							Scénario de sensibilisation
 						</h1>
 						<p className="textSanofi">
 							PONTICELLI FRERES prenant à coeur la sécurité de ses agents a fait appel au services de EOS VR, notre cellule de productions VR, pour créer un programme de sensibilisation aux risques quant à la maintenance des pompes industrielles chez SANOFI. <br />
@@ -61,7 +64,7 @@ function ProductionsVR() {
 						</p>
 					</div>
 					<div className="video">
-					<iframe className="videoSanofi"  src="https://www.youtube.com/embed/e38MpRtMTsc?si=8eASIp24RTBNh9Xo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+						<iframe className="videoSanofi" src="https://www.youtube.com/embed/e38MpRtMTsc?si=8eASIp24RTBNh9Xo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
 				</div>
 				<div className="partnersProjet">
@@ -77,7 +80,7 @@ function ProductionsVR() {
 						</p>
 					</div>
 					<div className="video">
-					<iframe className="videoPartners"  src="https://www.youtube.com/embed/d75_dHVMbfg?si=II7sANdri3T459JX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+						<iframe className="videoPartners" src="https://www.youtube.com/embed/d75_dHVMbfg?si=II7sANdri3T459JX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
 				</div>
 				<div className="retailProjet">
@@ -93,7 +96,7 @@ function ProductionsVR() {
 
 					</div>
 					<div className="video">
-					<iframe className="videoRetail"  src="https://www.youtube.com/embed/zT5iA9YOUwY?si=ZBYTUuLOw_F3sva4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+						<iframe className="videoRetail" src="https://www.youtube.com/embed/zT5iA9YOUwY?si=ZBYTUuLOw_F3sva4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
 				</div>
 			</div>
