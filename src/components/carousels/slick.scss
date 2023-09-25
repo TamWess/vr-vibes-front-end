@@ -119,19 +119,17 @@
     display: none;
 }
 .carouselHomeImages{
-	width: 1872px;
-	height: 475px;
+	margin: 50px 0 50px 0 !important;
 }
 
 // ---------RESPONSIVE---------
-
-
 
 @media screen and (max-width: 768px) {
 	.slick-track{
 		margin-top: 50px;
 	}
 	.carouselHomeImages{
+		
 		height: 250px !important;
 	}
 }

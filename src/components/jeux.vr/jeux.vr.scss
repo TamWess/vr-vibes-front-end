@@ -12,7 +12,7 @@ body {
   justify-content: space-around;
   position: relative;
   width: 100%;
-  height: 600px;
+  height: fit-content;
   padding: 30px 0 30px 0;
   background: linear-gradient(
     90deg,
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     width: 40%;
-    height: 600px;
+    height: 530px;
     .imageJeux1 {
       position: absolute;
       z-index: 8;
@@ -68,7 +68,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    height: 600px;
+    height: 530px;
     background-color: rgba(255, 255, 255, 0.116);
     .titleRightJeuxVR {
       font-family: "Archivo Black";
@@ -85,24 +85,23 @@ body {
       transition: 1s;
     }
     .lienJeu {
-		text-decoration: none;
-		z-index: 10;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Nunito Sans";
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        width: 160px;
-        height: 61px;
-        background: #005f4e;
-        border-radius: 11px;
-        border: none;
-        opacity: 0;
-        transition: 1s;
+      text-decoration: none;
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Nunito Sans";
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      width: 160px;
+      height: 61px;
+      background: #005f4e;
+      border-radius: 11px;
+      border: none;
+      opacity: 0;
+      transition: 1s;
     }
   }
 }
@@ -113,19 +112,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .leftPartJeuxVR {
-    align-content: end !important;
-    align-items: center;
-    .imageJeux1 {
-      width: 250px !important;
-    }
-    .imageJeux2 {
-      width: 220px !important;
-      padding-right: 100px !important;
-    }
-    .imageJeux3 {
-      width: 200px !important;
-      padding-right: 100px !important;
+  .containerJeuxVR {
+    height: 500px px !important
+	;
+    .leftPartJeuxVR {
+      align-content: end !important;
+      align-items: center;
+      .imageJeux1 {
+        width: 250px !important;
+      }
+      .imageJeux2 {
+        width: 220px !important;
+        padding-right: 100px !important;
+      }
+      .imageJeux3 {
+        width: 200px !important;
+        padding-right: 100px !important;
+      }
     }
   }
 }
@@ -151,9 +154,15 @@ body {
     }
     .rightPartJeuxVR {
       width: 90% !important;
-      height: 445px !important;
+	  height: 500px !important;
       .titleRightJeuxVR {
         font-size: 46px;
+      }
+      .textRightJeuxVR {
+        margin-top: 20px;
+      }
+      .lienJeu {
+        margin-top: 20px;
       }
     }
   }

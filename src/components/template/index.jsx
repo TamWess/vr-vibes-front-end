@@ -63,18 +63,20 @@ function Template() {
 							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris">
 						</img>
 					</Link>
-					<Link to="accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
-					<Link to="accueil_prive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
+					<Link to="/accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
+					<Link to="/accueil_prive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
 					<Link to="/productions-VR" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
 					<Link to="/contact" className="contactButton">Contact</Link>
 					<img src="/icns/burger-menu-white.svg" className="burgerMenu" />
 					<div className="rollMenu">
 						<ul className="listRollMenu">
 							<img className="crossClose" src="/icns/close-button-white.svg" />
-							<Link className="linksRollMenu" to="accueil_entreprise"><li> Animation VR pour Entreprise </li></Link>
-							<Link className="linksRollMenu" to="accueil_prive"><li> Animation VR pour Événements Privés </li></Link>
-							<Link className="linksRollMenu" to=""><li> Productions VR </li>
+							<Link className="linksRollMenu" to="/"><li> Accueil </li></Link>
+							<Link className="linksRollMenu" to="/accueil_entreprise"><li> Animation VR pour Entreprise </li></Link>
+							<Link className="linksRollMenu" to="/accueil_prive"><li> Animation VR pour Événements Privés </li></Link>
+							<Link className="linksRollMenu" to="/productions-VR"><li> Productions VR </li>
 							</Link>
+							<Link className="linksRollMenu" to="/vrvibes-catalogue-jeux-vr"><li> Sélection Jeux VR </li></Link>
 							<Link className="linksRollMenu" to="/contact"><li> Contact </li></Link>
 						</ul>
 					</div>
@@ -93,14 +95,19 @@ function Template() {
 						<img className="scrollTop" src="/icns/scroll-to-top.svg" onClick={(() => window.scrollTo(0, 0))} />
 					</div>
 					<div className="footerDiv01">
-						<img className="smileysFooter" src="/icns/vr-vibes-logo-smileys.svg" alt="logo vr-vibes symbole" />
+						{/* <p>Plan du site</p> */}
+						<Link className="footerLinks" to="/"><p>Accueil</p>
+						</Link>
+						<Link className="footerLinks" to="/accueil_entreprise"><p>VR-Vibes pour les événements d'entreprises</p>
+						</Link>
+						<Link className="footerLinks" to="/accueil_prive"><p>VR-Vibes pour les événements privés</p></Link>
 					</div>
 					<div className="footerDiv02">
 						{/* <p>Plan du site</p> */}
-						<Link className="footerLinks" to="/accueil_entreprise"><p>VR-Vibes pour les entreprises</p>
-						</Link>
-						<Link className="footerLinks" to="/accueil_prive"><p>VR-Vibes pour les événements privés</p></Link>
-						<Link className="footerLinks" to="/vrvibes-catalogue-jeux-vr"><p>Notre catalogue d'expériences VR</p></Link>
+						
+						<Link className="footerLinks" to="/vrvibes-catalogue-jeux-vr"><p>Sélection Jeux VR</p></Link>
+						<Link className="footerLinks" to="/vrvibes-catalogue-jeux-vr"><p>Productions VR</p></Link>
+						<Link className="footerLinks" to="/vrvibes-catalogue-jeux-vr"><p>Actus</p></Link>
 						{/* <p>Actus</p> */}
 					</div>
 

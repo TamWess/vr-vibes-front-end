@@ -64,13 +64,13 @@ body{
 	  .reserverContact{
 		  padding-left: 3%;
 		  background-color: #fff7ff;
-		  clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
+		  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
 		  font-family: "Nunito Sans";
 		  font-size: 23px;
 		  .lienFormulaireEntreprise{
 			font-size: 19px;
 			font-weight: bold;
-			margin-top: 150px;
+			margin-top: 100px;
 			color:black;
 			.lienEntreprise{
 				text-decoration: none;
@@ -81,13 +81,19 @@ body{
 			font-size: 19px;
 			font-weight: bold;
 			margin-top: 20px;
-			margin-bottom: 100px ;
+			margin-bottom: 70px ;
 			color:black;
 			.lienPrive{
 				text-decoration: none;
 				color:#006F5C;
 			}
 		  }
-		}
-	  
+		} 
+}
+
+@media screen and (max-width: 576px){
+
+.containerCoordonnees{
+	padding-bottom: 160px !important;
+}
 }
