@@ -87,9 +87,9 @@ function Template() {
 				<Outlet />
 			</section>
 			<footer>
-				<img className="friseGreenPastel" src="/img/frise-pastel.png" alt="" />
-				<img className="friseGreenPastel" src="/img/frise-green-pastel.png" alt="" />
-				<img className="friseFooter" src="/img/frise-footer.png" alt="" />
+				<img className="friseGreenPastel" src="/img/vrvibes-frise-pastel.png" alt="" />
+				<img className="friseGreenPastel" src="/img/vrvibes-frise-green-pastel.png" alt="" />
+				<img className="friseFooter" src="/img/vrvibes-frise-footer.png" alt="" />
 				<div className="footer">
 					<div className="sectionScrollTop">
 						<img className="scrollTop" src="/icns/scroll-to-top.svg" onClick={(() => window.scrollTo(0, 0))} />

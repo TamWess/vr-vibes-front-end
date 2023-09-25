@@ -69,12 +69,12 @@ function AccueilEntreprise() {
 			<div className="imageVREntrepriseAE2 animate__animated animate__backInDown" />
 			<div className="imageVREntrepriseAE3 animate__animated animate__backInRight" />
 			<div className="accueilImageAE"></div>
-			<img className="frise30" src="/img/frise-double-green-pastel.png" />
-			<img className="frise31" src="/img/frise-double-green-pastel.png" />
-			<img className="frise32" src="/img/frise-double-green-pastel.png" />
-			<img className="frise33" src="/img/frise-double-green-pastel.png" />
-			<img className="frise34" src="/img/frise-double-green-pastel.png" />
-			<img className="frise35" src="/img/frise-double-green-pastel.png" />
+			<img className="frise30" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise31" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise32" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise33" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise34" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise35" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	)
 }

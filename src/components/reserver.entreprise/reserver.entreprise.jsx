@@ -62,17 +62,17 @@ function ReserverEntreprise() {
 				<h1 className="subtitleEntreprise">
 					Team Building, Afterwork, Séminaire ...
 				</h1>
-				<img className="entrepriseChoice" src="/img/entreprise-choice.png" alt="vr-vibes réserver votre événement privé en réalité virtuelle baby shower - anniversaire - mariage" />
+				<img className="entrepriseChoice" src="/img/vrvibes-entreprise-choice.png" alt="vr-vibes réserver votre événement privé en réalité virtuelle baby shower - anniversaire - mariage" />
 				<Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
 				</Link>
 			</div>
-			<img className="frise15" src="/img/frise-double-green-pastel.png" alt="" />
-			<img className="frise16" src="/img/frise-double-green-pastel.png" />
-			<img className="frise17" src="/img/frise-double-green-pastel.png" />
-			<img className="frise18" src="/img/frise-double-green-pastel.png" />
-			<img className="frise19" src="/img/frise-double-green-pastel.png" />
-			<img className="frise20" src="/img/frise-double-green-pastel.png" />
+			<img className="frise15" src="/img/vrvibes-frise-double-green-pastel.png" alt="" />
+			<img className="frise16" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise17" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise18" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise19" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise20" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	);
 }

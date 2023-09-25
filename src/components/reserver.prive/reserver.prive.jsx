@@ -64,17 +64,17 @@ function ReserverPrive() {
 				<h1 className="subtitleFamilleAF">
 					Baby Shower, Anniversaire, Mariage ...
 				</h1>
-				<img className="familleChoiceAF" src="/img/family-choice.png" />
+				<img className="familleChoiceAF" src="/img/vrvibes-family-choice.png" />
 				<Link className="reserverFamilleAF" to="/formulaire_prive">
 					Réserver
 				</Link>
 			</div>
-			<img className="frise40" src="/img/frise-double-green-pastel.png" alt="okay" />
-			<img className="frise41" src="/img/frise-double-green-pastel.png" />
-			<img className="frise42" src="/img/frise-double-green-pastel.png" />
-			<img className="frise43" src="/img/frise-double-green-pastel.png" />
-			<img className="frise44" src="/img/frise-double-green-pastel.png" />
-			<img className="frise45" src="/img/frise-double-green-pastel.png" />
+			<img className="frise40" src="/img/vrvibes-frise-double-green-pastel.png" alt="okay" />
+			<img className="frise41" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise42" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise43" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise44" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise45" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	);
 }

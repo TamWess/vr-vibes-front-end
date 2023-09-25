@@ -43,7 +43,7 @@ function AvisUtilisateurs() {
 			<img src="/icns/vr-vibes-hands-logo-colored.svg" className="hands" />
 			<div className="user1div">
 				<div className="user1">
-					<img className="imageUser" src="/img/severin-richter.jpg" alt="Severin RICHTER responsable sécurité chez Ponticelli parle de vr-vibes" />
+					<img className="imageUser" src="/img/vrvibes-severin-richter.jpg" alt="Severin RICHTER responsable sécurité chez Ponticelli parle de vr-vibes" />
 					<div className="informationsUser">
 						<div className="commentaireUser">" Superbe atelier d'animation en VR avec nos partenaires VR-Vibes, merci pour tout! "
 						</div>
@@ -55,7 +55,7 @@ function AvisUtilisateurs() {
 
 			<div className="user2div">
 				<div className="user2">
-					<img className="imageUser2" src="/img/irene-lim.jpg" alt="Cliente de vr-vibes ayant commandé une prestation VR pour l'annniversaire de son fils donne son avis" />
+					<img className="imageUser2" src="/img/vrvibes-irene-lim.jpg" alt="Cliente de vr-vibes ayant commandé une prestation VR pour l'annniversaire de son fils donne son avis" />
 					<div className="informationsUser2">
 						<div className="commentaireUser2">" L'animation VR pour l'anniversaire de mon fils de 10 ans était géniale. Les enfants ce sont beaucoup amusés et étaient fascinés "
 						</div>
@@ -67,7 +67,7 @@ function AvisUtilisateurs() {
 			<div className="line" />
 			<div className="user3div">
 				<div className="user3">
-					<img className="imageUser3" src="/img/partners-formation-hani-habiba.jpg" alt="Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes" />
+					<img className="imageUser3" src="/img/vrvibes-partners-formation-hani-habiba.jpg" alt="Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes" />
 					<div className="informationsUser3">
 						<div className="commentaireUser3">" Une prestation de qualité, je recommande
 						fortement"
@@ -80,7 +80,7 @@ function AvisUtilisateurs() {
 
 			<div className="user4div">
 				<div className="user4">
-					<img className="imageUser4" src="/img/sylvia-stojanovic-parle-de-vrvibes.jpg" alt="" />
+					<img className="imageUser4" src="/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg" alt="" />
 					<div className="informationsUser4">
 						<div className="commentaireUser4">"À la recherche d'une idée pour une fête familiale, j'ai trouvé VR Vibes sur Google. Les invités étaient enchantés!"
 						</div>

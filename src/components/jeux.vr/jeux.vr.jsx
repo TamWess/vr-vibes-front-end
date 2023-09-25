@@ -63,7 +63,7 @@ function JeuxVR() {
 			<div className="leftPartJeuxVR">
 				<img className="imageJeux1" src="/img/vrvibes-among-us-vr.jpg" alt="" />
 				<img className="imageJeux2" src="/img/vrvibes-acron-attack-on-squirrels.jpg" alt="" />
-				<img className="imageJeux3" src="/img/vrvibes-vader-immortal-episode-3.jpg" alt="" />
+				<img className="imageJeux3" src="/img/vrvibes-vrvibes-vader-immortal-episode-3-slider.JPG" alt="" />
 			</div>
 			<div className="rightPartJeuxVR">
 				<h1 className="titleRightJeuxVR">Découvrez la séléction <br />VR-Vibes <br /> de jeux pour vos événements</h1>

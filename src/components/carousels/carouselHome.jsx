@@ -16,9 +16,9 @@ export default class SimpleSlider extends Component {
 
 		return (
 			<Slider {...settings}>
-				<img className="carouselHomeImages" src="/img/vader-immortal-episode-3.JPG" alt="" />
-				<img className="carouselHomeImages" src="/img/star-wars-squadrons-01.jpg" alt="" />
-				<img className="carouselHomeImages" src="/img/beat-saber-01.jpg" alt="" />
+				<img className="carouselHomeImages" src="/img/vrvibes-vader-immortal-episode-3-slider.JPG" alt="" />
+				<img className="carouselHomeImages" src="/img/vrvibes-star-wars-squadrons.jpg" alt="" />
+				<img className="carouselHomeImages" src="/img/vrvibes-beat-saber-01.jpg" alt="" />
 			</Slider>
 		);
 	}

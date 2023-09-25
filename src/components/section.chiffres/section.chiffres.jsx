@@ -117,11 +117,11 @@ function SectionChiffres() {
 			</div>
 			<img
 				className="frise80"
-				src="/img/frise-double-green-pastel.png"
+				src="/img/vrvibes-frise-double-green-pastel.png"
 				alt="okay"
 			/>
-			<img className="frise81" src="/img/frise-double-green-pastel.png" />
-			<img className="frise82" src="/img/frise-double-green-pastel.png" />
+			<img className="frise81" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise82" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	);
 }

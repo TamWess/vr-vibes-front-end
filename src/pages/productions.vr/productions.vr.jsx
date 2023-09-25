@@ -83,7 +83,7 @@ function ProductionsVR() {
 						<iframe className="videoPartners" src="https://www.youtube.com/embed/d75_dHVMbfg?si=II7sANdri3T459JX" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
 				</div>
-				<div className="retailProjet">
+				{/* <div className="retailProjet">
 					<div className="leftPartRetail">
 						<h1 className="titleRetail">
 							Eole Centre de maintenance
@@ -98,7 +98,7 @@ function ProductionsVR() {
 					<div className="video">
 						<iframe className="videoRetail" src="https://www.youtube.com/embed/zT5iA9YOUwY?si=ZBYTUuLOw_F3sva4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 					</div>
-				</div>
+				</div> */}
 			</div>
 
 		</>

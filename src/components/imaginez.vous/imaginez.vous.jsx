@@ -69,12 +69,12 @@ function ImaginezVous() {
 
 	return (
 		<div className="imaginezVous">
-			<img className="background" src="/img/star-wars-space-battle-02.jpg" alt="vr-vibes événement en réalité virtuelle - fond section Star Wars" />
-			<img className="vaisseau" src="/img/vaisseau-star-wars.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
-			<img className="vaisseau2" src="/img/vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
-			<img className="vaisseau3" src="/img/vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
-			<img className="planet" src="/img/planet-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Star Wars" />
-			<img className="mustafar" src="/img/mustafar-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Mustafar section Star Wars" />
+			<img className="background" src="/img/vrvibes-milky-way.jpg" alt="vr-vibes événement en réalité virtuelle - fond section Star Wars" />
+			<img className="vaisseau" src="/img/vrvibes-vaisseau-star-wars.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			<img className="vaisseau2" src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			<img className="vaisseau3" src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			<img className="planet" src="/img/vrvibes-planet-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Star Wars" />
+			<img className="mustafar" src="/img/vrvibes-mustafar-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Mustafar section Star Wars" />
 			<h2 className="title">Imaginez</h2>
 			<div className="text1">
 				Imaginez-vous transporter vos invités dans des mondes <br />

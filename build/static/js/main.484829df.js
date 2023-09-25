@@ -18847,7 +18847,7 @@
                     }),
                     (0, Jt.jsx)("img", {
                       className: "entrepriseChoice",
-                      src: "/img/entreprise-choice.png",
+                      src: "/img/vrvibes-entreprise-choice.png",
                       alt: "vr-vibes r\xe9server votre \xe9v\xe9nement d'entreprise en r\xe9alit\xe9 virtuelle - team building - escape game - after work - s\xe9minaire",
                     }),
                     (0, Jt.jsx)(Ht, {
@@ -18866,7 +18866,7 @@
                     }),
                     (0, Jt.jsx)("img", {
                       className: "familleChoice",
-                      src: "/img/family-choice.png",
+                      src: "/img/vrvibes-family-choice.png",
                       alt: "vr-vibes r\xe9server votre \xe9v\xe9nement priv\xe9 en r\xe9alit\xe9 virtuelle baby shower - anniversaire - mariage",
                     }),
                     (0, Jt.jsx)(Ht, {
@@ -18878,28 +18878,28 @@
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise1",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                   alt: "okay",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise2",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise3",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise4",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise5",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise6",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
               ],
             })
@@ -18944,32 +18944,32 @@
             children: [
               (0, Jt.jsx)("img", {
                 className: "background",
-                src: "/img/star-wars-space-battle-02.jpg",
+                src: "/img/vrvibes-milky-way.jpg",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - fond section Star Wars",
               }),
               (0, Jt.jsx)("img", {
                 className: "vaisseau",
-                src: "/img/vaisseau-star-wars.png",
+                src: "/img/vrvibes-vaisseau-star-wars.png",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - vaisseau section Star Wars",
               }),
               (0, Jt.jsx)("img", {
                 className: "vaisseau2",
-                src: "/img/vaisseau-star-wars-little.png",
+                src: "/img/vrvibes-vaisseau-star-wars-little.png",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - vaisseau section Star Wars",
               }),
               (0, Jt.jsx)("img", {
                 className: "vaisseau3",
-                src: "/img/vaisseau-star-wars-little.png",
+                src: "/img/vrvibes-vaisseau-star-wars-little.png",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - vaisseau section Star Wars",
               }),
               (0, Jt.jsx)("img", {
                 className: "planet",
-                src: "/img/planet-star-wars.png",
+                src: "/img/vrvibes-planet-star-wars.png",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - plan\xe8te Star Wars",
               }),
               (0, Jt.jsx)("img", {
                 className: "mustafar",
-                src: "/img/mustafar-star-wars.png",
+                src: "/img/vrvibes-mustafar-star-wars.png",
                 alt: "vr-vibes \xe9v\xe9nement en r\xe9alit\xe9 virtuelle - plan\xe8te Mustafar section Star Wars",
               }),
               (0, Jt.jsx)("h2", { className: "title", children: "Imaginez" }),
@@ -19086,17 +19086,17 @@
                         children: [
                           (0, Jt.jsx)("img", {
                             className: "carouselHomeImages",
-                            src: "/img/vader-immortal-episode-3.JPG",
+                            src: "/img/vrvibes-vader-immortal-episode-3-slider.JPG",
                             alt: "",
                           }),
                           (0, Jt.jsx)("img", {
                             className: "carouselHomeImages",
-                            src: "/img/star-wars-squadrons-01.jpg",
+                            src: "/img/vrvibes-star-wars-squadrons.jpg",
                             alt: "",
                           }),
                           (0, Jt.jsx)("img", {
                             className: "carouselHomeImages",
-                            src: "/img/beat-saber-01.jpg",
+                            src: "/img/vrvibes-beat-saber-01.jpg",
                             alt: "",
                           }),
                         ],
@@ -19148,7 +19148,7 @@
                     children: [
                       (0, Jt.jsx)("img", {
                         className: "imageUser",
-                        src: "/img/severin-richter.jpg",
+                        src: "/img/vrvibes-severin-richter.jpg",
                         alt: "Severin RICHTER responsable s\xe9curit\xe9 chez Ponticelli parle de vr-vibes",
                       }),
                       (0, Jt.jsxs)("div", {
@@ -19180,7 +19180,7 @@
                     children: [
                       (0, Jt.jsx)("img", {
                         className: "imageUser2",
-                        src: "/img/irene-lim.jpg",
+                        src: "/img/vrvibes-irene-lim.jpg",
                         alt: "Cliente de vr-vibes ayant command\xe9 une prestation VR pour l'annniversaire de son fils donne son avis",
                       }),
                       (0, Jt.jsxs)("div", {
@@ -19213,7 +19213,7 @@
                     children: [
                       (0, Jt.jsx)("img", {
                         className: "imageUser3",
-                        src: "/img/partners-formation-hani-habiba.jpg",
+                        src: "/img/vrvibes-partners-formation-hani-habiba.jpg",
                         alt: "Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes",
                       }),
                       (0, Jt.jsxs)("div", {
@@ -19245,7 +19245,7 @@
                     children: [
                       (0, Jt.jsx)("img", {
                         className: "imageUser4",
-                        src: "/img/sylvia-stojanovic-parle-de-vrvibes.jpg",
+                        src: "/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg",
                         alt: "",
                       }),
                       (0, Jt.jsxs)("div", {
@@ -20632,16 +20632,16 @@
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise80",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                   alt: "okay",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise81",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
                 (0, Jt.jsx)("img", {
                   className: "frise82",
-                  src: "/img/frise-double-green-pastel.png",
+                  src: "/img/vrvibes-frise-double-green-pastel.png",
                 }),
               ],
             })
@@ -28971,27 +28971,27 @@
               (0, Jt.jsx)("div", { className: "accueilImageAE" }),
               (0, Jt.jsx)("img", {
                 className: "frise30",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise31",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise32",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise33",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise34",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise35",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
             ],
           })
@@ -29047,7 +29047,7 @@
                   }),
                   (0, Jt.jsx)("img", {
                     className: "entrepriseChoice",
-                    src: "/img/entreprise-choice.png",
+                    src: "/img/vrvibes-entreprise-choice.png",
                     alt: "vr-vibes r\xe9server votre \xe9v\xe9nement priv\xe9 en r\xe9alit\xe9 virtuelle baby shower - anniversaire - mariage",
                   }),
                   (0, Jt.jsx)(Ht, {
@@ -29059,28 +29059,28 @@
               }),
               (0, Jt.jsx)("img", {
                 className: "frise15",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
                 alt: "",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise16",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise17",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise18",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise19",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise20",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
             ],
           })
@@ -29159,27 +29159,27 @@
               (0, Jt.jsx)("div", { className: "accueilImageAF" }),
               (0, Jt.jsx)("img", {
                 className: "frise60",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise61",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise62",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise63",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise64",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise65",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
             ],
           })
@@ -29235,7 +29235,7 @@
                   }),
                   (0, Jt.jsx)("img", {
                     className: "familleChoiceAF",
-                    src: "/img/family-choice.png",
+                    src: "/img/vrvibes-family-choice.png",
                   }),
                   (0, Jt.jsx)(Ht, {
                     className: "reserverFamilleAF",
@@ -29246,28 +29246,28 @@
               }),
               (0, Jt.jsx)("img", {
                 className: "frise40",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
                 alt: "okay",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise41",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise42",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise43",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise44",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
               (0, Jt.jsx)("img", {
                 className: "frise45",
-                src: "/img/frise-double-green-pastel.png",
+                src: "/img/vrvibes-frise-double-green-pastel.png",
               }),
             ],
           })
@@ -29398,17 +29398,17 @@
                 children: [
                   (0, Jt.jsx)("img", {
                     className: "friseGreenPastel",
-                    src: "/img/frise-pastel.png",
+                    src: "/img/vrvibes-frise-pastel.png",
                     alt: "",
                   }),
                   (0, Jt.jsx)("img", {
                     className: "friseGreenPastel",
-                    src: "/img/frise-green-pastel.png",
+                    src: "/img/vrvibes-frise-green-pastel.png",
                     alt: "",
                   }),
                   (0, Jt.jsx)("img", {
                     className: "friseFooter",
-                    src: "/img/frise-footer.png",
+                    src: "/img/vrvibes-frise-footer.png",
                     alt: "",
                   }),
                   (0, Jt.jsxs)("div", {
@@ -33144,16 +33144,14 @@
         window.scrollTo(0, 0);
       });
       var Ps = js;
-      t
-        .createRoot(document.getElementById("root"))
-        .render(
-          (0, Jt.jsx)(e.StrictMode, {
-            children: (0, Jt.jsx)(_t, {
-              router: Ps,
-              children: (0, Jt.jsx)(Xt, {}),
-            }),
-          })
-        ),
+      t.createRoot(document.getElementById("root")).render(
+        (0, Jt.jsx)(e.StrictMode, {
+          children: (0, Jt.jsx)(_t, {
+            router: Ps,
+            children: (0, Jt.jsx)(Xt, {}),
+          }),
+        })
+      ),
         en();
     })();
 })();

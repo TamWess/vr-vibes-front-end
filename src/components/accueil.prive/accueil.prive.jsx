@@ -74,12 +74,12 @@ function AccueilPrive() {
 			<div className="imageVRFamilleAF2 animate__animated animate__backInDown" />
 			<div className="imageVRFamilleAF3 animate__animated animate__backInRight" />
 			<div className="accueilImageAF"></div>
-			<img className="frise60" src="/img/frise-double-green-pastel.png" />
-			<img className="frise61" src="/img/frise-double-green-pastel.png" />
-			<img className="frise62" src="/img/frise-double-green-pastel.png" />
-			<img className="frise63" src="/img/frise-double-green-pastel.png" />
-			<img className="frise64" src="/img/frise-double-green-pastel.png" />
-			<img className="frise65" src="/img/frise-double-green-pastel.png" />
+			<img className="frise60" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise61" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise62" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise63" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise64" src="/img/vrvibes-frise-double-green-pastel.png" />
+			<img className="frise65" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	)
 }
