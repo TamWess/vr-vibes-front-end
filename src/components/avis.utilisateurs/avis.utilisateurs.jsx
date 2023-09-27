@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./avis.utilisateurs.scss";
 
 function AvisUtilisateurs() {
@@ -42,7 +42,7 @@ function AvisUtilisateurs() {
 		<div className="sectionUsers">
 			<img src="/icns/vr-vibes-hands-logo-colored.svg" className="hands" />
 			<div className="user1div">
-				<div className="user1">
+				<div className="user1" >
 					<img className="imageUser" src="/img/vrvibes-severin-richter.jpg" alt="Severin RICHTER responsable sécurité chez Ponticelli parle de vr-vibes" />
 					<div className="informationsUser">
 						<div className="commentaireUser">" Superbe atelier d'animation en VR avec nos partenaires VR-Vibes, merci pour tout! "

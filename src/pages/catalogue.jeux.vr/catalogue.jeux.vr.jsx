@@ -28,8 +28,8 @@ function CatalogueJeuxVR() {
 	return (
 		<div className="containerCatalogue">
 			<h1 className="titleCatalogue">Notre sélection de jeux VR</h1>
-			<p className="introTextProductionVR">Voici le Top 10 VR-Vibes des meilleurs jeux VR multijoueurs! <br/><br/>
-			Faites nous confiance, notre sélection est faite pour vous... et vos précieux invités.
+			<p className="introTextProductionVR">Voici le Top 10 VR-Vibes des meilleurs jeux VR multijoueurs! <br /><br />
+				Faites nous confiance, notre sélection est faite pour vous... et vos précieux invités.
 			</p>
 			{catalogueJeuxVR.map((item) => (
 				<React.Fragment key={item._id}>
@@ -45,17 +45,18 @@ function CatalogueJeuxVR() {
 							<p className="descriptionJeu">
 								{item.description}
 							</p>
-							<div className="videoTrailer">
-								<iframe
-									className="videoJeu"
-									width="100%"
-									src={item.trailer}
-									title="YouTube video player"
-									frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-									allowFullScreen
-								></iframe>
-							</div>
+
+						</div>
+						<div className="videoTrailer">
+							<iframe
+								className="videoJeu"
+								width="100%"
+								src={item.trailer}
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowFullScreen
+							></iframe>
 						</div>
 					</div>
 				</React.Fragment>))}

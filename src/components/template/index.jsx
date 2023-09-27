@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Link, Outlet } from "react-router-dom";
-import { GoogleMap, useJsApiLoader, useLoadScript, Marker } from "@react-google-maps/api";
-import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import "../../utils/style/libs/base.scss";
 import "./style.scss";
 import 'animate.css';
@@ -10,6 +8,13 @@ import 'animate.css';
 
 function Template() {
 
+	function closeRollMenu() {
+		setTimeout(() => {
+			document.querySelector(".rollMenu").style.display = "none"
+		}
+			, 50
+		)
+	}
 
 	useEffect(() => {
 
@@ -24,6 +29,9 @@ function Template() {
 		const burgerMenu = document.querySelector(".burgerMenu");
 		const rollMenu = document.querySelector(".rollMenu")
 		const crossClose = document.querySelector(".crossClose")
+
+		
+	
 
 		burgerMenu.addEventListener("click", (event) => {
 
@@ -45,11 +53,16 @@ function Template() {
 			}
 		})
 
-		setTimeout(() => {
-			window.scrollTo(0, 0);
-		}
-			, 500
-		)
+		crossClose.addEventListener("click", (event) => {
+
+			rollMenu.style.display = "none"
+			if (window.width > 578) {
+				burgerMenu.style.left = "80px"
+			}
+			if (window.width <= 578) {
+				burgerMenu.style.left = "30px !important"
+			}
+		})
 	});
 
 
@@ -63,7 +76,7 @@ function Template() {
 							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris">
 						</img>
 					</Link>
-					<Link to="/accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Entreprise</Link>
+					<Link to="/accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp" onClick={closeRollMenu}>Animation VR pour Entreprise</Link>
 					<Link to="/accueil_prive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
 					<Link to="/productions-VR" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
 					<Link to="/contact" className="contactButton">Contact</Link>

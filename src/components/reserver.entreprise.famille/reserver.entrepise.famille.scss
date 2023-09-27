@@ -1,6 +1,10 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
+html, body{
+	overflow-x: hidden;
+}
+
 .entrepriseFamille {
   z-index: 0;
   position: relative;

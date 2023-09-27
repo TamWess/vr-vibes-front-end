@@ -7,7 +7,12 @@
   src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
 
+html, body{
+	overflow-x: hidden;
+}
+
 .imaginezVous {
+  padding-top: 80px;
   z-index: 21;
   position: relative;
   height: 900px;
@@ -50,9 +55,9 @@
     z-index: 3;
 	width: 600px;
 	height: auto;
-    animation: planete infinite 500s;
-    transform-origin: center; /* Centre de l'élément */
-    transition: 1000s;
+    animation: planete infinite 200s;
+    transform-origin: center !important; /* Centre de l'élément */
+    
   }
   .mustafar {
     z-index: 2;
@@ -61,7 +66,6 @@
     left: 43%;
     margin-top: -500px;
     animation: mustafar infinite 350s;
-    transform-origin: 438px 438px; /* Centre de l'élément */
     transform-origin: 250px 250px;
   }
   .title {
@@ -233,6 +237,7 @@
       font-size: 32px;
       margin: 20px 0 0 30px;
       left: 2000px;
+	  filter: drop-shadow(1px 1px 3px rgb(0, 0, 0))
     }
     .text1,
     .text2,
@@ -242,8 +247,8 @@
       left: 2000px;
       position: absolute;
       margin: 80px 0 0 30px;
-      filter: drop-shadow(-8px -8px 13px rgba(0, 0, 0, 0.86))
-        drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.29));
+      filter: drop-shadow(1px 1px 3px rgb(0, 0, 0))
+        
     }
     .text2 {
       margin-top: 330px;
@@ -276,6 +281,20 @@
       height: 800px;
       left: -200px;
       margin-top: -500px;
+    }
+	.title {
+		filter: drop-shadow(1px 1px 3px rgb(0, 0, 0))
+	  }
+	.text1,
+    .text2,
+    .text3 {
+      filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) 
+    }
+    .text2 {
+      margin-top: 330px;
+    }
+    .text3 {
+      margin-top: 610px;
     }
   }
 }

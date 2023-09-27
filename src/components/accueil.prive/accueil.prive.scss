@@ -1,6 +1,10 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
+html, body{
+	overflow-x: hidden;
+}
+
 .homeAF {
   overflow-y: hidden !important;
   overflow-x: hidden !important;

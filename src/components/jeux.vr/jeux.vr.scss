@@ -1,8 +1,8 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
-body {
-  overflow-x: hidden;
+html, body{
+	overflow-x: hidden;
 }
 
 .containerJeuxVR {
@@ -154,7 +154,7 @@ body {
     }
     .rightPartJeuxVR {
       width: 90% !important;
-	  height: 500px !important;
+      height: 500px !important;
       .titleRightJeuxVR {
         font-size: 46px;
       }

@@ -13,16 +13,16 @@ function ImaginezVous() {
 		const parallaxVaisseau = rallax(targetVaisseau, { speed: 0.35 })
 
 		const targetVaisseau2 = document.querySelector('.vaisseau2')
-		const parallaxVaisseau2 = rallax(targetVaisseau2, { speed: 0.1 })
+		const parallaxVaisseau2 = rallax(targetVaisseau2, { speed: 0.2 })
 
 		const targetVaisseau3 = document.querySelector('.vaisseau3')
-		const parallaxVaisseau3 = rallax(targetVaisseau3, { speed: 0.1 })
+		const parallaxVaisseau3 = rallax(targetVaisseau3, { speed: 0.2 })
 
 		const targetMustafar = document.querySelector('.mustafar')
-		const parallaxMustafar = rallax(targetMustafar, { speed: 0.08 })
+		const parallaxMustafar = rallax(targetMustafar, { speed: 0.04 })
 
 		const targetPlanet = document.querySelector('.planet')
-		const parallaxPlanet = rallax(targetPlanet, { speed: 0.015 })
+		const parallaxPlanet = rallax(targetPlanet, { speed: 0.1 })
 
 		const targetTitle = document.querySelector('.title')
 
