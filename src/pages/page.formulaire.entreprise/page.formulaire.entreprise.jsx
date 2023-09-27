@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import loaderSpin from './page.formulaire.entreprise.scss';
+
 import "./page.formulaire.entreprise.scss";
+
 
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 
@@ -25,6 +29,7 @@ function FormulaireEntreprise() {
 
 	async function handleSubmit(event) {
 		event.preventDefault()
+		setSaving(true)
 
 		try {
 			const response = await axios.post(`${apiBaseUrl}/reservations`,
@@ -58,8 +63,9 @@ function FormulaireEntreprise() {
 		catch (error) {
 			console.error(error);
 		}
-		// finally {
-		// 	setSaving(false)
+		finally {
+			setSaving(false)
+		}
 	}
 
 	// --------------REGEX---------------
@@ -359,12 +365,13 @@ function FormulaireEntreprise() {
 					<label className="pourToutesPrecisions" htmlFor="precisions">Pour toutes précisions concernant votre événements, écrivez-nous un message:</label>
 					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent} />
 
+					<button className="boutonEnvoyer" disabled={isSaving}><span style={{ marginInline: '1em' }}>Envoyer</span>
+					{isSaving && <AiOutlineLoading3Quarters className={loaderSpin.spin} />}</ button>
+
 					{/* envoyer */}
 
-					<button className="boutonEnvoyer">Envoyer</button>
+					{/* <button className="boutonEnvoyer">Envoyer</button> */}
 
-					{/* <button className="boutonEnvoyer" disabled={isSaving}><span style={{ marginInline: '1em' }}>Envoyer</span>
-					{isSaving && <AiOutlineLoading3Quarters className={baseStyle.spin} />}</ button> */}
 
 					<div className="erreurEnvoi">
 						Vous n'avez pas rempli tous les champs requis.

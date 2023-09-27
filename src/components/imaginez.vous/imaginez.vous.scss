@@ -23,7 +23,6 @@
   .vaisseau {
     position: absolute;
     left: 57%;
-    margin-top: -220px;
     z-index: 6;
     animation: vaisseau ease-in-out infinite 50s;
     transform-origin: center;
@@ -49,6 +48,8 @@
     left: 47%;
     margin-top: -70px;
     z-index: 3;
+	width: 600px;
+	height: auto;
     animation: planete infinite 500s;
     transform-origin: center; /* Centre de l'élément */
     transition: 1000s;
