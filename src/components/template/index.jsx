@@ -4,6 +4,7 @@ import "../../utils/style/libs/base.scss";
 import "./style.scss";
 import 'animate.css';
 
+
 // Responsive App ip adress: http://192.168.8.123:3000/
 
 function Template() {
@@ -64,7 +65,6 @@ function Template() {
 			}
 		})
 	});
-
 
 	return (
 		<>

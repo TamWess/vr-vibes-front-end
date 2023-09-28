@@ -72,7 +72,7 @@ function AvisUtilisateurs() {
 						<div className="commentaireUser3">" Une prestation de qualité, je recommande
 						fortement"
 						</div>
-						<div className="nameUser3">Nacer BEDDAR</div>
+						<div className="nameUser3">Habiba HANNI</div>
 						<img className="entrepriseUser3" src="/icns/partners-formation-logo.png" alt="logo PARTNERS FORMATION" />
 					</div>
 				</div>

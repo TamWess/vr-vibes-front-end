@@ -233,167 +233,243 @@ html, body{
 
 // -----------RESPONSIVE------------
 
-@media screen and (max-width: 567px) {
-  .hands {
-    display: none;
-  }
-  .sectionUsers {
-    position: relative !important;
-    display: flex !important;
-    flex-wrap: wrap !important;
-    width: 100% !important;
-    height: fit-content !important;
-    .user1div {
-      width: 96% !important;
-      height: 210px !important;
-      display: flex !important;
-      // flex-wrap: wrap;
-      padding: 1% 0 1% 0 !important;
-      background-color: rgb(255, 248, 208) !important;
-      clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%) !important;
-      .user1 {
-        margin: 0 0 1% 0% !important;
-        width: 92% !important;
-        height: 175px !important;
-        .imageUser {
-          height: 62% !important;
-          margin: auto !important;
-        }
-        .informationsUser {
-          width: 100% !important;
-        }
-        .commentaireUser {
-          padding-top: 0px !important;
-          width: 92% !important;
-          height: 50% !important;
-          line-height: 20px !important;
-          font-size: 19px !important;
-          margin: auto !important;
-        }
-        .nameUser {
-          width: 57% !important;
-          padding-top: 5px !important;
-          padding-bottom: 10px !important;
-          font-size: 18px !important;
-          margin: auto !important;
-        }
-        .entrepriseUser {
-          padding-top: 10px !important;
-          width: 35% !important;
-        }
-      }
-    }
-    .user2div {
-      position: relative !important;
-      left: 4% !important;
-      width: 96% !important;
-      height: 210px !important;
-      display: flex !important;
-      padding: 1% 0 1% 0 !important;
-
-      .user2 {
-        position: relative !important;
-        margin: 0 0 1% 6% !important;
-        width: 92% !important;
-        height: 175px !important;
-        .imageUser2 {
-          left: 4% !important;
-          height: 62% !important;
-          margin: auto !important;
-        }
-        .informationsUser2 {
-          position: relative !important;
-          width: 100% !important;
-          .commentaireUser2 {
-            padding-top: 0px !important;
-            width: 92% !important;
-            height: 50% !important;
-            line-height: 20px !important;
-            font-size: 18px !important;
-            margin: auto !important;
-          }
-          .nameUser2 {
-            margin-top: 0px !important;
-            left: 80% !important;
-            width: 57% !important;
-            padding-top: 5px !important;
-            padding-bottom: 10px !important;
-            font-size: 18px !important;
-            margin-left: 65% !important;
-          }
-          .entrepriseUser2 {
-            padding-top: 10px !important;
-            width: 35% !important;
-          }
-        }
-      }
-    }
-    .user3div,
-    .user4div {
-      display: none !important;
-    }
-  }
+@media screen and (max-width: 1200px) {
+	.hands {
+		display: none;
+	  }
+	  .line {
+		height: 3px;
+		width: 100%;
+	  }
+	  .sectionUsers {
+		.user1div {
+		  width: 90%;
+		  .user1 {
+			align-items: center;
+			.informationsUser {
+			  width: 70%;
+			}
+			.nameUser {
+			  margin-top: 20px;
+			}
+		  }
+		}
+		.user2div {
+		  left: 10%;
+		  width: 90%;
+		  .user2 {
+			align-items: center;
+			.informationsUser2 {
+			  width: 70%;
+			}
+			.nameUser2 {
+			  margin-top: 20px;
+			}
+		  }
+		}
+		.user3div {
+		  width: 90%;
+		  clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
+		  .user3 {
+			align-items: center;
+			.informationsUser3 {
+			  width: 70%;
+			}
+			.nameUser3 {
+			  margin-top: 20px;
+			}
+			.entrepriseUser3{
+				margin-top: 10px !important;
+			}
+			
+		  }
+		}
+		.user4div {
+		  left: 10%;
+		  width: 90%;
+		  .user4 {
+			align-items: center;
+			.informationsUser4 {
+			  width: 70%;
+			}
+			.nameUser4 {
+			  margin-top: 20px;
+			}
+		  }
+		}
+	  }
 }
 
 @media screen and (max-width: 768px) {
-  .hands {
-    display: none;
-  }
-  .line {
-    height: 3px;
-    width: 100%;
-  }
-  .sectionUsers {
-    .user1div {
-      width: 90%;
-      .user1 {
-        align-items: center;
-        .informationsUser {
-          width: 70%;
-        }
-        .nameUser {
-          margin-top: 20px;
-        }
-      }
-    }
-    .user2div {
-      left: 10%;
-      width: 90%;
-      .user2 {
-        align-items: center;
-        .informationsUser2 {
-          width: 70%;
-        }
-        .nameUser2 {
-          margin-top: 20px;
-        }
-      }
-    }
-    .user3div {
-      width: 90%;
-      clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%);
-      .user3 {
-        align-items: center;
-        .informationsUser3 {
-          width: 70%;
-        }
-        .nameUser3 {
-          margin-top: 20px;
-        }
-      }
-    }
-    .user4div {
-      left: 10%;
-      width: 90%;
-      .user4 {
-        align-items: center;
-        .informationsUser4 {
-          width: 70%;
-        }
-        .nameUser4 {
-          margin-top: 20px;
-        }
-      }
-    }
-  }
+	.hands {
+		display: none;
+	  }
+	  .sectionUsers {
+		position: relative !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
+		width: 100% !important;
+		height: fit-content !important;
+		.user1div {
+		  width: 96% !important;
+		  height: 210px !important;
+		  display: flex !important;
+		  // flex-wrap: wrap;
+		  padding: 1% 0 1% 0 !important;
+		  background-color: rgb(255, 248, 208) !important;
+		  clip-path: polygon(0 0, 84% 0, 100% 100%, 0% 100%) !important;
+		  .user1 {
+			margin: 0 0 1% 0% !important;
+			width: 92% !important;
+			height: 175px !important;
+			.imageUser {
+			  height: 62% !important;
+			  margin: auto !important;
+			}
+			.informationsUser {
+			  width: 100% !important;
+			}
+			.commentaireUser {
+			  padding-top: 0px !important;
+			  width: 92% !important;
+			  height: 50% !important;
+			  line-height: 20px !important;
+			  font-size: 19px !important;
+			  margin: auto !important;
+			}
+			.nameUser {
+			  width: 57% !important;
+			  padding-top: 5px !important;
+			  padding-bottom: 10px !important;
+			  font-size: 18px !important;
+			  margin: auto !important;
+			}
+			.entrepriseUser {
+			  padding-top: 10px !important;
+			  width: 35% !important;
+			}
+		  }
+		}
+		.user2div {
+		  position: relative !important;
+		  left: 4% !important;
+		  width: 96% !important;
+		  height: 210px !important;
+		  display: flex !important;
+		  padding: 1% 0 1% 0 !important;
+	
+		  .user2 {
+			position: relative !important;
+			margin: 0 0 1% 6% !important;
+			width: 92% !important;
+			height: 175px !important;
+			.imageUser2 {
+			  left: 4% !important;
+			  height: 62% !important;
+			  margin: auto !important;
+			}
+			.informationsUser2 {
+			  position: relative !important;
+			  width: 100% !important;
+			  .commentaireUser2 {
+				padding-top: 0px !important;
+				width: 92% !important;
+				height: 50% !important;
+				line-height: 20px !important;
+				font-size: 18px !important;
+				margin: auto !important;
+			  }
+			  .nameUser2 {
+				margin-top: 0px !important;
+				left: 80% !important;
+				width: 57% !important;
+				padding-top: 5px !important;
+				padding-bottom: 10px !important;
+				font-size: 18px !important;
+				margin-left: 65% !important;
+			  }
+			  .entrepriseUser2 {
+				padding-top: 10px !important;
+				width: 35% !important;
+			  }
+			}
+		  }
+		}
+		.user3 {
+			margin: 0 0 1% 0% !important;
+			width: 92% !important;
+			height: 175px !important;
+			.imageUser3 {
+			  height: 62% !important;
+			  margin: auto !important;
+			}
+			.informationsUser3 {
+			  width: 100% !important;
+			}
+			.commentaireUser3 {
+			  padding-top: 0px !important;
+			  width: 92% !important;
+			  height: 50% !important;
+			  line-height: 20px !important;
+			  font-size: 19px !important;
+			  margin: auto !important;
+			}
+			.nameUser3 {
+			  width: 57% !important;
+			  padding-top: 5px !important;
+			  padding-bottom: 10px !important;
+			  font-size: 18px !important;
+			  margin: auto !important;
+			}
+			.entrepriseUser3 {
+			  width: 30% !important;
+			  
+			}
+		  }
+		  .user4div {
+			position: relative !important;
+			left: 4% !important;
+			width: 96% !important;
+			height: 210px !important;
+			display: flex !important;
+			padding: 1% 0 1% 0 !important;
+	  
+			.user4 {
+			  position: relative !important;
+			  margin: 0 0 1% 6% !important;
+			  width: 92% !important;
+			  height: 175px !important;
+			  .imageUser4 {
+				left: 4% !important;
+				height: 62% !important;
+				margin: auto !important;
+			  }
+			  .informationsUser4 {
+				position: relative !important;
+				width: 100% !important;
+				.commentaireUser4 {
+				  padding-top: 0px !important;
+				  width: 92% !important;
+				  height: 50% !important;
+				  line-height: 20px !important;
+				  font-size: 18px !important;
+				  margin: auto !important;
+				}
+				.nameUser4 {
+				  margin-top: 0px !important;
+				  left: 80% !important;
+				  width: 57% !important;
+				  padding-top: 5px !important;
+				  padding-bottom: 10px !important;
+				  font-size: 18px !important;
+				  margin-left: 65% !important;
+				}
+				.entrepriseUser4 {
+				  padding-top: 10px !important;
+				  width: 35% !important;
+				}
+			  }
+			}
+		  }
+		}
 }

@@ -134,18 +134,21 @@ function ReserverEntrepriseFamille() {
 					Team Building, Afterwork, Séminaire ...
 				</h2>
 				<img className="entrepriseChoice" src="/img/vrvibes-entreprise-choice.png" alt="vr-vibes réserver votre événement d'entreprise en réalité virtuelle - team building - escape game - after work - séminaire" />
-				<Link className="reserverEntreprise" to="/formulaire_entreprise">
+				<div className="divReserver"><Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
-				</Link>
+				</Link></div>
+
 			</div>
 			<div className="famille">
 				<h2 className="subtitleFamille">
 					Baby Shower, Anniversaire, Mariage ...
 				</h2>
 				<img className="familleChoice" src="/img/vrvibes-family-choice.png" alt="vr-vibes réserver votre événement privé en réalité virtuelle baby shower - anniversaire - mariage" />
-				<Link className="reserverFamille" to="formulaire_prive">
-					Réserver
-				</Link>
+				<div className="divReserver">
+					<Link className="reserverFamille" to="formulaire_prive">
+						Réserver
+					</Link>
+				</div>
 			</div>
 			<img className="frise1" src="/img/vrvibes-frise-double-green-pastel.png" alt="okay" />
 			<img className="frise2" src="/img/vrvibes-frise-double-green-pastel.png" />

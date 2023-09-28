@@ -10,7 +10,8 @@
   src: url(../../../public/fonts/NunitoSans.ttf);
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -68,7 +69,6 @@ html, body {
   right: 20px;
   display: block;
   position: relative;
-  z-index: 100;
   width: 40px;
   filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27))
     drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
@@ -91,7 +91,7 @@ html, body {
 }
 .listRollMenu {
   text-decoration: none !important;
-  z-index: 100;
+  z-index: 100 !important;
   width: 90%;
   position: relative;
   font-size: 32px;
@@ -113,7 +113,7 @@ html, body {
   position: relative;
   margin-top: 20px;
   left: 90%;
-  z-index: 15;
+  z-index: 100 !important;
   width: 30px;
   filter: drop-shadow(-2px -1px 3px rgba(255, 255, 255, 0.27))
     drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.29));
@@ -125,7 +125,7 @@ html, body {
 }
 .friseGreenPastel {
   z-index: 9;
-  margin-bottom: -57px;
+  margin-bottom: -20px;
 }
 .friseFooter,
 .friseGreenPastel {
@@ -191,19 +191,51 @@ html, body {
 }
 
 // -------------------RESPONSIVE------------------
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 1025px) {
   .burgerMenu {
-    display: none !important;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    .headerLogo {
+      left: -160px;
+      width: 8vw;
+      padding: 10px;
+      animation-duration: 1s;
+      transition: 500ms;
+    }
+  }
+  .burgerMenu {
+    left: 20%;
+  }
+  
+  .contactButton {
+    display: none;
+  }
+  .itemsNav {
+    display: none;
   }
   .scrollTop {
     right: 2% !important;
+  }
+  .rollMenu {
+    z-index: 15;
+    position: absolute;
+    top: 10px;
+    left: 58%;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .burgerMenu {
-    width: 35px;
-    left: 80px;
+    width: 35px !important;
+    left: 90px !important;
   }
   .rollMenu {
     z-index: 15;
@@ -217,9 +249,9 @@ html, body {
   .header {
     width: 100%;
     .headerLogo {
-      width: 15vw;
-      padding: 10px;
-      left: -90px;
+      width: 15vw !important;
+      padding: 10px !important;
+      left: -110px !important;
       animation-duration: 1s;
       transition: 500ms;
     }
@@ -250,7 +282,7 @@ html, body {
 @media screen and (max-width: 576px) {
   .burgerMenu {
     width: 28px !important;
-    left: 30px;
+    left: 80px !important;
   }
   .rollMenu {
     z-index: 100;
@@ -265,7 +297,7 @@ html, body {
     .headerLogo {
       width: 20vw;
       padding: 10px;
-      left: -40px !important;
+      left: -90px !important;
       animation-duration: 1s;
       transition: 500ms;
     }
@@ -302,4 +334,31 @@ html, body {
   .scrollTop {
     width: 45px !important;
   }
+}
+
+@media screen and (max-width: 390px) {
+	.burgerMenu {
+	  width: 28px !important;
+	  left: 60px !important;
+	}
+	.rollMenu {
+	  z-index: 100;
+	  position: absolute;
+	  top: 10px !important;
+	  left: 70px !important;
+	  width: 80vw !important;
+	}
+	.header {
+	  width: 100%;
+	  .headerLogo {
+		width: 20vw;
+		padding: 10px;
+		left: -75px !important;
+		animation-duration: 1s;
+		transition: 500ms;
+	  }
+	  .itemsNav {
+		display: none;
+	  }
+	}
 }

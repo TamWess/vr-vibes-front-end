@@ -122,6 +122,23 @@ html, body{
 
 // ----------------RESPONSIVE----------------
 
+@media screen and (min-width: 1025px) {
+	.imageVREntreprise {
+		background-image: url(../../../public/img/vrvibes-entreprise-widescreen-min-1025.jpg) !important;
+	  }
+	  .imageVRFamille {
+		background-image: url(../../../public/img/vrvibes-famille-widescreen-min-1025.jpg) !important;
+	  }
+  }
+  
+  @media screen and (max-width: 1025px) {
+
+  }
+
+@media screen and (min-width: 769px) {
+	
+}
+
 @media screen and (max-width: 768px) {
   .imageVRFamille {
     background-color: rgb(255, 221, 254);
