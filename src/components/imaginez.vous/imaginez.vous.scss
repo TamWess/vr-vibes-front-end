@@ -26,6 +26,7 @@ html, body{
     clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
   }
   .vaisseau {
+	top: -200px;
     position: absolute;
     left: 57%;
     z-index: 6;
@@ -33,6 +34,7 @@ html, body{
     transform-origin: center;
   }
   .vaisseau2 {
+	top:-100px;
     position: absolute;
     left: 50%;
     z-index: 4;

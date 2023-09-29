@@ -99,6 +99,7 @@ function Template() {
 			<section>
 				<Outlet />
 			</section>
+
 			<footer>
 				<img className="friseGreenPastel" src="/img/vrvibes-frise-pastel.png" alt="" />
 				<img className="friseGreenPastel" src="/img/vrvibes-frise-green-pastel.png" alt="" />

@@ -20,7 +20,7 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 400px;
+  height: 60vh;
   .badge1 {
     opacity: 0;
     text-align: center;
@@ -28,8 +28,8 @@
     border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
-    height: 250px;
+    width: 32%;
+    height: 70%;
     background-image: url("../../../public/icns/badge-01.svg");
     background-size: cover;
     .avisUtilisateurs1 {
@@ -67,8 +67,8 @@
     border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
-    height: 250px;
+    width: 32%;
+    height: 70%;
     background-image: url("../../../public/icns/badge-02.svg");
     background-size: cover;
     .avisUtilisateurs2 {
@@ -80,7 +80,14 @@
       font-size: 27px;
       margin: 37% 10% 0;
     }
+	.containerNumberSur{
+		justify-content: center;
+		display: flex;
+		flex-wrap: wrap;
+		width:80%
+	}
     .numbers2 {
+		width:15%;
       font-family: "Nunito Sans";
       font-weight: bold;
       color: white;
@@ -90,6 +97,7 @@
       margin-bottom: 10%;
     }
     .sur2 {
+		width: 85%;
       font-family: "Nunito Sans";
       font-weight: bold;
       color: white;
@@ -108,8 +116,8 @@
     border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
-    width: 20vw;
-    height: 250px;
+    width: 32%;
+    height: 70%;
     background-image: url("../../../public/icns/badge-03.svg");
     background-size: cover;
     .avisUtilisateurs3 {
@@ -140,127 +148,26 @@
       margin-bottom: 10%;
     }
   }
-  .frise80,
-  .frise82,
-  .frise11 {
-    right: -1500px;
-  }
-  .frise81,
-  .frise10,
-  .frise12 {
-    left: -1500px;
-  }
-  .frise80,
-  .frise81,
-  .frise82 {
-    overflow: hidden;
-    z-index: 1;
-    margin-bottom: 265px;
-    position: absolute;
-    width: 200%;
-    opacity: 0.05;
-    filter: drop-shadow(5px 5px 5px #0000008e);
-    transition: 1s;
-  }
-  .frise81 {
-    margin: -15px 0 0 0;
-  }
-  .frise82 {
-    margin: 245px 0 0 0;
-  }
 }
 
 // ----------RESPONSIVE----------
 
-@media screen and (min-width: 769px) {
-  .numbers2 {
-    position: relative;
-    left: 10px !important;
-  }
-  .sur2 {
-    position: relative;
-    left: 20px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .laVRcest {
+	padding: 20px 0 20px 0;
     z-index: 5;
     position: relative;
-    display: flex;
-    flex-wrap: nowrap;
+    display: block;
+    flex-wrap: nowrap !important;
     align-items: center;
     align-content: center;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: fit-content;
+    height: fit-content !important;
     .badge1 {
-      margin-top: 15px;
-      width: 50vw;
-      height: 265px;
-    }
-    .badge2 {
-      margin-top: 15px;
-      width: 50vw;
-      height: 265px;
-      .avisUtilisateurs2 {
-        width: 100%;
-        font-size: 30px;
-        margin: 35% 20% 0;
-      }
-    }
-    .badge3 {
-      width: 50vw;
-      height: 265px;
-    }
-    .frise80,
-    .frise82,
-    .frise11 {
-      right: -1500px;
-    }
-    .frise81,
-    .frise10,
-    .frise12 {
-      left: -1500px;
-    }
-    .frise80,
-    .frise81,
-    .frise82 {
-      overflow: hidden;
-      z-index: 1;
-      margin-bottom: 265px;
-      position: absolute;
-      width: 200%;
-      opacity: 0.05;
-      filter: drop-shadow(5px 5px 5px #0000008e);
-      transition: 1s;
-    }
-    .frise81 {
-      margin: -15px 0 0 0;
-    }
-    .frise82 {
-      margin: 245px 0 0 0;
-    }
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .laVRcest {
-    z-index: 5;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap !important;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    .badge1 {
-      margin-top: 40px !important;
-      width: 60vw !important;
-      height: 200px !important;
+      margin: auto !important;
+      width: 40vw !important;
+      height: 280px !important;
       .avisUtilisateurs1 {
         width: 100% !important;
         font-size: 24px !important;
@@ -274,9 +181,10 @@
       }
     }
     .badge2 {
+		margin: auto !important;
       margin-top: 15px !important;
-      width: 60vw !important;
-      height: 200px !important;
+      width: 40vw !important;
+      height: 280px !important;
       .avisUtilisateurs2 {
         width: 100% !important;
         font-size: 24px !important;
@@ -291,9 +199,10 @@
       }
     }
     .badge3 {
+		margin: auto !important;
       margin-top: 15px !important;
-      width: 60vw !important;
-      height: 200px !important;
+      width: 40vw !important;
+      height: 280px !important;
 	  margin-bottom: 40px;
       .avisUtilisateurs3 {
         width: 100% !important;
@@ -307,33 +216,71 @@
         font-size: 35px !important;
       }
     }
-    .frise80,
-    .frise82,
-    .frise11 {
-      right: -1500px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .laVRcest {
+	padding: 20px 0 20px 0;
+    z-index: 5;
+    position: relative;
+    display: block;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content !important;
+    .badge1 {
+      margin: auto !important;
+      width: 40vw !important;
+      height: 200px !important;
+      .avisUtilisateurs1 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 35% 20% 0 !important;
+      }
+      .numbers1 {
+        font-size: 35px !important;
+      }
+      .sur1 {
+        font-size: 35px !important;
+      }
     }
-    .frise81,
-    .frise10,
-    .frise12 {
-      left: -1500px;
+    .badge2 {
+		margin: auto !important;
+      margin-top: 15px !important;
+      width: 40vw !important;
+      height: 200px !important;
+      .avisUtilisateurs2 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 28% 20% 0 !important;
+      }
+      .numbers2 {
+        font-size: 35px !important;
+      }
+      .sur2 {
+        font-size: 20px !important;
+        padding-top: 6px !important;
+      }
     }
-    .frise80,
-    .frise81,
-    .frise82 {
-      overflow: hidden;
-      z-index: 1;
-      margin-bottom: 265px;
-      position: absolute;
-      width: 200%;
-      opacity: 0.05;
-      filter: drop-shadow(5px 5px 5px #0000008e);
-      transition: 1s;
-    }
-    .frise81 {
-      margin: -15px 0 0 0;
-    }
-    .frise82 {
-      margin: 245px 0 0 0;
+    .badge3 {
+		margin: auto !important;
+      margin-top: 15px !important;
+      width: 40vw !important;
+      height: 200px !important;
+	  margin-bottom: 40px;
+      .avisUtilisateurs3 {
+        width: 100% !important;
+        font-size: 24px !important;
+        margin: 35% 20% 0 !important;
+      }
+      .numbers3 {
+        font-size: 35px !important;
+      }
+      .sur3 {
+        font-size: 35px !important;
+      }
     }
   }
 }

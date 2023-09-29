@@ -1,9 +1,9 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./section.chiffres.scss";
 import anime from "animejs";
 
 function SectionChiffres() {
-	
+
 	useEffect(() => {
 
 		// Fonctions liées à la dépendance anime.js
@@ -61,39 +61,6 @@ function SectionChiffres() {
 					round: 40, // Will round the animated value to 1 decimal
 				});
 				// ----------Fin des fonctions liées à anime.js
-
-
-				// frises défilant de droite à gauche
-				const frise80 = document.querySelector(".frise80");
-				const frise82 = document.querySelector(".frise82");
-
-				// frises défilant de droite à gauche
-				const frise81 = document.querySelector(".frise81");
-
-				let friseRight = -1500;
-
-				setInterval(() => {
-					frise80.style.right = `${friseRight}px`;
-					friseRight += 20;
-
-					frise82.style.right = `${friseRight}px`;
-					friseRight += 20;
-
-					if (frise80.style.right, frise82.style.right > "100px") {
-						friseRight = -1500;
-					}
-				}, 2000);
-
-				let friseLeft = -1500;
-
-				setInterval(() => {
-					frise81.style.left = `${friseLeft}px`;
-					friseLeft += 20;
-
-					if (frise81.style.left > "100px") {
-						friseLeft = -1500;
-					}
-				}, 2000);
 			}
 		});
 	});
@@ -107,21 +74,16 @@ function SectionChiffres() {
 			</div>
 			<div className="badge2">
 				<div className="avisUtilisateurs2">Nous intervenons dans</div>
-				<div className="numbers2"></div>
-				<div className="sur2">départements</div>
+				<div className="containerNumberSur">
+					<div className="numbers2"></div>
+					<div className="sur2">départements</div>
+				</div>
 			</div>
 			<div className="badge3">
 				<div className="avisUtilisateurs3">Jeux disponibles</div>
 				<div className="numbers3"></div>
 				<div className="sur3"></div>
 			</div>
-			<img
-				className="frise80"
-				src="/img/vrvibes-frise-double-green-pastel.png"
-				alt="okay"
-			/>
-			<img className="frise81" src="/img/vrvibes-frise-double-green-pastel.png" />
-			<img className="frise82" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	);
 }

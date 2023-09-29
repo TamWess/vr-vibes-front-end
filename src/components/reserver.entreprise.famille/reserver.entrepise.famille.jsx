@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./reserver.entrepise.famille.scss"
 
@@ -8,78 +8,7 @@ function ReserverEntrepriseFamille() {
 
 	useEffect(() => {
 
-		// frises défilant de droite à gauche
-		const frise1 = document.querySelector(".frise1");
-		const frise3 = document.querySelector(".frise3");
-		const frise5 = document.querySelector(".frise5");
-
-		let friseRight = -1500;
-
-		setInterval(() => {
-			frise1.style.right = `${friseRight}px`
-			friseRight += 20
-
-			if (frise1.style.right > "100px") {
-				friseRight = -1500
-			}
-		}, 2000)
-
-		setInterval(() => {
-			frise3.style.right = `${friseRight}px`
-			friseRight += 20
-
-			if (frise3.style.right > "100px") {
-				friseRight = -1500
-			}
-		}, 2000)
-
-		setInterval(() => {
-			frise5.style.right = `${friseRight}px`
-			friseRight += 20
-
-			if (frise5.style.right > "100px") {
-				friseRight = -1500
-			}
-		}, 2000)
-
-		// frises défilant de droite à gauche
-		const frise2 = document.querySelector(".frise2");
-		const frise4 = document.querySelector(".frise4");
-		const frise6 = document.querySelector(".frise6");
-
-		let friseLeft = -1500
-
-		setInterval(() => {
-			frise2.style.left = `${friseLeft}px`
-			friseLeft += 20
-
-			if (frise2.style.left > "100px") {
-				friseLeft = -1500
-			}
-		}, 2000)
-
-		setInterval(() => {
-			frise4.style.left = `${friseLeft}px`
-			friseLeft += 20
-
-			if (frise4.style.left > "100px") {
-				friseLeft = -1500
-			}
-		}, 2000)
-
-		setInterval(() => {
-			frise6.style.left = `${friseLeft}px`
-			friseLeft += 20
-
-			if (frise6.style.left > "100px") {
-				friseLeft = -1500
-			}
-		}, 2000)
-
-
-
 		// --------SCROLL ANIMATIONS------
-
 
 		const titleEntrepriseFamille = document.querySelector(".titleEntrepriseFamille")
 
@@ -137,7 +66,6 @@ function ReserverEntrepriseFamille() {
 				<div className="divReserver"><Link className="reserverEntreprise" to="/formulaire_entreprise">
 					Réserver
 				</Link></div>
-
 			</div>
 			<div className="famille">
 				<h2 className="subtitleFamille">
@@ -150,12 +78,6 @@ function ReserverEntrepriseFamille() {
 					</Link>
 				</div>
 			</div>
-			<img className="frise1" src="/img/vrvibes-frise-double-green-pastel.png" alt="okay" />
-			<img className="frise2" src="/img/vrvibes-frise-double-green-pastel.png" />
-			<img className="frise3" src="/img/vrvibes-frise-double-green-pastel.png" />
-			<img className="frise4" src="/img/vrvibes-frise-double-green-pastel.png" />
-			<img className="frise5" src="/img/vrvibes-frise-double-green-pastel.png" />
-			<img className="frise6" src="/img/vrvibes-frise-double-green-pastel.png" />
 		</div>
 	);
 }

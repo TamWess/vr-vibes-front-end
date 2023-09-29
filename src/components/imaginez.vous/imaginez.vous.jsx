@@ -1,12 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./imaginez.vous.scss";
 import rallax from 'rallax.js'
 
 
 function ImaginezVous() {
+	const imaginezVousRef = useRef(null)
 
 	useEffect(() => {
-
 		// ----------Fonction Parallax dépendance rallax.js-----------
 
 		const targetVaisseau = document.querySelector('.vaisseau')
@@ -32,43 +32,52 @@ function ImaginezVous() {
 		const targetText2 = document.querySelector('.text2')
 		const targetText3 = document.querySelector('.text3')
 
+		let timeoutId, timeoutId1, timeoutId2, timeoutId3
 
 		window.addEventListener('scroll', function () {
-			if (this.window.scrollY > 900) {
+			const offsetTop = imaginezVousRef.current?.offsetTop
 
-				this.setTimeout(() => {
+			if (window.scrollY > (offsetTop - 500)) {
+				timeoutId = setTimeout(() => {
 					targetTitle.style.left = "0px";
 					targetTitle.style.opacity = "1";
 				}
 					, 100
 				)
 
-				this.setTimeout(() => {
+				timeoutId1 = setTimeout(() => {
 					targetText1.style.left = "0px";
 					targetText1.style.opacity = "1";
 				}
 					, 1000
 				)
 
-				this.setTimeout(() => {
+				timeoutId2 = setTimeout(() => {
 					targetText2.style.left = "0px";
 					targetText2.style.opacity = "1";
 				}
 					, 1700
 				)
 
-				this.setTimeout(() => {
+				timeoutId3 = setTimeout(() => {
 					targetText3.style.left = "0px";
 					targetText3.style.opacity = "1";
 				}
 					, 2400
 				)
 			}
-		})
+		},)
+		
+		return () => {
+			clearTimeout(timeoutId)
+			clearTimeout(timeoutId1)
+			clearTimeout(timeoutId2)
+			clearTimeout(timeoutId3)
+		}
 	});
 
 	return (
-		<div className="imaginezVous">
+		<div className="imaginezVous" ref={imaginezVousRef}>
 			<img className="background" src="/img/vrvibes-milky-way.jpg" alt="vr-vibes événement en réalité virtuelle - fond section Star Wars" />
 			<img className="vaisseau" src="/img/vrvibes-vaisseau-star-wars.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
 			<img className="vaisseau2" src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
