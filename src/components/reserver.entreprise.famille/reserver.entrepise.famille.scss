@@ -152,47 +152,6 @@ body {
       }
     }
   }
-
-  .frise1,
-  .frise3,
-  .frise5 {
-    right: -1500px;
-  }
-  .frise2,
-  .frise4,
-  .frise6 {
-    left: -1500px;
-  }
-  .frise1,
-  .frise2,
-  .frise3,
-  .frise4,
-  .frise5,
-  .frise6 {
-    overflow: hidden;
-    z-index: 1;
-    position: absolute;
-    margin: 4% 0 0 0;
-    width: 200%;
-    opacity: 0.1;
-    filter: drop-shadow(5px 5px 5px #0000008e);
-    transition: 1s;
-  }
-  .frise2 {
-    margin: 10% 0 0 0;
-  }
-  .frise3 {
-    margin: 18% 0 0 0;
-  }
-  .frise4 {
-    margin: 26% 0 0 0;
-  }
-  .frise5 {
-    margin: 34% 0 0 0;
-  }
-  .frise6 {
-    margin: 42% 0 0 0;
-  }
 }
 
 // ----------RESPONSIVE----------
@@ -216,7 +175,7 @@ body {
 	padding-top: 100px;
     z-index: 0;
     position: relative;
-    height: 1000px;
+    height: fit-content;
     background-size: cover;
     .titleEntrepriseFamille {
       position: relative;
@@ -239,6 +198,7 @@ body {
       }
     }
     .famille {
+	padding-bottom: 30px ;
       width: 100%;
       height: fit-content;
       margin-top: -35px;
@@ -257,53 +217,12 @@ body {
       }
     }
   }
-  .frise1,
-  .frise3,
-  .frise5 {
-    right: -1500px;
-  }
-  .frise2,
-  .frise4,
-  .frise6 {
-    left: -1500px;
-  }
-  .frise1,
-  .frise2,
-  .frise3,
-  .frise4,
-  .frise5,
-  .frise6 {
-    overflow: hidden;
-    z-index: 1;
-    position: absolute;
-    margin: 4% 0 0 0;
-    width: 1000% !important;
-    opacity: 0.1;
-    filter: drop-shadow(5px 5px 5px #0000008e);
-    transition: 1s;
-  }
-  .frise2 {
-    margin: 250px 0 0 0 !important;
-  }
-  .frise3 {
-    margin: 450px 0 0 0 !important;
-  }
-  .frise4 {
-    margin: 650px 0 0 0 !important;
-  }
-  .frise5 {
-    margin: 850px 0 0 0 !important;
-  }
-  .frise6 {
-    margin: 1050px 0 0 0 !important;
-  }
 }
 
 @media screen and (max-width: 576px) {
   .entrepriseFamille {
     z-index: 0;
     position: relative;
-    height: 1015px !important;
     background-size: cover;
     .titleEntrepriseFamille {
       padding-top: 66px;
@@ -344,46 +263,5 @@ body {
         margin-bottom: 50px;
       }
     }
-  }
-  .frise1,
-  .frise3,
-  .frise5 {
-    right: -1500px;
-  }
-  .frise2,
-  .frise4,
-  .frise6 {
-    left: -1500px;
-  }
-  .frise1,
-  .frise2,
-  .frise3,
-  .frise4,
-  .frise5,
-  .frise6 {
-    padding-top: 35px;
-    overflow: hidden;
-    z-index: 1;
-    position: absolute;
-    margin: 4% 0 0 0;
-    width: 1000% !important;
-    opacity: 0.1 !important;
-    filter: drop-shadow(5px 5px 5px #0000008e);
-    transition: 1s;
-  }
-  .frise2 {
-    margin: 10% 0 0 0;
-  }
-  .frise3 {
-    margin: 18% 0 0 0;
-  }
-  .frise4 {
-    margin: 26% 0 0 0;
-  }
-  .frise5 {
-    margin: 34% 0 0 0;
-  }
-  .frise6 {
-    margin: 42% 0 0 0;
   }
 }

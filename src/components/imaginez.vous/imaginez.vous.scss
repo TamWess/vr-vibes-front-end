@@ -10,12 +10,11 @@
 html, body{
 	overflow-x: hidden;
 }
-
 .imaginezVous {
   padding-top: 80px;
   z-index: 21;
   position: relative;
-  height: 900px;
+  height: fit-content;
   overflow-y: hidden;
   overflow-x: hidden;
   .background {
@@ -71,19 +70,22 @@ html, body{
     transform-origin: 250px 250px;
   }
   .title {
+	height: fit-content;
     font-family: "Archivo Black";
     font-size: 35px;
     margin: 60px 0 0 30px;
     left: 2000px;
     opacity: 0;
     color: white;
-    position: absolute;
+    position: relative;
     z-index: 21;
     transition: 1s;
   }
   .text1,
   .text2,
   .text3 {
+	margin-left: 2%;
+	height: 15% ;
     font-family: "Nunito Sans";
     font-weight: bold;
     font-size: 20px;
@@ -91,16 +93,19 @@ html, body{
     left: 2000px;
     opacity: 0;
     color: white;
-    position: absolute;
-    margin: 150px 0 0 30px;
+    position: relative;
     z-index: 21;
-    transition: 1s;
+    transition: 1.2s;
+  }
+  .text1{
+	margin-top: 55px;
   }
   .text2 {
-    margin-top: 290px;
+    margin-top: 20px;
   }
   .text3 {
-    margin-top: 465px;
+    margin-top: 20px;
+	margin-bottom: 60px
   }
 }
 
@@ -209,11 +214,6 @@ html, body{
 @media screen and (max-width: 576px) {
   .imaginezVous {
     position: relative;
-    height: 1000px;
-    .background {
-      height: 1000px !important;
-      width: 1500px !important;
-    }
     .vaisseau {
       left: 0% !important;
       margin-top: -320px !important;
@@ -237,8 +237,6 @@ html, body{
     }
     .title {
       font-size: 32px;
-      margin: 20px 0 0 30px;
-      left: 2000px;
 	  filter: drop-shadow(1px 1px 3px rgb(0, 0, 0))
     }
     .text1,
@@ -246,17 +244,8 @@ html, body{
     .text3 {
       font-size: 20px;
       line-height: 1.3;
-      left: 2000px;
-      position: absolute;
-      margin: 80px 0 0 30px;
       filter: drop-shadow(1px 1px 3px rgb(0, 0, 0))
         
-    }
-    .text2 {
-      margin-top: 330px;
-    }
-    .text3 {
-      margin-top: 610px;
     }
   }
 }
@@ -291,12 +280,6 @@ html, body{
     .text2,
     .text3 {
       filter: drop-shadow(1px 1px 3px rgb(0, 0, 0)) 
-    }
-    .text2 {
-      margin-top: 330px;
-    }
-    .text3 {
-      margin-top: 610px;
     }
   }
 }
