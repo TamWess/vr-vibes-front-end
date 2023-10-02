@@ -5,10 +5,21 @@ html, body{
 	overflow-x: hidden;
 }
 
+
+
 .home {
   overflow-y: hidden;
   overflow-x: hidden;
   padding-top: 30px;
+  .titleAccueilFamilleEntreprise{
+	position: relative;
+	z-index: 50;
+	width: 100%;
+	height: 10vh;
+	font-family: "Archivo Black";
+	font-size: 25px;
+	bottom: 100px;
+  }
   .accueilImage {
     z-index: 9;
     position: relative;
@@ -109,6 +120,7 @@ html, body{
     background-size: cover;
     clip-path: polygon(73% 0, 100% 0, 100% 100%, 30% 100%);
   }
+ 
 }
 @keyframes logoAnimation {
   from {

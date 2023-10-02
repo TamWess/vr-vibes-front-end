@@ -8,8 +8,10 @@ function AccueilEntreprisePrive() {
 			<img className="logoVRvibes" src="/icns/vr-vibes-logo.png" alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris" />
 			<div className="imageVREntreprise" />
 			<div className="imageVRFamille" />
-			<div className="accueilImage">
-			</div>
+			<div className="accueilImage"/>
+			<h1 className="titleAccueilFamilleEntreprise">
+				Animation VR pour accompagner vos événements
+			</h1>
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import "./avis.utilisateurs.scss";
 
 function AvisUtilisateurs() {
@@ -12,6 +12,7 @@ function AvisUtilisateurs() {
 
 
 		window.addEventListener("scroll", function () {
+
 			if (window.scrollY > 900) {
 
 				imageUser1.style.opacity = "1";
@@ -36,7 +37,7 @@ function AvisUtilisateurs() {
 				)
 			}
 		});
-	})
+	},[])
 
 	return (
 		<div className="sectionUsers">
@@ -70,7 +71,7 @@ function AvisUtilisateurs() {
 					<img className="imageUser3" src="/img/vrvibes-partners-formation-hani-habiba.jpg" alt="Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes" />
 					<div className="informationsUser3">
 						<div className="commentaireUser3">" Une prestation de qualité, je recommande
-						fortement"
+							fortement"
 						</div>
 						<div className="nameUser3">Habiba HANNI</div>
 						<img className="entrepriseUser3" src="/icns/partners-formation-logo.png" alt="logo PARTNERS FORMATION" />
@@ -80,7 +81,7 @@ function AvisUtilisateurs() {
 
 			<div className="user4div">
 				<div className="user4">
-					<img className="imageUser4" src="/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg" alt="" />
+					<img className="imageUser4" src="/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg" />
 					<div className="informationsUser4">
 						<div className="commentaireUser4">"À la recherche d'une idée pour une fête familiale, j'ai trouvé VR Vibes sur Google. Les invités étaient enchantés!"
 						</div>
