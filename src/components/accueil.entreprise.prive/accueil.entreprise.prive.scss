@@ -1,25 +1,35 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
-html, body{
-	overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
-
-
 
 .home {
   overflow-y: hidden;
   overflow-x: hidden;
   padding-top: 30px;
-  .titleAccueilFamilleEntreprise{
-	position: relative;
-	z-index: 50;
-	width: 100%;
-	height: 10vh;
-	font-family: "Archivo Black";
-	font-size: 25px;
-	bottom: 100px;
+  .divH1 {
+    position: relative;
+    z-index: 8;
+    margin: auto;
+    width: 90%;
+    bottom: 120px;
+    display: flex;
+    justify-content: center;
+    .titleAccueilFamilleEntreprise {
+      margin: auto;
+      opacity: 0;
+      color: white;
+      position: relative;
+      font-family: "Archivo Black";
+      font-size: 40px;
+      text-shadow: 3px 3px 5px rgba(0, 48, 38, 0.479);
+      text-align: center;
+    }
   }
+
   .accueilImage {
     z-index: 9;
     position: relative;
@@ -120,7 +130,6 @@ html, body{
     background-size: cover;
     clip-path: polygon(73% 0, 100% 0, 100% 100%, 30% 100%);
   }
- 
 }
 @keyframes logoAnimation {
   from {
@@ -135,20 +144,18 @@ html, body{
 // ----------------RESPONSIVE----------------
 
 @media screen and (min-width: 1025px) {
-	.imageVREntreprise {
-		background-image: url(../../../public/img/vrvibes-entreprise-widescreen-min-1025.jpg) !important;
-	  }
-	  .imageVRFamille {
-		background-image: url(../../../public/img/vrvibes-famille-widescreen-min-1025.jpg) !important;
-	  }
+  .imageVREntreprise {
+    background-image: url(../../../public/img/vrvibes-entreprise-widescreen-min-1025.jpg) !important;
   }
-  
-  @media screen and (max-width: 1025px) {
-
+  .imageVRFamille {
+    background-image: url(../../../public/img/vrvibes-famille-widescreen-min-1025.jpg) !important;
   }
+}
 
-@media screen and (min-width: 769px) {
-	
+@media screen and (max-width: 800px) {
+  .divH1 {
+    bottom: 150px !important;
+  }
 }
 
 @media screen and (max-width: 768px) {

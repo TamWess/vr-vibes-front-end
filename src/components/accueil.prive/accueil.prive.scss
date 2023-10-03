@@ -1,8 +1,9 @@
 @import "../../../src/utils/style/libs/mixins.scss";
 @import "../../../src/utils/style/libs/variable.scss";
 
-html, body{
-	overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 .homeAF {
@@ -12,22 +13,30 @@ html, body{
   display: flex;
   flex-wrap: wrap;
   background-size: cover;
-  .accueilImageAF {
+  .activitiesPrive {
+    opacity: 0;
     z-index: 9;
-    position: relative;
-    height: 600px;
-    background-image: url(../../../public/img/vr-vibes-home-image.jpg);
-    background-size: cover;
+    background-color: rgba(127, 255, 212, 0.644);
     display: flex;
-    animation: clip 3s 1;
-    animation-fill-mode: forwards;
-    @keyframes clip {
-      from {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      }
-      to {
-        clip-path: polygon(73% 0, 73% 0, 30% 100%, 30% 100%);
-      }
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    transition: 1s;
+    .babyShower,
+    .anniversaire,
+    .mariage {
+      text-align: center;
+      font-family: "Archivo Black";
+      z-index: 9;
+      position: relative;
+      width: 30%;
+      font-size: 35px;
+      color: rgb(255, 255, 255);
+      text-shadow: 3px 3px 5px rgba(0, 48, 38, 0.479);
     }
   }
   .logoVRvibesAF {
@@ -38,7 +47,7 @@ html, body{
     top: calc(50% - 60px);
     clip-path: polygon(0% 0%, 60% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
     animation: logoAnimation 1.8s 1;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
   .imageVRFamilleAF1 {

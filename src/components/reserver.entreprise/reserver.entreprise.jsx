@@ -11,7 +11,7 @@ function ReserverEntreprise() {
 			</h2>
 			<div className="entrepriseAE">
 				<h1 className="subtitleEntrepriseAE">
-					Team Building, Afterwork, Séminaire ...
+					Team Building, Afterworks, Séminaires ...
 				</h1>
 				<img className="entrepriseChoiceAE" src="/img/vrvibes-entreprise-choice.png" alt="vrvibes réserver votre événement privé en réalité virtuelle baby shower - anniversaire - mariage" />
 				<div className="divReserverEntrerpriseAE">

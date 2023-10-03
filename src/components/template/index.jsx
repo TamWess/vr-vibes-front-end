@@ -10,21 +10,11 @@ import 'animate.css';
 function Template() {
 
 	function closeRollMenu() {
-		setTimeout(() => {
 			document.querySelector(".rollMenu").style.display = "none"
 		}
-			, 50
-		)
-	}
-
+	
 	useEffect(() => {
-
-		// Tentative changement d'animation logo nav au changement de width screen
-
-		if (window.screen.width < 576) {
-			document.getElementsByClassName("animate__pulse").className = "animate__tada";
-		}
-
+		
 		// -----Fonction pour burger menu responsive écrans téléphones----
 
 		const burgerMenu = document.querySelector(".burgerMenu");
@@ -53,17 +43,6 @@ function Template() {
 				burgerMenu.style.left = "30px !important"
 			}
 		})
-
-		crossClose.addEventListener("click", (event) => {
-
-			rollMenu.style.display = "none"
-			if (window.width > 578) {
-				burgerMenu.style.left = "80px"
-			}
-			if (window.width <= 578) {
-				burgerMenu.style.left = "30px !important"
-			}
-		})
 	});
 
 	return (
@@ -76,7 +55,7 @@ function Template() {
 							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris">
 						</img>
 					</Link>
-					<Link to="/accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp" onClick={closeRollMenu}>Animation VR pour Entreprise</Link>
+					<Link to="/accueil_entreprise" className="itemsNav animate__animated animate__fadeInUp" >Animation VR pour Entreprise</Link>
 					<Link to="/accueil_prive" className="itemsNav animate__animated animate__fadeInUp">Animation VR pour Événement Privé</Link>
 					<Link to="/productions-VR" className="itemsNav animate__animated animate__fadeInUp">Productions VR</Link>
 					<Link to="/contact" className="contactButton">Contact</Link>
@@ -84,7 +63,7 @@ function Template() {
 					<div className="rollMenu">
 						<ul className="listRollMenu">
 							<img className="crossClose" src="/icns/close-button-white.svg" />
-							<Link className="linksRollMenu" to="/"><li> Accueil </li></Link>
+							<Link className="linksRollMenu" to="/" ><li> Accueil </li></Link>
 							<Link className="linksRollMenu" to="/accueil_entreprise"><li> Animation VR pour Entreprise </li></Link>
 							<Link className="linksRollMenu" to="/accueil_prive"><li> Animation VR pour Événements Privés </li></Link>
 							<Link className="linksRollMenu" to="/productions-VR"><li> Productions VR </li>
@@ -110,7 +89,7 @@ function Template() {
 					</div>
 					<div className="footerDiv01">
 						{/* <p>Plan du site</p> */}
-						<Link className="footerLinks" to="/"><p>Accueil</p>
+						<Link className="footerLinks" to="/" onClick={closeRollMenu}><p>Accueil</p>
 						</Link>
 						<Link className="footerLinks" to="/accueil_entreprise"><p>VR-Vibes pour les événements d'entreprises</p>
 						</Link>

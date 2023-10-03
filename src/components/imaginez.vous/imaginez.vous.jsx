@@ -1,22 +1,27 @@
 import React, { useEffect, useRef } from "react";
 import "./imaginez.vous.scss";
-import rallax from 'rallax.js'
+import rallax from 'rallax.js' 
 
 
 function ImaginezVous() {
 	const imaginezVousRef = useRef(null)
+	const titleRef = useRef(null)
+	const text1Ref = useRef(null)
+	const text2Ref = useRef(null)
+	const text3Ref = useRef(null)
+
 
 	useEffect(() => {
+		
 		// ----------Fonction Parallax dépendance rallax.js-----------
+		const vaisseau1 = document.querySelector(".vaisseau")
+		const parallaxVaisseau = rallax(vaisseau1, { speed: 0.35 })
 
-		const targetVaisseau = document.querySelector('.vaisseau')
-		const parallaxVaisseau = rallax(targetVaisseau, { speed: 0.35 })
+		const vaisseau2 = document.querySelector(".vaisseau2")
+		const parallaxVaisseau2 = rallax(vaisseau2, { speed: 0.2 })
 
-		const targetVaisseau2 = document.querySelector('.vaisseau2')
-		const parallaxVaisseau2 = rallax(targetVaisseau2, { speed: 0.2 })
-
-		const targetVaisseau3 = document.querySelector('.vaisseau3')
-		const parallaxVaisseau3 = rallax(targetVaisseau3, { speed: 0.2 })
+		// const vaisseau3 = document.querySelector(".vaisseau3")
+		// const parallaxVaisseau3 = rallax(vaisseau3, { speed: 0.2 })
 
 		const targetMustafar = document.querySelector('.mustafar')
 		const parallaxMustafar = rallax(targetMustafar, { speed: 0.04 })
@@ -37,7 +42,7 @@ function ImaginezVous() {
 		window.addEventListener('scroll', function () {
 			const offsetTop = imaginezVousRef.current?.offsetTop
 
-			if (window.scrollY > (offsetTop - 500)) {
+			if (window.scrollY > (offsetTop - 300)) {
 				timeoutId = setTimeout(() => {
 					targetTitle.style.left = "0px";
 					targetTitle.style.opacity = "1";
@@ -79,12 +84,12 @@ function ImaginezVous() {
 	return (
 		<div className="imaginezVous" ref={imaginezVousRef}>
 			<img className="background" src="/img/vrvibes-milky-way.jpg" alt="vr-vibes événement en réalité virtuelle - fond section Star Wars" />
-			<img className="vaisseau" src="/img/vrvibes-vaisseau-star-wars.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
-			<img className="vaisseau2" src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
-			<img className="vaisseau3" src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			<img className="vaisseau"  src="/img/vrvibes-vaisseau-star-wars.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			<img className="vaisseau2"  src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" />
+			{/* <img className="vaisseau3"  src="/img/vrvibes-vaisseau-star-wars-little.png" alt="vr-vibes événement en réalité virtuelle - vaisseau section Star Wars" /> */}
 			<img className="planet" src="/img/vrvibes-planet-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Star Wars" />
 			<img className="mustafar" src="/img/vrvibes-mustafar-star-wars.png" alt="vr-vibes événement en réalité virtuelle - planète Mustafar section Star Wars" />
-			<h2 className="title">Imaginez</h2>
+			<h2 className="title" ref={titleRef}>Imaginez</h2>
 			<div className="text1">
 				Imaginez-vous transporter vos invités dans des mondes <br />
 				virtuels époustouflants et participer à des jeux en équipe <br />
