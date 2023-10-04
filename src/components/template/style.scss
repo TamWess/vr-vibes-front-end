@@ -211,7 +211,7 @@ body {
   .burgerMenu {
     left: 20%;
   }
-  
+
   .contactButton {
     display: none;
   }
@@ -297,7 +297,7 @@ body {
     .headerLogo {
       width: 17vw !important;
       padding: 10px;
-      left: -90px !important;
+      left: -75px !important;
       animation-duration: 1s;
       transition: 500ms;
     }
@@ -337,28 +337,28 @@ body {
 }
 
 @media screen and (max-width: 390px) {
-	.burgerMenu {
-	  width: 28px !important;
-	  left: 60px !important;
-	}
-	.rollMenu {
-	  z-index: 100;
-	  position: absolute;
-	  top: 10px !important;
-	  left: 70px !important;
-	  width: 80vw !important;
-	}
-	.header {
-	  width: 100%;
-	  .headerLogo {
-		width: 20vw;
-		padding: 10px;
-		left: -65px !important;
-		animation-duration: 1s;
-		transition: 500ms;
-	  }
-	  .itemsNav {
-		display: none;
-	  }
-	}
+  .burgerMenu {
+    width: 28px !important;
+    left: 60px !important;
+  }
+  .rollMenu {
+    z-index: 100;
+    position: absolute;
+    top: 10px !important;
+    left: 70px !important;
+    width: 80vw !important;
+  }
+  .header {
+    width: 100%;
+    .headerLogo {
+      width: 20vw;
+      padding: 10px;
+      left: -65px !important;
+      animation-duration: 1s;
+      transition: 500ms;
+    }
+    .itemsNav {
+      display: none;
+    }
+  }
 }

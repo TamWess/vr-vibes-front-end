@@ -19,7 +19,7 @@ body {
     width: 200%;
     left: -50%;
     height: 120%;
-    background-image: url('/assets/img/vrvibes-frise-double-green-pastel.png');
+    background-image: url("/assets/img/vrvibes-frise-double-green-pastel.png");
     background-repeat: repeat-y;
     background-size: 100%;
     opacity: 0.15;
@@ -32,7 +32,7 @@ body {
     right: -50%;
     height: 120%;
     top: 75px;
-    background-image: url('/assets/img/vrvibes-frise-double-green-pastel.png');
+    background-image: url("/assets/img/vrvibes-frise-double-green-pastel.png");
     background-repeat: repeat-y;
     background-size: 100%;
     z-index: 5;
@@ -133,7 +133,7 @@ body {
     .divReserver {
       width: 100%;
       .reserverFamille {
-		opacity: 0;
+        opacity: 0;
         margin: auto;
         z-index: 10;
         width: 100%;
@@ -172,7 +172,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .entrepriseFamille {
-	padding-top: 100px;
+    padding-top: 100px;
     z-index: 0;
     position: relative;
     height: fit-content;
@@ -186,7 +186,7 @@ body {
     .entreprise {
       width: 100%;
       height: fit-content;
-      
+
       .subtitleEntreprise {
         text-align: center;
         color: $primary;
@@ -198,7 +198,7 @@ body {
       }
     }
     .famille {
-	padding-bottom: 30px ;
+      padding-bottom: 30px;
       width: 100%;
       height: fit-content;
       margin-top: -35px;
@@ -225,7 +225,6 @@ body {
     position: relative;
     background-size: cover;
     .titleEntrepriseFamille {
-      padding-top: 66px;
       position: relative;
       text-align: center;
       margin: auto;
