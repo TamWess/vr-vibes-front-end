@@ -11,8 +11,22 @@
   src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
 
-html, body{
-	overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
+}
+// pour le "patientez" après envoi
+.spin {
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .introFormulaire {
@@ -264,7 +278,7 @@ html, body{
       border: none;
     }
     .erreurEnvoi {
-	  opacity:0;
+      opacity: 0;
       margin-block: 30px;
       color: #b10404da;
       transition: 0.5;
@@ -280,7 +294,7 @@ html, body{
     .phone,
     .mail,
     .localisation {
-	  z-index: 5;
+      z-index: 5;
       margin-left: 3%;
       margin-top: 15px;
       display: flex;

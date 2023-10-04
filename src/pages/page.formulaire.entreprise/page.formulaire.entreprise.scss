@@ -276,6 +276,18 @@ html, body {
       margin-top: 30px;
       border: none;
     }
+    .boutonEnvoyerIsSaving {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      width: fit-content;
+      height: fit-content;
+      color: rgba(255, 255, 255, 0.568);
+      padding: 5px 10px;
+      background-color: rgb(25, 54, 52);
+      border-radius: 10px;
+      margin-top: 30px;
+      border: none;
+    }
     .erreurEnvoi {
       opacity: 0;
       margin-block: 30px;

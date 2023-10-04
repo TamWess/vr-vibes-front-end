@@ -1,12 +1,11 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import loaderSpin from './page.formulaire.entreprise.scss';
+// import loaderSpin from './page.formulaire.entreprise.scss';
 
 import "./page.formulaire.entreprise.scss";
-
 
 const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
 
@@ -19,9 +18,9 @@ function FormulaireEntreprise() {
 	const [nom, setNom] = useState("")
 	const [prenom, setPrenom] = useState("")
 	const [date, setDate] = useState("")
-	const [rue, setRue] = useState("")
-	const [ville, setVille] = useState("")
-	const [codePostal, setCodePostal] = useState("")
+	// const [rue, setRue] = useState("")
+	// const [ville, setVille] = useState("")
+	// const [codePostal, setCodePostal] = useState("")
 	const [mail, setMail] = useState("")
 	const [tel, setTel] = useState("")
 	const [precisions, setPrecisions] = useState("")
@@ -39,9 +38,9 @@ function FormulaireEntreprise() {
 					nom: nom,
 					prenom: prenom,
 					date: date,
-					rue: rue,
-					ville: ville,
-					codePostal: codePostal,
+					// rue: rue,
+					// ville: ville,
+					// codePostal: codePostal,
 					mail: mail,
 					tel: tel,
 					precisions: precisions,
@@ -161,56 +160,56 @@ function FormulaireEntreprise() {
 		console.log(date);
 	}
 
-	function rueEvent(event) {
-		setRue(event.target.value)
+	// function rueEvent(event) {
+	// 	setRue(event.target.value)
 
-		const rueId = document.querySelector("#rue")
+	// 	const rueId = document.querySelector("#rue")
 
-		if (rueRegex.test(event.target.value)) {
-			rueId.style.color = "green";
-			rueId.style.backgroundColor = "#0080002b";
-			document.querySelector(".labelRue").style.color = "green";
-		}
-		else {
-			rueId.style.color = "red";
-			rueId.style.backgroundColor = "#b104043e";
-			document.querySelector(".labelRue").style.color = "red";
-		}
-	}
+	// 	if (rueRegex.test(event.target.value)) {
+	// 		rueId.style.color = "green";
+	// 		rueId.style.backgroundColor = "#0080002b";
+	// 		document.querySelector(".labelRue").style.color = "green";
+	// 	}
+	// 	else {
+	// 		rueId.style.color = "red";
+	// 		rueId.style.backgroundColor = "#b104043e";
+	// 		document.querySelector(".labelRue").style.color = "red";
+	// 	}
+	// }
 
-	function villeEvent(event) {
-		setVille(event.target.value)
+	// function villeEvent(event) {
+	// 	setVille(event.target.value)
 
-		const villeId = document.querySelector("#ville")
+	// 	const villeId = document.querySelector("#ville")
 
-		if (nomPrenomRegex.test(event.target.value)) {
-			villeId.style.color = "green";
-			villeId.style.backgroundColor = "#0080002b";
-			document.querySelector(".labelVille").style.color = "green";
-		}
-		else {
-			villeId.style.color = "red";
-			villeId.style.backgroundColor = "#b104043e";
-			document.querySelector(".labelVille").style.color = "red";
-		}
-	}
+	// 	if (nomPrenomRegex.test(event.target.value)) {
+	// 		villeId.style.color = "green";
+	// 		villeId.style.backgroundColor = "#0080002b";
+	// 		document.querySelector(".labelVille").style.color = "green";
+	// 	}
+	// 	else {
+	// 		villeId.style.color = "red";
+	// 		villeId.style.backgroundColor = "#b104043e";
+	// 		document.querySelector(".labelVille").style.color = "red";
+	// 	}
+	// }
 
-	function codePostalEvent(event) {
-		setCodePostal(event.target.value)
+	// function codePostalEvent(event) {
+	// 	setCodePostal(event.target.value)
 
-		const codePostalId = document.querySelector("#codePostal")
+	// 	const codePostalId = document.querySelector("#codePostal")
 
-		if (codePostalRegex.test(event.target.value)) {
-			codePostalId.style.color = "green";
-			codePostalId.style.backgroundColor = "#0080002b";
-			document.querySelector(".labelCodePostal").style.color = "green";
-		}
-		else {
-			codePostalId.style.color = "red";
-			codePostalId.style.backgroundColor = "#b104043e";
-			document.querySelector(".labelCodePostal").style.color = "red";
-		}
-	}
+	// 	if (codePostalRegex.test(event.target.value)) {
+	// 		codePostalId.style.color = "green";
+	// 		codePostalId.style.backgroundColor = "#0080002b";
+	// 		document.querySelector(".labelCodePostal").style.color = "green";
+	// 	}
+	// 	else {
+	// 		codePostalId.style.color = "red";
+	// 		codePostalId.style.backgroundColor = "#b104043e";
+	// 		document.querySelector(".labelCodePostal").style.color = "red";
+	// 	}
+	// }
 
 	function mailEvent(event) {
 		setMail(event.target.value)
@@ -322,31 +321,31 @@ function FormulaireEntreprise() {
 
 					{/* nom */}
 
-					<label className="labelNom" htmlFor="nom">Nom *</label>
+					<label className="labelNom" htmlFor="nom">Nom</label>
 					<input required type="text" name="nom" id="nom" onChange={nomEvent} />
 
 
 					{/* prenom */}
 
-					<label className="labelPrenom" htmlFor="prenom">Prénom *</label>
+					<label className="labelPrenom" htmlFor="prenom">Prénom</label>
 					<input required type="text" name="prenom" id="prenom" onChange={prenomEvent} />
 
 
 					{/* rue */}
 
-					<label className="labelRue" htmlFor="rue">Rue *</label>
-					<input required type="text" name="rue" id="rue" onChange={rueEvent} />
+					{/* <label className="labelRue" htmlFor="rue">Rue *</label>
+					<input required type="text" name="rue" id="rue" onChange={rueEvent} /> */}
 
 
 					{/* ville */}
 
-					<label className="labelVille" htmlFor="ville">Ville *</label>
-					<input required type="text" name="ville" id="ville" onChange={villeEvent} />
+					{/* <label className="labelVille" htmlFor="ville">Ville *</label>
+					<input required type="text" name="ville" id="ville" onChange={villeEvent} /> */}
 
 					{/* code postal */}
 
-					<label className="labelCodePostal" htmlFor="codePostal">Code postal *</label>
-					<input required type="text" name="codePostale" id="codePostal" onChange={codePostalEvent} />
+					{/* <label className="labelCodePostal" htmlFor="codePostal">Code postal *</label>
+					<input required type="text" name="codePostale" id="codePostal" onChange={codePostalEvent} /> */}
 
 					{/* mail */}
 
@@ -365,10 +364,10 @@ function FormulaireEntreprise() {
 					<label className="pourToutesPrecisions" htmlFor="precisions">Pour toutes précisions concernant votre événements, écrivez-nous un message:</label>
 					<input type="text" name="precisions" id="precisions" onChange={precisionsEvent} />
 
-					<button className="boutonEnvoyer" disabled={isSaving}><span style={{ marginInline: '1em' }}>Envoyer</span>
-					{isSaving && <AiOutlineLoading3Quarters className={loaderSpin.spin} />}</ button>
-
 					{/* envoyer */}
+
+					<button className="boutonEnvoyer" disabled={isSaving}><span style={{ marginInline: '1em' }}>Envoyer</span>
+						{isSaving && <AiOutlineLoading3Quarters className="spin" />} </ button>
 
 					{/* <button className="boutonEnvoyer">Envoyer</button> */}
 
