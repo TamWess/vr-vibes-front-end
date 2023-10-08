@@ -6,14 +6,26 @@ body {
   overflow-x: hidden;
 }
 @keyframes floating1 {
-  from { transform: translateX(0px); }
-  50%  { transform: translateX(-100px); }
-  to   { transform: translateX(-0px); }    
+  from {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(-0px);
+  }
 }
 @keyframes floating2 {
-  from { transform: translateX(0px); }
-  50%  { transform: translateX(100px); }
-  to   { transform: translateX(-0px); }    
+  from {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-0px);
+  }
 }
 
 .containerEntrepriseAE {
@@ -23,7 +35,7 @@ body {
     width: 200%;
     left: -50%;
     height: 120%;
-    background-image: url('/assets/img/vrvibes-frise-double-green-pastel.png');
+    background-image: url("/assets/img/vrvibes-frise-double-green-pastel.png");
     background-repeat: repeat-y;
     background-size: 100%;
     opacity: 0.15;
@@ -36,7 +48,7 @@ body {
     right: -50%;
     height: 120%;
     top: 75px;
-    background-image: url('/assets/img/vrvibes-frise-double-green-pastel.png');
+    background-image: url("/assets/img/vrvibes-frise-double-green-pastel.png");
     background-repeat: repeat-y;
     background-size: 100%;
     z-index: 5;
@@ -52,9 +64,9 @@ body {
   flex-wrap: wrap;
   text-align: center;
   height: fit-content;
-  
+
   .titleAE {
-	width: 100%;
+    width: 80%;
     margin: 65px 0 15px 0;
     position: relative;
     height: 4vh;
@@ -87,26 +99,26 @@ body {
       width: 646px;
       height: 474px;
     }
-	.divReserverEntrerpriseAE{
-		width:100%;
-		.reserverEntreprise {
-			margin: auto;
-			z-index: 10;
-			position: relative;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			font-family: "Nunito Sans";
-			text-decoration: none;
-			color: white;
-			font-size: 30px;
-			width: 160px;
-			height: 61px;
-			background: #005f4e;
-			border-radius: 11px;
-	}
-    
+    .divReserverEntrerpriseAE {
+      width: 100%;
+      .reserverEntreprise {
+        margin: auto;
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Nunito Sans";
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        width: 160px;
+        height: 61px;
+        background: #005f4e;
+        border-radius: 11px;
+      }
+
       //   box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.22),
       //     inset 1px 2px 3px rgba(255, 255, 255, 0.34);
       //   filter: drop-shadow(-8px -8px 13px rgba(255, 255, 255, 0.86))
@@ -160,41 +172,14 @@ body {
 // ----------RESPONSIVE----------
 
 @media screen and (max-width: 1200px) {
-	.entrepriseAE{
-		margin-top: 30px !important;
-	}
+  .entrepriseAE {
+    margin-top: 30px !important;
+  }
 }
 
-@media screen and (max-width: 576px) {
-  .containerEntrepriseAE {
-    z-index: 0;
-    position: relative;
-    height: fit-content !important;
-    .titleAE {
-      padding-top: 66px;
-      position: relative;
-      text-align: center;
-      margin: auto;
-      font-size: 23px !important;
-    }
-    .entrepriseAE {
-      width: 100%;
-      height: fit-content;
-      margin-top: 20px;
-      .subtitleEntrepriseAE {
-        text-align: center;
-        color: $primary;
-        font-size: 26px !important;
-      }
-      .entrepriseChoiceAE {
-		margin-top: 20px !important;
-        width: 367px !important;
-        height: 290px !important;
-      }
-	  .divReserverEntrerpriseAE{
-		margin-top: 20px !important;
-	  }
-    }
+@media screen and (min-width: 769px) {
+  .titleAE {
+    margin-bottom: 80px !important;
   }
 }
 
@@ -205,7 +190,7 @@ body {
     height: fit-content;
     .titleAE {
       padding-top: 66px;
-      padding-bottom: 0px !important;
+      padding-bottom: 55px !important;
       position: relative;
       text-align: center;
       margin: auto;
@@ -223,6 +208,41 @@ body {
       .entrepriseChoiceAE {
         width: 700px;
         height: 510px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .containerEntrepriseAE {
+    z-index: 0;
+    position: relative;
+    height: fit-content !important;
+    .titleAE {
+      padding-top: 66px !important;
+	  padding-bottom: 0px !important;
+      position: relative;
+      text-align: center;
+      margin: auto;
+
+      font-size: 23px !important;
+    }
+    .entrepriseAE {
+      width: 100%;
+      height: fit-content;
+      margin-top: 20px;
+      .subtitleEntrepriseAE {
+        text-align: center;
+        color: $primary;
+        font-size: 26px !important;
+      }
+      .entrepriseChoiceAE {
+        margin-top: 20px !important;
+        width: 367px !important;
+        height: 290px !important;
+      }
+      .divReserverEntrerpriseAE {
+        margin-top: 20px !important;
       }
     }
   }

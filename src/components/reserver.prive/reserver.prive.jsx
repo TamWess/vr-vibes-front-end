@@ -7,7 +7,7 @@ function ReserverPrive() {
 	return (
 		<div className="familleDivAF">
 			<h2 className="titleAF">
-				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
+			LA VR RENDRA VOTRE EVENEMENT INOUBLIABLE !
 			</h2>
 			<div className="familleAF">
 				<h1 className="subtitleFamilleAF">

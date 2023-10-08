@@ -7,7 +7,7 @@ function ReserverEntreprise() {
 	return (
 		<div className="containerEntrepriseAE">
 			<h2 className="titleAE">
-				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
+				NOUS NOUS OCCUPONS DE VOS COLLABORATEURS !
 			</h2>
 			<div className="entrepriseAE">
 				<h1 className="subtitleEntrepriseAE">

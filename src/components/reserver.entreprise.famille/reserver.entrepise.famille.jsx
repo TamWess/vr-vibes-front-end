@@ -56,7 +56,7 @@ function ReserverEntrepriseFamille() {
 	return (
 		<div className="entrepriseFamille">
 			<h1 className="titleEntrepriseFamille">
-				RENDEZ VOTRE ÉVÉNEMENT INOUBLIABLE !
+				LA VR RENDRA VOTRE EVENEMENT INOUBLIABLE !
 			</h1>
 			<div className="entreprise">
 				<h2 className="subtitleEntreprise">
