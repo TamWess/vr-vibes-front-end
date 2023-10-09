@@ -68,7 +68,7 @@ function Template() {
 					</Link>
 					<div className="itemContainer" >
 						<div className="containerCenter">
-							<Link to="/" className="linkDropMenu" >
+							<Link to="" className="linkDropMenu" >
 								Animations VR
 								<img className="unfoldLogo" src="icns/vrvibes-unfold.svg" />
 							</Link>
