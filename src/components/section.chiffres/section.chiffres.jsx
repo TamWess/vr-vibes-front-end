@@ -1,33 +1,45 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import "./section.chiffres.scss";
 import anime from "animejs";
 
 function SectionChiffres() {
 
+	const laVrcestRef = useRef (null)
+	const badge1Ref = useRef (null)
+	const badge2Ref = useRef (null)
+	const badge3Ref = useRef (null)
+
+
 	useEffect(() => {
 
 		// Fonctions liées à la dépendance anime.js
 
-		const badge1 = document.querySelector(".badge1");
-		const badge2 = document.querySelector(".badge2");
-		const badge3 = document.querySelector(".badge3");
-
 		window.addEventListener("scroll", function () {
-			if (window.scrollY > 2100) {
-				badge1.style.opacity = "1";
-				badge1.classList.add("animate__animated");
-				badge1.classList.add("animate__fadeInUp");
+			const offsetTop = laVrcestRef.current?.offsetTop
+			if (window.scrollY > (offsetTop - 700)) {
+				if (!badge1Ref.current) {
+					return
+				  }
+				badge1Ref.current.style.opacity = "1";
+				badge1Ref.current.classList.add("animate__animated");
+				badge1Ref.current.classList.add("animate__fadeInUp");
 
 				setTimeout(() => {
-					badge2.style.opacity = "1";
-					badge2.classList.add("animate__animated");
-					badge2.classList.add("animate__fadeInUp");
+					if (!badge2Ref.current) {
+						return
+					  }
+					badge2Ref.current.style.opacity = "1";
+					badge2Ref.current.classList.add("animate__animated");
+					badge2Ref.current.classList.add("animate__fadeInUp");
 				}, 300);
 
 				setTimeout(() => {
-					badge3.style.opacity = "1";
-					badge3.classList.add("animate__animated");
-					badge3.classList.add("animate__fadeInUp");
+					if (!badge3Ref.current) {
+						return
+					  }
+					badge3Ref.current.style.opacity = "1";
+					badge3Ref.current.classList.add("animate__animated");
+					badge3Ref.current.classList.add("animate__fadeInUp");
 				}, 600);
 			}
 		});
@@ -66,20 +78,20 @@ function SectionChiffres() {
 	});
 
 	return (
-		<div className="laVRcest">
-			<div className="badge1">
+		<div className="laVRcest" ref={laVrcestRef}>
+			<div className="badge1" ref={badge1Ref}>
 				<div className="avisUtilisateurs1">Avis Utilisateurs</div>
 				<div className="numbers1"></div>
 				<div className="sur1">/5</div>
 			</div>
-			<div className="badge2">
+			<div className="badge2" ref={badge2Ref}>
 				<div className="avisUtilisateurs2">Nous intervenons dans</div>
 				<div className="containerNumberSur">
 					<div className="numbers2"></div>
 					<div className="sur2">départements</div>
 				</div>
 			</div>
-			<div className="badge3">
+			<div className="badge3" ref={badge3Ref}>
 				<div className="avisUtilisateurs3">Jeux disponibles</div>
 				<div className="numbers3"></div>
 				<div className="sur3"></div>

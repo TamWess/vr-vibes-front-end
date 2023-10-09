@@ -1,23 +1,26 @@
-import React, {useEffect} from "react"
+import React from "react"
 import "./accueil.entreprise.scss"
+
 
 function AccueilEntreprise() {
 
+	/*
+	const activitiesRef = useRef (null)
+
 	useEffect(() => {
 		setTimeout(() => {
-			const h1EntrepriseAccueil = document.querySelector(".activitiesEntreprise")
-			// const h1EntrepriseFamille = document.querySelector(".titleAccueilFamilleEntreprise")
-			h1EntrepriseAccueil.style.opacity = "1";
-			h1EntrepriseAccueil.classList.add("animate__animated");
-			h1EntrepriseAccueil.classList.add("animate__fadeInUp");
+			activitiesRef.current.style.opacity = "1";
+			activitiesRef.current.classList.add("animate__animated");
+			activitiesRef.current.classList.add("animate__fadeInUp");
 		}
 		, 3500
 		)
 	})
+	*/
 
 	return (
 		<div className="homeAE">
-			<div className="activitiesEntreprise">
+			<div className="activitiesEntreprise animate__animated animate__fadeInUp animate__delay-3s" /*ref={activitiesRef} */>
 				<h2 className="team">Team-Building</h2>
 				<h2 className="afterwork">Afterworks</h2>
 				<h2 className="seminaire">Séminaires</h2>

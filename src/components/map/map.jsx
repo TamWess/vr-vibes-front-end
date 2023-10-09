@@ -6,6 +6,7 @@ import "./map.scss"
 
 function MyGoogleMap() {
 
+const divTitleMyMapRef = useRef (null)
 const titleMyMapRef = useRef (null)
 
 	const { isLoaded } = useJsApiLoader({
@@ -18,11 +19,13 @@ const titleMyMapRef = useRef (null)
 
 
 		window.addEventListener('scroll', function () {
-			const offsetTop = titleMyMapRef.current?.offsetTop
-			const titleMyMap = document.querySelector(".titleMyMap")
+			const offsetTopMap = divTitleMyMapRef.current?.offsetTop
 
-			if (window.scrollY > (offsetTop - 100)) {
-				titleMyMap.style.opacity = "1";
+			if (window.scrollY > (offsetTopMap - 600)) {
+				if (!titleMyMapRef.current) {
+					return
+				  }
+				titleMyMapRef.current.style.opacity = "1";
 			}
 		})
 
@@ -32,8 +35,8 @@ const titleMyMapRef = useRef (null)
 	// return isLoaded && est l'équivalent de if(isloaded)
 	return isLoaded && (
 		<>
-			<div className="divTitleMyMap" ref={titleMyMapRef}>
-				<h2 className="titleMyMap">Nous intervenons dans <br /> toute la région île-de-France</h2>
+			<div className="divTitleMyMap" ref={divTitleMyMapRef}>
+				<h2 className="titleMyMap" ref={titleMyMapRef}>Nous intervenons dans <br /> toute la région île-de-France</h2>
 			</div>
 			<GoogleMap
 				zoom={11.3}

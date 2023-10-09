@@ -126,47 +126,6 @@ body {
       border-radius: 11px;
     }
   }
-
-  .frise15,
-  .frise17,
-  .frise19 {
-    right: -1500px;
-  }
-  .frise16,
-  .frise18,
-  .frise20 {
-    left: -1500px;
-  }
-  .frise15,
-  .frise16,
-  .frise17,
-  .frise18,
-  .frise19,
-  .frise20 {
-    overflow: hidden;
-    z-index: 1;
-    position: absolute;
-    margin: 4% 0 0 0;
-    width: 200%;
-    opacity: 0.1;
-    filter: drop-shadow(5px 5px 5px #0000008e);
-    transition: 1s;
-  }
-  .frise16 {
-    margin: 10% 0 0 0;
-  }
-  .frise17 {
-    margin: 18% 0 0 0;
-  }
-  .frise18 {
-    margin: 26% 0 0 0;
-  }
-  .frise19 {
-    margin: 34% 0 0 0;
-  }
-  .frise20 {
-    margin: 42% 0 0 0;
-  }
 }
 
 // ----------RESPONSIVE----------
@@ -220,7 +179,7 @@ body {
     height: fit-content !important;
     .titleAE {
       padding-top: 66px !important;
-	  padding-bottom: 0px !important;
+      padding-bottom: 0px !important;
       position: relative;
       text-align: center;
       margin: auto;
