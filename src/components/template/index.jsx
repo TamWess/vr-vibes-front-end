@@ -135,12 +135,11 @@ function Template() {
 
 					<div className="footerDiv03">
 						<Link className="footerLinks" to="/contact">Contact</Link>
-						FAQ
+						<Link className="footerLinks" to="">FAQ</Link>
 						<Link className="footerLinks" to="/CGV">
 							CGU - CGV - <br /> Mentions légales
 						</Link>
 					</div>
-
 				</div>
 			</footer>
 		</>

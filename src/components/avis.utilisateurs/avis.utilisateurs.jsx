@@ -68,7 +68,7 @@ function AvisUtilisateurs() {
 
 			<div className="user2div">
 				<div className="user2">
-					<img className={classnames('imageUser', { [activeClasses]: showImgUser2, 'opacity-0': !showImgUser2 })} src="/img/vrvibes-irene-lim.jpg" alt="Cliente de vr-vibes ayant commandé une prestation VR pour l'annniversaire de son fils donne son avis" />
+					<img className={classnames('imageUser2', { [activeClasses]: showImgUser2, 'opacity-0': !showImgUser2 })} src="/img/vrvibes-irene-lim.jpg" alt="Cliente de vr-vibes ayant commandé une prestation VR pour l'annniversaire de son fils donne son avis" />
 					<div className="informationsUser2">
 						<div className="commentaireUser2">" L'animation VR pour l'anniversaire de mon fils de 10 ans était géniale. Les enfants ce sont beaucoup amusés et étaient fascinés "
 						</div>
@@ -80,7 +80,7 @@ function AvisUtilisateurs() {
 			{/* <div className="line" /> */}
 			<div className="user3div">
 				<div className="user3">
-					<img className={classnames('imageUser', myClasses3)} src="/img/vrvibes-partners-formation-hani-habiba.jpg" alt="Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes" />
+					<img className={classnames('imageUser3', myClasses3)} src="/img/vrvibes-partners-formation-hani-habiba.jpg" alt="Habiba HANI responsable de l'organisme de formation PARTNERS FORMATION parle de vr-vibes" />
 					<div className="informationsUser3">
 						<div className="commentaireUser3">" Une prestation de qualité, je recommande
 							fortement"
@@ -93,7 +93,7 @@ function AvisUtilisateurs() {
 
 			<div className="user4div">
 				<div className="user4">
-					<img className={classnames('imageUser', { [activeClasses]: showImgUser4, 'opacity-0': !showImgUser4 })} src="/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg" />
+					<img className={classnames('imageUser4', { [activeClasses]: showImgUser4, 'opacity-0': !showImgUser4 })} src="/img/vrvibes-sylvia-stojanovic-parle-de-vrvibes.jpg" />
 					<div className="informationsUser4">
 						<div className="commentaireUser4">"À la recherche d'une idée pour une fête familiale, j'ai trouvé VR Vibes sur Google. Les invités étaient enchantés!"
 						</div>

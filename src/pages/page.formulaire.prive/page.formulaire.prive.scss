@@ -15,6 +15,7 @@ html,
 body {
   overflow-x: hidden;
 }
+
 // pour le "patientez" après envoi
 .spin {
   animation: spin 1s ease-in-out infinite;
@@ -95,7 +96,6 @@ body {
     height: fit-content;
     margin-bottom: 10vh;
     background-color: #ebfaff;
-    background-color: rgb(240, 255, 251);
     clip-path: polygon(0 2%, 100% 0%, 100% 97.8%, 0% 100%);
     .ligne {
       opacity: 0;
@@ -116,11 +116,12 @@ body {
       height: fit-content;
       margin-left: 3%;
       .labelQuelTypeEvent {
+        width: 100%;
         font-family: "Nunito Sans";
         font-size: 17px;
       }
       #quelTypeEvent {
-        width: fit-content;
+        width: 80%;
         height: fit-content;
         background-color: #b104043e;
         color: white;
@@ -140,11 +141,12 @@ body {
       height: fit-content;
       margin-left: 3%;
       .labelNombrePersonnes {
+        width: 100%;
         font-family: "Nunito Sans";
         font-size: 17px;
       }
       #combienDePersonnes {
-        width: fit-content;
+        width: 80%;
         height: fit-content;
         background-color: #b104043e;
         color: white;
@@ -170,12 +172,13 @@ body {
         font-family: "Nunito Sans";
         font-size: 17px;
         height: fit-content;
-        margin-left: 3%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
       }
       #date {
+        width: 40%;
         font-family: "Nunito Sans";
         color: white;
         margin: 7px 0 0px 0;
@@ -277,6 +280,18 @@ body {
       margin-top: 30px;
       border: none;
     }
+    .boutonEnvoyerIsSaving {
+      font-family: "Nunito Sans";
+      font-size: 18px;
+      width: fit-content;
+      height: fit-content;
+      color: rgba(255, 255, 255, 0.568);
+      padding: 5px 10px;
+      background-color: rgb(25, 54, 52);
+      border-radius: 10px;
+      margin-top: 30px;
+      border: none;
+    }
     .erreurEnvoi {
       opacity: 0;
       margin-block: 30px;
@@ -308,6 +323,7 @@ body {
       .phoneImage,
       .mailImage,
       .localisationImage {
+        z-index: 10;
         width: 10%;
       }
       .space {
@@ -322,5 +338,34 @@ body {
         line-height: 23px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .typeEvent,
+  .nombrePersonnes,
+  .aQuelleDate,
+  .messageTel,
+  .pourToutesPrecisions {
+    width: 150% !important;
+  }
+  #combienDePersonnes {
+    width: 100% !important;
+  }
+
+  #quelTypeEvent {
+    width: 100% !important;
+  }
+  #date {
+    width: 70% !important;
+  }
+  #prenom,
+  #nom,
+  #rue,
+  #ville,
+  #codePostal,
+  #mail,
+  #tel {
+    width: 100%;
   }
 }

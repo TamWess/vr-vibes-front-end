@@ -387,7 +387,6 @@ body {
     width: 35px !important;
     left: 90px !important;
   }
-
   .rollMenu {
     z-index: 15;
     position: absolute;
@@ -438,9 +437,15 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+
   .burgerMenu {
     width: 28px !important;
     left: 60px !important;
+  }
+
+  .footerLinks {
+    font-size: 10px !important;
+    text-align: center !important;
   }
 
   .rollMenu {
@@ -481,25 +486,11 @@ body {
 
   .footer {
     height: 220px;
-
-    .footerDiv01,
-    .footerDiv02,
-    .footerDiv03 {
-      left: 3%;
-      position: relative;
-      font-size: 12px !important;
-    }
-
-    .footerDiv01 {
-      .smileysFooter {
-        width: 80px !important;
-      }
-    }
   }
+}
 
-  .scrollTop {
-    width: 45px !important;
-  }
+.scrollTop {
+  width: 45px !important;
 }
 
 @media screen and (max-width: 390px) {

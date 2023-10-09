@@ -11,23 +11,24 @@
   src: url(../../../public/fonts/ArchivoBlack-Regular.ttf);
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
 // pour le "patientez" après envoi
 .spin {
-	animation: spin 1s ease-in-out infinite;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes spin {
-	from {
-	  transform: rotate(0deg);
-	}
-	to {
-	  transform: rotate(360deg);
-	}
+  to {
+    transform: rotate(360deg);
   }
+}
 
 .introFormulaire {
   margin-top: 80px;
@@ -115,11 +116,12 @@ html, body {
       height: fit-content;
       margin-left: 3%;
       .labelQuelTypeEvent {
+        width: 100%;
         font-family: "Nunito Sans";
         font-size: 17px;
       }
       #quelTypeEvent {
-        width: fit-content;
+        width: 80%;
         height: fit-content;
         background-color: #b104043e;
         color: white;
@@ -139,11 +141,12 @@ html, body {
       height: fit-content;
       margin-left: 3%;
       .labelNombrePersonnes {
+        width: 100%;
         font-family: "Nunito Sans";
         font-size: 17px;
       }
       #combienDePersonnes {
-        width: fit-content;
+        width: 80%;
         height: fit-content;
         background-color: #b104043e;
         color: white;
@@ -169,12 +172,13 @@ html, body {
         font-family: "Nunito Sans";
         font-size: 17px;
         height: fit-content;
-        margin-left: 3%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         margin-top: 20px;
       }
       #date {
+        width: 40%;
         font-family: "Nunito Sans";
         color: white;
         margin: 7px 0 0px 0;
@@ -301,11 +305,11 @@ html, body {
     position: relative;
     width: 30%;
     height: 100px;
-	
+
     .phone,
     .mail,
     .localisation {
-	  z-index: 5;
+      z-index: 5;
       margin-left: 3%;
       margin-top: 15px;
       display: flex;
@@ -334,5 +338,34 @@ html, body {
         line-height: 23px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .typeEvent,
+  .nombrePersonnes,
+  .aQuelleDate,
+  .messageTel,
+  .pourToutesPrecisions {
+    width: 150% !important;
+  }
+  #combienDePersonnes {
+    width: 100% !important;
+  }
+
+  #quelTypeEvent {
+    width: 100% !important;
+  }
+  #date {
+    width: 70% !important;
+  }
+  #prenom,
+  #nom,
+  #rue,
+  #ville,
+  #codePostal,
+  #mail,
+  #tel {
+    width: 100%;
   }
 }
