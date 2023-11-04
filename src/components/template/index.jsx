@@ -35,11 +35,9 @@ function Template() {
 			  if (!rollMenuRef.current) {
 				return
 			  }
-
 			burgerMenuRef.current.style.zIndex = "100 !important"
 			rollMenuRef.current.style.display = "flex"
 			rollMenuRef.current.style.zIndex = "100 !important"
-
 		})
 
 		crossCloseRef.current.addEventListener("click", (event) => {
@@ -60,13 +58,13 @@ function Template() {
 			<header>
 				<div className="header">
 					<Link to="/">
-						<img className="headerLogo animate__animated animate__pulse"
+						<img
+							className="headerLogo animate__animated animate__pulse"
 							src="/icns/vr-vibes-logo.png"
-							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris">
-						</img>
-
+							alt="logo vrvibes entreprise d'animation en réalité virtuelle sur paris"
+						/>
 					</Link>
-					<div className="itemContainer" >
+					<div className="itemContainer">
 						<div className="containerCenter">
 							<Link to="" className="linkDropMenu" >
 								Animations VR
